@@ -20,3 +20,10 @@ in the development of a database connector suitable for your needs.
 ###Tested on:
 * Linux 3.0 x86-32bit
 * Win7 x86-32bit
+
+##Note
+
+The project was developed in Qt-Creator
+some files have been included
+for use as sample configuration:
+exp. "pro.user" "doxygen", etc.
