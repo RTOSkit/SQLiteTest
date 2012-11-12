@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>resources/Gear.png</file>
+        <file>resources/Trash.png</file>
+        <file>resources/Infoarrow.png</file>
+        <file>resources/sqlitetest.png</file>
+        <file>resources/Help.png</file>
+        <file>resources/Delete.png</file>
+        <file>resources/Home.png</file>
+    </qresource>
+</RCC>
