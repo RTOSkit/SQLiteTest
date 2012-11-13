@@ -15,7 +15,7 @@ where you will be using a SQLite database, and thus assist
 in the development of a database connector suitable for your needs.
 
 
-##Current Version 0.1.1 alpha
+##Current Version 0.3.0 alpha
 
 ###Tested on:
 * Linux 3.0 x86-32bit
