@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #ifndef MAINWINDOW_H
@@ -52,6 +54,7 @@
 #define MAX_TURNS        30
 #define MAX_SLEEPS       30
 #define RRL_TITLE        "Ram Records List "
+#define DRL_TITLE        "Data Records List "
 
 typedef void (*AnonymVoid)();
 
@@ -70,6 +73,9 @@ public:
     int postTmpRunSeconds;
     bool fullSpeed;
     int RRLbytes;
+    int DRLbytes;
+    bool isQueryError;
+    QString queryErrorMsg;
     QList<int> resultTimes;
 
     
@@ -86,9 +92,10 @@ public slots:
     void ClickedTESTSELECT();
     void about();
     void open();
-    void runTimerEvent();
-
-
+    void runTimerInsertEvent();
+    void runTimerUpdateEvent();
+    void runTimerDeleteEvent();
+    void runTimerSelectEvent();
 
 private:    
     Ui::MainWindow *ui;
@@ -101,10 +108,23 @@ private:
     QString randomFixString(int lenght);    
     void insertInvoke(void);
     void insertInvokeFullSpeed(void);
-    void startRunTimer();
+    void updateInvoke(void);
+    void updateInvokeFullSpeed(void);
+    void deleteInvoke(void);
+    void deleteInvokeFullSpeed(void);
+    void selectInvoke(void);
+    void selectInvokeFullSpeed(void);
+    void startRunTimer(const char* runStepper);
     void callAnonymTask(void(MainWindow::*)());
     void openResult();
     void stopProcess();
+    void processClearALL();
+    void processMakeRRL();
+    void processTestInsert();
+    void processTestUpdate();
+    void processTestSelect();
+    void processTestDelete();
+    void populateDRL();
 
     QSpinBox* sbxLenghtVector[FIX_NR_FIELDS];
     QCheckBox* cbxTextFieldVector[FIX_NR_FIELDS];
@@ -126,7 +146,9 @@ private:
     int tmpRunSeconds;
     AnonymVoid runFunction;
     bool isBusy;
+    bool isSelect;
     int mainTimer;
+    const char* runStepper;
 };
 
 #endif // MAINWINDOW_H

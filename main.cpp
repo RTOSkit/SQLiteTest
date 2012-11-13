@@ -30,17 +30,16 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include <QtGui/QApplication>
 #include "mainwindow.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    //QRect scr = QApplication::desktop()->screenGeometry();
-    //move( scr.center() - rect().center() );
     return a.exec();
 }

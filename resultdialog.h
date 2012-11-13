@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 

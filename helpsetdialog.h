@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #ifndef HELPSETDIALOG_H
@@ -58,7 +60,11 @@ public:
 
 public slots:
     void ClickedHome();
+    void ClickedGit();
     void ClickedClose();
+    void ClickedBack();
+    void ClickedForward();
+    void ClickedRefresh();
     void ClickedH0();
     void ClickedH1();
     void ClickedH2();
@@ -72,9 +78,9 @@ public slots:
 
 
 private:
-    Ui::HelpSetDialog *ui;
-    SQLite *lSQLite;
+    Ui::HelpSetDialog *ui;    
     QWidget *cparent;
+    bool firstCall;
     void initListeners(void);
     void beforeClose(void);
 

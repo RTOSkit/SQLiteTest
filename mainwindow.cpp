@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include "mainwindow.h"
@@ -58,6 +60,14 @@ MainWindow::~MainWindow(){
 }
 
 
+
+
+
+
+/**
+ * @section MainWindow config
+ *
+ */
 void MainWindow::createActions(){
     openAct = new QAction(tr("&Set..."), this);
     openAct->setStatusTip(tr("Open HelpSet Dialog"));
@@ -73,8 +83,6 @@ void MainWindow::createActions(){
     aboutQtAct->setStatusTip(tr("Show the Qt library's About box"));
     connect(aboutQtAct, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
 }
-
-
 void MainWindow::createMenus(){
     fileMenu = menuBar()->addMenu(tr("&File"));
     fileMenu->addAction(openAct);
@@ -85,27 +93,6 @@ void MainWindow::createMenus(){
     helpMenu->addAction(aboutAct);
     helpMenu->addAction(aboutQtAct);
 }
-
-
-void MainWindow::about(){
-    AboutDialog *aboutDialog = new AboutDialog();
-    aboutDialog->show();
-}
-
-void MainWindow::open(){
-    openSet(false);
-}
-
-void MainWindow::openSet(bool firstCall){
-    HelpSetDialog *helpSetDialog = new HelpSetDialog(firstCall,this);
-    helpSetDialog->show();
-}
-
-void MainWindow::openResult(){
-    ResultDialog *resultDialog = new ResultDialog(this);
-    resultDialog->show();
-}
-
 void MainWindow::initVectors(void){
 
     int idx=0;
@@ -160,7 +147,6 @@ void MainWindow::initVectors(void){
     txtTextContentVector[idx] = ui->txtFFG_9;
 
 }
-
 void MainWindow::initListeners(void){
    connect(ui->dialEPS, SIGNAL(valueChanged(int)), this, SLOT(setValueEPS(int)));
    connect(ui->dialST, SIGNAL(valueChanged(int)), this, SLOT(setValueST(int)));
@@ -197,50 +183,15 @@ void MainWindow::initListeners(void){
 
 
 
-void MainWindow::ChangeFFGfieldType(int){
-
-    if(!muteEvent){
-        ui->sbxFFG_0->setEnabled(!ui->cbxFFG_TEXT_0->isChecked());
-        ui->sbxFFG_1->setEnabled(!ui->cbxFFG_TEXT_1->isChecked());
-        ui->sbxFFG_2->setEnabled(!ui->cbxFFG_TEXT_2->isChecked());
-        ui->sbxFFG_3->setEnabled(!ui->cbxFFG_TEXT_3->isChecked());
-        ui->sbxFFG_4->setEnabled(!ui->cbxFFG_TEXT_4->isChecked());
-        ui->sbxFFG_5->setEnabled(!ui->cbxFFG_TEXT_5->isChecked());
-        ui->sbxFFG_6->setEnabled(!ui->cbxFFG_TEXT_6->isChecked());
-        ui->sbxFFG_7->setEnabled(!ui->cbxFFG_TEXT_7->isChecked());
-        ui->sbxFFG_8->setEnabled(!ui->cbxFFG_TEXT_8->isChecked());
-        ui->sbxFFG_9->setEnabled(!ui->cbxFFG_TEXT_9->isChecked());
-    }
-
-}
-
-void MainWindow::ChangeFFGfieldContent(int){
-
-    if(!muteEvent){
-        ui->txtFFG_0->setEnabled(!ui->cbxFFG_RANDOM_0->isChecked());
-        ui->txtFFG_1->setEnabled(!ui->cbxFFG_RANDOM_1->isChecked());
-        ui->txtFFG_2->setEnabled(!ui->cbxFFG_RANDOM_2->isChecked());
-        ui->txtFFG_3->setEnabled(!ui->cbxFFG_RANDOM_3->isChecked());
-        ui->txtFFG_4->setEnabled(!ui->cbxFFG_RANDOM_4->isChecked());
-        ui->txtFFG_5->setEnabled(!ui->cbxFFG_RANDOM_5->isChecked());
-        ui->txtFFG_6->setEnabled(!ui->cbxFFG_RANDOM_6->isChecked());
-        ui->txtFFG_7->setEnabled(!ui->cbxFFG_RANDOM_7->isChecked());
-        ui->txtFFG_8->setEnabled(!ui->cbxFFG_RANDOM_8->isChecked());
-        ui->txtFFG_9->setEnabled(!ui->cbxFFG_RANDOM_9->isChecked());
-     }
-}
-
-void MainWindow::setValueEPS(int value){
-    ui->lcdNumberEPS->display(value);
-}
-
-void MainWindow::setValueST(int value){
-    ui->lcdNumberST->display(value);
-}
 
 
-void MainWindow::ClickedClear(){
 
+
+/**
+ * @section MainWindow post Slots
+ *
+ */
+void MainWindow::processClearALL(){
     muteEvent=true;
     ui->cbxFFG_TEXT_0->setChecked(false);
     ui->cbxFFG_TEXT_1->setChecked(false);
@@ -277,10 +228,16 @@ void MainWindow::ClickedClear(){
     for(int j=0;j<nRows;j++){
         ui->tableDRL->removeRow(0);
     }
+    ui->groupBoxDRL->setTitle(DRL_TITLE);
+
+    isSelect=false;
+    RRLbytes = DRLbytes = 0;
+    ui->tbMain->setCurrentIndex(0);
 }
 
-void MainWindow::ClickedMake(){
+void MainWindow::processMakeRRL(){
 
+    isSelect=false;
     int nRecords = ui->dialEPS->value();
 
     //CLEAR OBJECT
@@ -288,7 +245,13 @@ void MainWindow::ClickedMake(){
     for(int j=0;j<nRows;j++){
         ui->tableRRL->removeRow(0);
     }
-    RRLbytes=0;
+
+    nRows = ui->tableDRL->rowCount();
+    for(int j=0;j<nRows;j++){
+        ui->tableDRL->removeRow(0);
+    }
+    ui->groupBoxDRL->setTitle(DRL_TITLE);
+    RRLbytes = DRLbytes = 0;
 
 
     //POPULATE OBJECT
@@ -317,10 +280,9 @@ void MainWindow::ClickedMake(){
     ui->groupBoxRRL->setTitle(RRL_TITLE+strRRLbytes);
 }
 
-void MainWindow::ClickedTESTINSERT(){
-
-    int nRows = ui->tableRRL->rowCount();   
-    for(int j=0;j<nRows;j++){       
+void MainWindow::processTestInsert(){
+    int nRows = ui->tableRRL->rowCount();
+    for(int j=0;j<nRows;j++){
         dataDB[j].append(j+"");
         for(int i=0;i<FIX_NR_FIELDS;i++){
             QTableWidgetItem *item = ui->tableRRL->item(0,i);
@@ -331,9 +293,9 @@ void MainWindow::ClickedTESTINSERT(){
     }
 
     if(nRows){
+        isQueryError=false;
         tmpNrecords = nRows;
         postTmpNrecords = tmpNrecords;
-        runFunction = (AnonymVoid)&MainWindow::insertInvoke;
         ui->groupBoxRRL->setTitle(RRL_TITLE);
         QString msg = "Insert Sentence is Ready! \nDo you want run in fullSpeed Mode?";
         if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
@@ -342,7 +304,7 @@ void MainWindow::ClickedTESTINSERT(){
             insertInvokeFullSpeed();
         }else{
             fullSpeed=false;
-            startRunTimer();
+            startRunTimer(SLOT(runTimerInsertEvent()));
         }
 
     }else{
@@ -352,10 +314,96 @@ void MainWindow::ClickedTESTINSERT(){
     }
 }
 
+void MainWindow::processTestUpdate(){
+    int nRows = ui->tableDRL->rowCount();
+    for(int j=0;j<nRows;j++){        
+        for(int i=0;i<FIX_NR_FIELDS;i++){
+            QTableWidgetItem *item = ui->tableDRL->item(0,i);
+            QString itemStr = item->text();
+            dataDB[j].append(itemStr);
+        }
+        ui->tableDRL->removeRow(0);
+    }
+
+    if(nRows){
+        isQueryError=false;
+        tmpNrecords = nRows;
+        postTmpNrecords = tmpNrecords;
+        ui->groupBoxDRL->setTitle(DRL_TITLE);
+        QString msg = "Update Sentence is Ready! \nDo you want run in fullSpeed Mode?";
+        if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
+                                    QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){
+            fullSpeed=true;
+            updateInvokeFullSpeed();
+        }else{
+            fullSpeed=false;
+            startRunTimer(SLOT(runTimerUpdateEvent()));
+        }
+
+    }else{
+        QMessageBox::warning(0, qApp->tr("SQLiteTest"),
+             qApp->tr("Data Records List - is Empty!\n Please run a 'Select Test' first."),
+        QMessageBox::Ok);
+    }
 
 
+}
+
+void MainWindow::processTestSelect(){
+    int nRows = ui->tableRRL->rowCount();
+    if(nRows){
+        for(int j=0;j<nRows;j++){
+            ui->tableRRL->removeRow(0);
+        }
+    }else{
+       nRows = ui->dialEPS->value();
+    }
+    isQueryError=false;
+    tmpNrecords = nRows;
+    postTmpNrecords = tmpNrecords;
+    ui->groupBoxRRL->setTitle(RRL_TITLE);
+    QString msg = "Select Sentence is Ready! \nDo you want run in fullSpeed Mode?";
+    if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
+                                QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){
+        fullSpeed=true;
+        selectInvokeFullSpeed();
+    }else{
+        fullSpeed=false;
+        startRunTimer(SLOT(runTimerSelectEvent()));
+    }
+}
+
+void MainWindow::processTestDelete(){
+    int nRows = ui->tableRRL->rowCount();
+    if(nRows){
+        for(int j=0;j<nRows;j++){
+            ui->tableRRL->removeRow(0);
+        }
+    }else{
+       nRows = ui->dialEPS->value();
+    }
+    isQueryError=false;
+    tmpNrecords = nRows;
+    postTmpNrecords = tmpNrecords;
+    ui->groupBoxRRL->setTitle(RRL_TITLE);
+    QString msg = "Delete Sentence is Ready! \nDo you want run in fullSpeed Mode?";
+    if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
+                                QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){
+        fullSpeed=true;
+        deleteInvokeFullSpeed();
+    }else{
+        fullSpeed=false;
+        startRunTimer(SLOT(runTimerDeleteEvent()));
+    }
+}
+
+
+
+/**
+ * @section MainWindow SQL invokes Methods
+ *
+ */
 void MainWindow::insertInvoke(void){
-
     QElapsedTimer ctrlTimer;
     int ctrlMS=0;
     tmpNrecords--;
@@ -407,26 +455,271 @@ void MainWindow::insertInvokeFullSpeed(void){
 }
 
 
-void MainWindow::ClickedTESTUPDATE(){
+void MainWindow::updateInvoke(void){
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    tmpNrecords--;
+    if(tmpNrecords<0){
+      isBusy=false;
+      stopProcess();
+      return;
+    }
+    ctrlTimer.start();
+    this->sqlite->updateDBRecord(dataDB[tmpNrecords]);
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    resultTimesIdx++;
 
+
+    if(tmpNrecords==0){
+       isBusy=false;
+       stopProcess();
+    }
 }
-void MainWindow::ClickedTESTDELETE(){
 
+
+void MainWindow::updateInvokeFullSpeed(void){
+
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    this->ui->centralWidget->setEnabled(false);
+    resultTimes.clear();
+    ctrlTimer.start();
+    this->sqlite->dbOpen();
+    for(int i=0;i<tmpNrecords;i++){
+       this->sqlite->updateDBRecord(dataDB[i]);
+    }
+    this->sqlite->dbClose();
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    this->ui->centralWidget->setEnabled(true);
+    openResult();
+
+    /*DEBUG
+    QString strCtrlMS="";
+    strCtrlMS.sprintf("Total Insert in %u MS",ctrlMS);
+    QMessageBox::information(0, qApp->tr("SQLiteTest"),
+    strCtrlMS,
+    QMessageBox::Ok);
+    */
 }
-void MainWindow::ClickedTESTSELECT(){
 
+
+void MainWindow::selectInvoke(void){
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    tmpNrecords--;
+    if(tmpNrecords<0){
+      isBusy=false;
+      isSelect=true;
+      stopProcess();
+      return;
+    }
+    QString str ="";
+    ctrlTimer.start();
+    dataDB[tmpNrecords] = this->sqlite->selectDBRecord(str.setNum(tmpNrecords));
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    resultTimesIdx++;
+
+
+    if(tmpNrecords==0){
+       isBusy=false;
+       isSelect=true;
+       stopProcess();
+    }
+}
+
+
+void MainWindow::selectInvokeFullSpeed(void){
+
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    this->ui->centralWidget->setEnabled(false);
+    resultTimes.clear();
+    ctrlTimer.start();
+    this->sqlite->dbOpen();
+    QString str ="";
+    for(int i=0;i<tmpNrecords;i++){       
+        dataDB[i] = this->sqlite->selectDBRecord(str.setNum(i));
+    }
+    this->sqlite->dbClose();
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    this->ui->centralWidget->setEnabled(true);       
+    populateDRL();
+    ui->tbMain->setCurrentIndex(1);
+    openResult();
+
+    /*DEBUG
+    QString strCtrlMS="";
+    strCtrlMS.sprintf("Total Insert in %u MS",ctrlMS);
+    QMessageBox::information(0, qApp->tr("SQLiteTest"),
+    strCtrlMS,
+    QMessageBox::Ok);
+    */
+}
+
+
+void MainWindow::deleteInvoke(void){
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    tmpNrecords--;
+    if(tmpNrecords<0){
+      isBusy=false;
+      stopProcess();
+      return;
+    }
+    ctrlTimer.start();
+    if(!this->sqlite->deleteDBRecord()){
+        stopProcess();
+        isQueryError=true;
+        queryErrorMsg.sprintf(" in %u record.",postTmpNrecords - tmpNrecords);
+        tmpNrecords=0;
+    }
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    resultTimesIdx++;
+
+
+    if(tmpNrecords==0){
+       isBusy=false;
+       stopProcess();
+    }
+}
+
+
+void MainWindow::deleteInvokeFullSpeed(void){
+
+    QElapsedTimer ctrlTimer;
+    int ctrlMS=0;
+    this->ui->centralWidget->setEnabled(false);
+    resultTimes.clear();
+    ctrlTimer.start();
+    this->sqlite->dbOpen();
+    for(int i=0;i<tmpNrecords;i++){
+       if(!this->sqlite->deleteDBRecord()){
+            isQueryError=true;
+            queryErrorMsg.sprintf(" in %u record.",postTmpNrecords - tmpNrecords);
+            break;
+       }
+    }
+    this->sqlite->dbClose();
+    ctrlMS= ctrlTimer.elapsed();
+    lastTime = ctrlMS;
+    resultTimes.append(ctrlMS);
+    this->ui->centralWidget->setEnabled(true);
+    openResult();
+
+    /*DEBUG
+    QString strCtrlMS="";
+    strCtrlMS.sprintf("Total Insert in %u MS",ctrlMS);
+    QMessageBox::information(0, qApp->tr("SQLiteTest"),
+    strCtrlMS,
+    QMessageBox::Ok);
+    */
+}
+
+
+
+/**
+ * @section MainWindow code methods
+ *
+ */
+void MainWindow::populateDRL(){
+    int nRecords = ui->dialEPS->value();
+
+    //CLEAR OBJECT
+    int nRows = ui->tableDRL->rowCount();
+    for(int j=0;j<nRows;j++){
+        ui->tableDRL->removeRow(0);
+    }
+    DRLbytes=0;
+
+    //POPULATE OBJECT
+    for(int j=0;j<nRecords;j++){
+        ui->tableDRL->insertRow(j);
+        for(int i=0;i<FIX_NR_FIELDS;i++){
+            if(dataDB[j].length()!=10){
+                isQueryError=true;
+                queryErrorMsg.sprintf(" only %u records found.",postTmpNrecords - tmpNrecords);
+                goto lPOPULATEDRL_EXIT;
+            }
+            QTableWidgetItem *item;
+            QString tmpS="";
+            tmpS = dataDB[j][i];
+            DRLbytes += tmpS.length();
+            item = new QTableWidgetItem(tmpS);
+            ui->tableDRL->setItem(j,i,item);
+        }
+    }
+
+lPOPULATEDRL_EXIT:
+    QString strDRLbytes="";
+    float speedRequired = DRLbytes / 8;
+    strDRLbytes.sprintf(": %u Bytes, Speed %9.1fkbits/s",DRLbytes,speedRequired);
+    ui->groupBoxDRL->setTitle(DRL_TITLE+strDRLbytes);
+}
+
+
+
+/**
+ * @section MainWindow Tests with timer flow
+ *
+ */
+void MainWindow::startRunTimer(const char* runStepper){
+    this->runStepper = runStepper;
+    runTimer = new QTimer();
+    connect(runTimer,SIGNAL(timeout()),this,runStepper);
+    ui->centralWidget->setEnabled(false);
+    int tI= floor(1000 / ui->lcdNumberEPS->value());
+    tmpRunSeconds = ui->lcdNumberST->value();
+    postTmpRunSeconds = tmpRunSeconds;
+    sleepTime = tI;
+    resultTimesIdx=0;
+    isSelect=false;
+    resultTimes.clear();
+    this->sqlite->dbOpen();
+    //timeout timer
+    mainTimer = startTimer(1000);
+    //steps timer
+    runTimer->start(tI);
 }
 
 void MainWindow::stopProcess(){
     if(!isBusy){
         runTimer->stop();
+        disconnect(runTimer,SIGNAL(timeout()),this,this->runStepper);
         killTimer(mainTimer);
         this->sqlite->dbClose();
-        this->ui->centralWidget->setEnabled(true);
+        this->ui->centralWidget->setEnabled(true);        
+        if(isSelect){
+            populateDRL();
+            ui->tbMain->setCurrentIndex(1);
+        }
         openResult();
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+/**
+ * @section MainWindow Code Slots
+ *
+ */
 void MainWindow::timerEvent(QTimerEvent *){
     if(!tmpRunSeconds){
         QString strMSG="Operation not completed due to timeout!";
@@ -435,46 +728,146 @@ void MainWindow::timerEvent(QTimerEvent *){
     }else{
        tmpRunSeconds--;
     }
-
 }
-
-void MainWindow::runTimerEvent(){
-
+void MainWindow::runTimerInsertEvent(){
     if(!isBusy){
         isBusy=true;
         if(resultTimesIdx){
             resultTimes.append(sleepTime - lastTime);
             resultTimesIdx++;
         }
-        insertInvoke();
-        //runFunction();
+        insertInvoke();       
         isBusy=false;
+    }
+}
+void MainWindow::runTimerSelectEvent(){
+    if(!isBusy){
+        isBusy=true;
+        if(resultTimesIdx){
+            resultTimes.append(sleepTime - lastTime);
+            resultTimesIdx++;
+        }
+        selectInvoke();
+        isBusy=false;
+    }
+}
+void MainWindow::runTimerDeleteEvent(){
+    if(!isBusy){
+        isBusy=true;
+        if(resultTimesIdx){
+            resultTimes.append(sleepTime - lastTime);
+            resultTimesIdx++;
+        }
+        deleteInvoke();
+        isBusy=false;
+    }
+}
+void MainWindow::runTimerUpdateEvent(){
+    if(!isBusy){
+        isBusy=true;
+        if(resultTimesIdx){
+            resultTimes.append(sleepTime - lastTime);
+            resultTimesIdx++;
+        }
+        updateInvoke();
+        isBusy=false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * @section MainWindow User Slots
+ *
+ */
+void MainWindow::ChangeFFGfieldType(int){
+
+    if(!muteEvent){
+        ui->sbxFFG_0->setEnabled(!ui->cbxFFG_TEXT_0->isChecked());
+        ui->sbxFFG_1->setEnabled(!ui->cbxFFG_TEXT_1->isChecked());
+        ui->sbxFFG_2->setEnabled(!ui->cbxFFG_TEXT_2->isChecked());
+        ui->sbxFFG_3->setEnabled(!ui->cbxFFG_TEXT_3->isChecked());
+        ui->sbxFFG_4->setEnabled(!ui->cbxFFG_TEXT_4->isChecked());
+        ui->sbxFFG_5->setEnabled(!ui->cbxFFG_TEXT_5->isChecked());
+        ui->sbxFFG_6->setEnabled(!ui->cbxFFG_TEXT_6->isChecked());
+        ui->sbxFFG_7->setEnabled(!ui->cbxFFG_TEXT_7->isChecked());
+        ui->sbxFFG_8->setEnabled(!ui->cbxFFG_TEXT_8->isChecked());
+        ui->sbxFFG_9->setEnabled(!ui->cbxFFG_TEXT_9->isChecked());
     }
 
 }
+void MainWindow::ChangeFFGfieldContent(int){
 
-QElapsedTimer ctrlTimerTot;
-
-void MainWindow::startRunTimer(){
-    runTimer = new QTimer();
-    connect(runTimer,SIGNAL(timeout()),this,SLOT(runTimerEvent()));
-    int tI= floor(1000 / ui->lcdNumberEPS->value());
-    sleepTime = tI;
-    ui->centralWidget->setEnabled(false);
-    tmpRunSeconds = ui->lcdNumberST->value();
-    postTmpRunSeconds = tmpRunSeconds;
-    resultTimesIdx=0;
-    resultTimes.clear();
-    this->sqlite->dbOpen();
-    mainTimer = startTimer(1000);
-    runTimer->start(tI);
-    ctrlTimerTot.start();
+    if(!muteEvent){
+        ui->txtFFG_0->setEnabled(!ui->cbxFFG_RANDOM_0->isChecked());
+        ui->txtFFG_1->setEnabled(!ui->cbxFFG_RANDOM_1->isChecked());
+        ui->txtFFG_2->setEnabled(!ui->cbxFFG_RANDOM_2->isChecked());
+        ui->txtFFG_3->setEnabled(!ui->cbxFFG_RANDOM_3->isChecked());
+        ui->txtFFG_4->setEnabled(!ui->cbxFFG_RANDOM_4->isChecked());
+        ui->txtFFG_5->setEnabled(!ui->cbxFFG_RANDOM_5->isChecked());
+        ui->txtFFG_6->setEnabled(!ui->cbxFFG_RANDOM_6->isChecked());
+        ui->txtFFG_7->setEnabled(!ui->cbxFFG_RANDOM_7->isChecked());
+        ui->txtFFG_8->setEnabled(!ui->cbxFFG_RANDOM_8->isChecked());
+        ui->txtFFG_9->setEnabled(!ui->cbxFFG_RANDOM_9->isChecked());
+     }
 }
+void MainWindow::setValueEPS(int value){
+    ui->lcdNumberEPS->display(value);
+}
+void MainWindow::setValueST(int value){
+    ui->lcdNumberST->display(value);
+}
+void MainWindow::ClickedClear(){
+    processClearALL();
+}
+void MainWindow::ClickedMake(){
+    processMakeRRL();
+}
+void MainWindow::about(){
+    AboutDialog *aboutDialog = new AboutDialog();
+    aboutDialog->show();
+}
+void MainWindow::open(){
+    openSet(false);
+}
+void MainWindow::openSet(bool firstCall){
+    HelpSetDialog *helpSetDialog = new HelpSetDialog(firstCall,this);
+    helpSetDialog->show();
+}
+void MainWindow::openResult(){
+    ResultDialog *resultDialog = new ResultDialog(this);
+    resultDialog->show();
+}
+void MainWindow::ClickedTESTINSERT(){
+    processTestInsert();
+}
+void MainWindow::ClickedTESTUPDATE(){
+    processTestUpdate();
+}
+void MainWindow::ClickedTESTDELETE(){
+    processTestDelete();
+}
+void MainWindow::ClickedTESTSELECT(){
+    processTestSelect();
+}
+
+
 
 
 
  /**
-  * Helpers Section
+  * @section Helpers
+  *
   */
 QString MainWindow::randomFixString(int lenght){
     QString ABC[] = {"QWERTYUIOPASDFGHJKLZXCVBNM",

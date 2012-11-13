@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include "sqlite.h"
@@ -171,28 +173,25 @@ void SQLite::dbOpen(void){
 }
 
 
-bool SQLite::updateDBRecord(QStringList data){
-     bool out=false;
+bool SQLite::updateDBRecord(QStringList data){     
      QString queryStr = "UPDATE " + qApp->tr(DEFAULT_TABLENAME) + " SET "
-                       + "FIELD1 = '"   + data[1] + "', "
-                       + "FIELD2 = '"   + data[2] + "', "
-                       + "FIELD3 = '"   + data[3] + "', "
-                       + "FIELD4 = '"   + data[4] + "', "
-                       + "FIELD5 = '"   + data[5] + "', "
-                       + "FIELD6 = '"   + data[6] + "', "
-                       + "FIELD7 = '"   + data[7] + "', "
-                       + "FIELD8 = '"   + data[8] + "', "
-                       + "FIELD9 = '"   + data[9] + "', "
-                       + "FIELD10 = '"   + data[10] + "', "
-                       + "WHERE ID = '" + data[0] + "'";
+                       + "FIELD1 = '"   + data[0] + "', "
+                       + "FIELD2 = '"   + data[1] + "', "
+                       + "FIELD3 = '"   + data[2] + "', "
+                       + "FIELD4 = '"   + data[3] + "', "
+                       + "FIELD5 = '"   + data[4] + "', "
+                       + "FIELD6 = '"   + data[5] + "', "
+                       + "FIELD7 = '"   + data[6] + "', "
+                       + "FIELD8 = '"   + data[7] + "', "
+                       + "FIELD9 = '"   + data[8] + "', "
+                       + "FIELD10 = '"   + data[9] + "', "
+                       + "WHERE FIELD1 = '" + data[0] + "'";
     QSqlQuery query(queryStr,db);
-    out = (bool) query.result();
-    return (bool) out;
+    return (bool) query.result();
 }
 
 
-bool SQLite::insertDBRecord(QStringList data){
-     bool out=false;
+bool SQLite::insertDBRecord(QStringList data){     
      QString queryStr = "INSERT INTO " + qApp->tr(DEFAULT_TABLENAME) + " (FIELD1,FIELD2,FIELD3,FIELD4,FIELD5,FIELD6,FIELD7,FIELD8,FIELD9,FIELD10) VALUES ("
              + "'" + data[1] + "', "
              + "'" + data[2] + "', "
@@ -205,6 +204,26 @@ bool SQLite::insertDBRecord(QStringList data){
              + "'" + data[9] + "', "
              + "'" + data[10] + "' )";     
     QSqlQuery query(queryStr,db);
-    out = (bool) query.result();
-    return (bool) out;
+    return (bool) query.result();
+}
+
+
+bool SQLite::deleteDBRecord(){     
+     QString queryStr = "DELETE FROM " + qApp->tr(DEFAULT_TABLENAME) + " WHERE rowid= (SELECT MIN(rowid) FROM " + qApp->tr(DEFAULT_TABLENAME) + ");";
+     QSqlQuery query(queryStr,db);
+     return (bool) query.result();
+}
+
+
+QStringList SQLite::selectDBRecord(QString startIdx){
+     QStringList sl;
+     QString querySql = "SELECT * FROM " + qApp->tr(DEFAULT_TABLENAME) + " LIMIT " + startIdx + ",1;";
+     QSqlQuery query(querySql,db);
+     query.next();
+     sl << query.value(1).toString();sl << query.value(2).toString();
+     sl << query.value(3).toString();sl << query.value(4).toString();
+     sl << query.value(5).toString();sl << query.value(6).toString();
+     sl << query.value(7).toString();sl << query.value(8).toString();
+     sl << query.value(9).toString();sl << query.value(10).toString();
+     return sl;
 }

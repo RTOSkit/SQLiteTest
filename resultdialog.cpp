@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include "resultdialog.h"
@@ -51,7 +53,8 @@ ResultDialog::~ResultDialog(){
 void ResultDialog::populateTable(){
 
     int nRecords = ((MainWindow*)cparent)->postTmpNrecords;
-    int nTurns = ((MainWindow*)cparent)->resultTimes.count();//(((MainWindow*)cparent)->postTmpRunSeconds * 2) -1;
+    int nTurns = ((MainWindow*)cparent)->resultTimes.count();
+    //(((MainWindow*)cparent)->postTmpRunSeconds * 2) -1;
     bool fullSpeed = ((MainWindow*)cparent)->fullSpeed;
 
 
@@ -61,7 +64,7 @@ void ResultDialog::populateTable(){
     float totalSleep=0;
     float speedTot=0;
 
-    ((MainWindow*)cparent)->resultTimes.count();
+
 
     //POPULATE OBJECT
     for(int j=0;j<nTurns;j++){
@@ -93,7 +96,7 @@ void ResultDialog::populateTable(){
     QString totalSleepStr = tmpS;
     tmpS.sprintf("%5.0f",((fullSpeed)?totalRun:(((totalRun<1000)?1000:totalSleep)-totalSleep)));
     QString totalDRunStr = tmpS;
-    tmpS.sprintf("%u",((MainWindow*)cparent)->RRLbytes);
+    tmpS.sprintf("%u", ((MainWindow*)cparent)->RRLbytes | ((MainWindow*)cparent)->DRLbytes);
     QString totalBytes=tmpS;
     tmpS.sprintf("%u",nRecords);
     QString totalRecords=tmpS;
@@ -109,6 +112,8 @@ void ResultDialog::populateTable(){
     summary.append("<b>Deducted Run Time in a second:</b><br />" + totalDRunStr + " ms <br />");
     summary.append("<b>Theoric Run Time:</b><br />" + totalRunStr + " ms<br />");
     summary.append("<b>Theoric Sleep Time:</b><br />" + totalSleepStr + " ms <br />");
+    if(((MainWindow*)cparent)->isQueryError)
+        summary.append("<b>Error:</b><br />" + ((MainWindow*)cparent)->queryErrorMsg + "<br />");
     summary.append("</center>");
     ui->pteResult->appendHtml(summary);
 }

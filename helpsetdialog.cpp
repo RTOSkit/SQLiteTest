@@ -30,14 +30,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include "helpsetdialog.h"
 #include "ui_helpsetdialog.h"
 
-HelpSetDialog::HelpSetDialog(bool firstCall,QWidget *parent):
+HelpSetDialog::HelpSetDialog(bool firstCall,QWidget *parent):    
     QDialog(parent),
     ui(new Ui::HelpSetDialog){    
+    this->firstCall = firstCall;
     QString pathHTML  = QApplication::applicationDirPath()+"/html/resultdialog_8cpp.html";
     ui->setupUi(this);
     ui->webView->load(QUrl(pathHTML));
@@ -52,39 +55,54 @@ HelpSetDialog::~HelpSetDialog(){
 }
 
 void HelpSetDialog::beforeClose(){
-    QString msg = "Do you want to charge driver with a new configuration profile?";
-    if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
-                                QMessageBox::Ok,QMessageBox::Cancel)==QMessageBox::Ok){
 
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useAtomicCommit =  ui->groupBoxAC->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomPageSize =  ui->gbAC_0->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomCacheSize =  ui->gbAC_1->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customTempStore =  ui->gbAC_2->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomJournalMode =  ui->gbAC_3->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomLockingMode =  ui->gbAC_4->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomSynchronous =  ui->gbAC_5->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useExistDB =  ui->cbxUED->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->useRamDB =  ui->cbxARD->isChecked();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customPageSize =  ui->txtAC_0->text();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customCacheSize =  ui->txtAC_1->text();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customTempStore =  ui->txtAC_2->text();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customJournalMode =  ui->txtAC_3->text();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customLockingMode =  ui->txtAC_4->text();
-        ((MainWindow*)cparent)->sqlite->sqlPreferences->customSynchronous =  ui->txtAC_5->text();
-
+    if(firstCall){
+        goto lBEFORECLOSE_SET;
+    }else{
+        QString msg = "Do you want to charge driver with a new configuration profile?";
+        if(QMessageBox::question(0, qApp->tr("SQLiteTest"),msg,
+                                    QMessageBox::Ok,QMessageBox::Cancel)==QMessageBox::Ok){
+            goto lBEFORECLOSE_SET;
+        }else{
+            goto lBEFORECLOSE_EXIT;
+        }
     }
+
+lBEFORECLOSE_SET:
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useAtomicCommit =  ui->groupBoxAC->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomPageSize =  ui->gbAC_0->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomCacheSize =  ui->gbAC_1->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customTempStore =  ui->gbAC_2->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomJournalMode =  ui->gbAC_3->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomLockingMode =  ui->gbAC_4->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useCustomSynchronous =  ui->gbAC_5->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useExistDB =  ui->cbxUED->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->useRamDB =  ui->cbxARD->isChecked();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customPageSize =  ui->txtAC_0->text();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customCacheSize =  ui->txtAC_1->text();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customTempStore =  ui->txtAC_2->text();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customJournalMode =  ui->txtAC_3->text();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customLockingMode =  ui->txtAC_4->text();
+    ((MainWindow*)cparent)->sqlite->sqlPreferences->customSynchronous =  ui->txtAC_5->text();
+
+
+lBEFORECLOSE_EXIT:
+    asm("nop");
 }
 
 void HelpSetDialog::closeEvent(QCloseEvent * event){
-
+    event=event;
     //event->ignore();
     beforeClose();
-    //this->close();
 }
 
 void HelpSetDialog::initListeners(void){
    connect(ui->btnH_home,SIGNAL(clicked()),this,SLOT(ClickedHome()));
+   connect(ui->btnH_git,SIGNAL(clicked()),this,SLOT(ClickedGit()));
    connect(ui->btnH_close,SIGNAL(clicked()),this,SLOT(ClickedClose()));
+   connect(ui->btnH_back,SIGNAL(clicked()),this,SLOT(ClickedBack()));
+   connect(ui->btnH_forward,SIGNAL(clicked()),this,SLOT(ClickedForward()));
+   connect(ui->btnH_refresh,SIGNAL(clicked()),this,SLOT(ClickedRefresh()));
    connect(ui->btnH_0,SIGNAL(clicked()),this,SLOT(ClickedH0()));
    connect(ui->btnH_1,SIGNAL(clicked()),this,SLOT(ClickedH1()));
    connect(ui->btnH_2,SIGNAL(clicked()),this,SLOT(ClickedH2()));
@@ -100,6 +118,17 @@ void HelpSetDialog::ClickedClose(){
     this->close();
 }
 
+void HelpSetDialog::ClickedRefresh(){
+    ui->webView->reload();
+}
+void HelpSetDialog::ClickedBack(){
+    ui->webView->back();
+}
+void HelpSetDialog::ClickedForward(){
+    ui->webView->forward();
+}
+
+
 
 
 void HelpSetDialog::ClickedHome(){
@@ -108,52 +137,59 @@ void HelpSetDialog::ClickedHome(){
     ui->viewerBox->setTitle("SQLiteTest - Doxygen Home");
 }
 
+void HelpSetDialog::ClickedGit(){
+    QString pathHTML  = "https://github.com/emmodded/SQLiteTest";
+    ui->webView->load(QUrl(pathHTML));
+    ui->viewerBox->setTitle("SQLiteTest - Git Repository :: " + pathHTML);
+}
+
+
 void HelpSetDialog::ClickedH0(){
     QString pathHTML  = "http://www.sqlite.org/atomiccommit.html";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Atomic Commit");
+    ui->viewerBox->setTitle("SQLite - Atomic Commit :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedH1(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_page_size";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Page Size Bytes");
+    ui->viewerBox->setTitle("SQLite - Page Size Bytes :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedH2(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_cache_size";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Cache Size Bytes");
+    ui->viewerBox->setTitle("SQLite - Cache Size Bytes :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedH3(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_temp_store";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Temp Store Mode");
+    ui->viewerBox->setTitle("SQLite - Temp Store Mode :: " + pathHTML);
 }
 
 
 void HelpSetDialog::ClickedH4(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_journal_mode";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Journal Mode");
+    ui->viewerBox->setTitle("SQLite - Journal Mode :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedH5(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_locking_mode";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Locking Transaction Mode");
+    ui->viewerBox->setTitle("SQLite - Locking Transaction Mode :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedH6(){
     QString pathHTML  = "http://www.sqlite.org/pragma.html#pragma_synchronous";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLite - Synchronous Transaction");
+    ui->viewerBox->setTitle("SQLite - Synchronous Transaction :: " + pathHTML);
 }
 
 
 void HelpSetDialog::ClickedH7(){
-    QString strMSG="Use Stored Database";
+    QString strMSG="Use Stored Existing Database";
     QMessageBox::information(0, qApp->tr("SQLiteTest"),
     strMSG,
     QMessageBox::Ok);

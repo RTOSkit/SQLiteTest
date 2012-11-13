@@ -4,8 +4,12 @@
         <file>resources/Trash.png</file>
         <file>resources/Infoarrow.png</file>
         <file>resources/sqlitetest.png</file>
-        <file>resources/Help.png</file>
         <file>resources/Delete.png</file>
         <file>resources/Home.png</file>
+        <file>resources/Back.png</file>
+        <file>resources/Forward.png</file>
+        <file>resources/Refresh.png</file>
+        <file>resources/homepage.png</file>
+        <file>resources/git.png</file>
     </qresource>
 </RCC>

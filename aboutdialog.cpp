@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #include "aboutdialog.h"
@@ -37,13 +39,11 @@
 
 AboutDialog::AboutDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::AboutDialog)
-{
+    ui(new Ui::AboutDialog){
     ui->setupUi(this);
 
 }
 
-AboutDialog::~AboutDialog()
-{
+AboutDialog::~AboutDialog(){
     delete ui;
 }

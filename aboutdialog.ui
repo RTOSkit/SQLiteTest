@@ -46,7 +46,11 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="plainText">
     <string>
-  SQLiteTest - Analysis Tools Kit 
+ SQLiteTest - Analysis Tools Kit  
+
+ https://github.com/emmodded/SQLiteTest 
+ git clone https://github.com/emmodded/SQLiteTest.git
+ 
 
  Copyright (c) 2012 Emmodded Project 
  All rights reserved.

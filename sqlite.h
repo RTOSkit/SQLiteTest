@@ -30,6 +30,8 @@
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @package sqlitetest
+ * @version 0.3.0a
+ * @author Maurizio Spoto ::RTOSkit::
  */
 
 #ifndef SQLITE_H
@@ -79,6 +81,8 @@ public:
     void dbFlush(void);
     bool updateDBRecord(QStringList data);
     bool insertDBRecord(QStringList data);    
+    bool deleteDBRecord();
+    QStringList selectDBRecord(QString startIdx);
 
     QSqlDatabase db;
     SqlPreferences *sqlPreferences;

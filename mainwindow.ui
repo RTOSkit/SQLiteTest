@@ -26,7 +26,7 @@
    <string>SQLiteTest</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QToolBox" name="toolBoxMain">
+   <widget class="QToolBox" name="tbMain">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -36,7 +36,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="pageProcess">
      <property name="geometry">
@@ -3007,6 +3007,15 @@ color: rgb(48, 87, 135);</string>
        <property name="horizontalScrollBarPolicy">
         <enum>Qt::ScrollBarAlwaysOff</enum>
        </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideMiddle</enum>
+       </property>
        <attribute name="horizontalHeaderDefaultSectionSize">
         <number>100</number>
        </attribute>
@@ -3159,8 +3168,8 @@ color: rgb(48, 87, 135);</string>
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>98</width>
-       <height>28</height>
+       <width>1101</width>
+       <height>503</height>
       </rect>
      </property>
      <attribute name="label">
@@ -3208,6 +3217,15 @@ color: rgb(48, 87, 135);</string>
        </property>
        <property name="horizontalScrollBarPolicy">
         <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="textElideMode">
+        <enum>Qt::ElideMiddle</enum>
        </property>
        <attribute name="horizontalHeaderDefaultSectionSize">
         <number>100</number>
