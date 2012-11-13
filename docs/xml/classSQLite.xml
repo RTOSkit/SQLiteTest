@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classSQLite" kind="class" prot="public">
+    <compoundname>SQLite</compoundname>
+    <includes refid="sqlite_8h" local="no">sqlite.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classSQLite_1a1e719c7ea443e641471da642dbf33a70" prot="public" static="no" mutable="no">
+        <type>QSqlDatabase</type>
+        <definition>QSqlDatabase SQLite::db</definition>
+        <argsstring></argsstring>
+        <name>db</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="87" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">startDriver</referencedby>
+        <referencedby refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" compoundref="sqlite_8cpp" startline="156" endline="159">dbFlush</referencedby>
+        <referencedby refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" compoundref="sqlite_8cpp" startline="161" endline="165">dbClose</referencedby>
+        <referencedby refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" compoundref="sqlite_8cpp" startline="167" endline="173">dbOpen</referencedby>
+        <referencedby refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" compoundref="sqlite_8cpp" startline="176" endline="191">updateDBRecord</referencedby>
+        <referencedby refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" compoundref="sqlite_8cpp" startline="194" endline="208">insertDBRecord</referencedby>
+        <referencedby refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" compoundref="sqlite_8cpp" startline="211" endline="215">deleteDBRecord</referencedby>
+        <referencedby refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" compoundref="sqlite_8cpp" startline="218" endline="229">selectDBRecord</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" prot="public" static="no" mutable="no">
+        <type><ref refid="structSqlPreferences" kindref="compound">SqlPreferences</ref> *</type>
+        <definition>SqlPreferences* SQLite::sqlPreferences</definition>
+        <argsstring></argsstring>
+        <name>sqlPreferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="88" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" compoundref="sqlite_8cpp" startline="42" endline="44">SQLite</referencedby>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">startDriver</referencedby>
+        <referencedby refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" compoundref="sqlite_8cpp" startline="161" endline="165">dbClose</referencedby>
+        <referencedby refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" compoundref="sqlite_8cpp" startline="167" endline="173">dbOpen</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SQLite::SQLite</definition>
+        <argsstring>()</argsstring>
+        <name>SQLite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="77" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="42" bodyend="44"/>
+        <references refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" compoundref="sqlite_8h" startline="88">sqlPreferences</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::startDriver</definition>
+        <argsstring>(void)</argsstring>
+        <name>startDriver</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="78" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="46" bodyend="76"/>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+        <references refid="sqlite_8h_1acfcad24977a121f8cb40c7abc0861e13" compoundref="sqlite_8h" startline="51">DEFAULT_DBNAME</references>
+        <references refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" compoundref="sqlite_8h" startline="88">sqlPreferences</references>
+        <references refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" compoundref="sqlite_8h" startline="63">SqlPreferences::useExistDB</references>
+        <references refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" compoundref="sqlite_8h" startline="52">DEFAULT_TABLENAME</references>
+        <references refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" compoundref="sqlite_8h" startline="64">SqlPreferences::useRamDB</references>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="42" endline="55">MainWindow::MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::dbOpen</definition>
+        <argsstring>(void)</argsstring>
+        <name>dbOpen</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="79" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="167" bodyend="173"/>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+        <references refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" compoundref="sqlite_8h" startline="88">sqlPreferences</references>
+        <references refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" compoundref="sqlite_8h" startline="56">SqlPreferences::useAtomicCommit</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1a846367e96132826f56b96515a2c1d8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::dbClose</definition>
+        <argsstring>(void)</argsstring>
+        <name>dbClose</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="80" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="161" bodyend="165"/>
+        <references refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" compoundref="sqlite_8h" startline="88">sqlPreferences</references>
+        <references refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" compoundref="sqlite_8h" startline="56">SqlPreferences::useAtomicCommit</references>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1a245861da7b78b4adb356e552bd3b2286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::dbFlush</definition>
+        <argsstring>(void)</argsstring>
+        <name>dbFlush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="81" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="156" bodyend="159"/>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+        <referencedby refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" compoundref="mainwindow_8cpp" startline="57" endline="60">MainWindow::~MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SQLite::updateDBRecord</definition>
+        <argsstring>(QStringList data)</argsstring>
+        <name>updateDBRecord</name>
+        <param>
+          <type>QStringList</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="82" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="176" bodyend="191"/>
+        <references refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" compoundref="sqlite_8h" startline="52">DEFAULT_TABLENAME</references>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SQLite::insertDBRecord</definition>
+        <argsstring>(QStringList data)</argsstring>
+        <name>insertDBRecord</name>
+        <param>
+          <type>QStringList</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="83" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="194" bodyend="208"/>
+        <references refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" compoundref="sqlite_8h" startline="52">DEFAULT_TABLENAME</references>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SQLite::deleteDBRecord</definition>
+        <argsstring>()</argsstring>
+        <name>deleteDBRecord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="84" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="211" bodyend="215"/>
+        <references refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" compoundref="sqlite_8h" startline="52">DEFAULT_TABLENAME</references>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1a7c04908029911f3df653b673b3ee6e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QStringList</type>
+        <definition>QStringList SQLite::selectDBRecord</definition>
+        <argsstring>(QString startIdx)</argsstring>
+        <name>selectDBRecord</name>
+        <param>
+          <type>QString</type>
+          <declname>startIdx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="85" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="218" bodyend="229"/>
+        <references refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" compoundref="sqlite_8h" startline="52">DEFAULT_TABLENAME</references>
+        <references refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" compoundref="sqlite_8h" startline="87">db</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classSQLite_1a361a55088ac78691ac83d7bf8bb5a72a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::speedTests</definition>
+        <argsstring>(void)</argsstring>
+        <name>speedTests</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="92" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="94" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classSQLite_1ae1ef40c11add6d31db2e39a21202f9a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SQLite::pragmasSet</definition>
+        <argsstring>(void)</argsstring>
+        <name>pragmasSet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="93" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp" bodystart="78" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="27">
+        <label>SqlPreferences</label>
+        <link refid="structSqlPreferences"/>
+      </node>
+      <node id="26">
+        <label>SQLite</label>
+        <link refid="classSQLite"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>sqlPreferences</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="75" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="74" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" prot="public" virt="non-virtual"><scope>SQLite</scope><name>db</name></member>
+      <member refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" prot="public" virt="non-virtual"><scope>SQLite</scope><name>dbClose</name></member>
+      <member refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" prot="public" virt="non-virtual"><scope>SQLite</scope><name>dbFlush</name></member>
+      <member refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" prot="public" virt="non-virtual"><scope>SQLite</scope><name>dbOpen</name></member>
+      <member refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" prot="public" virt="non-virtual"><scope>SQLite</scope><name>deleteDBRecord</name></member>
+      <member refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" prot="public" virt="non-virtual"><scope>SQLite</scope><name>insertDBRecord</name></member>
+      <member refid="classSQLite_1ae1ef40c11add6d31db2e39a21202f9a9" prot="private" virt="non-virtual"><scope>SQLite</scope><name>pragmasSet</name></member>
+      <member refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" prot="public" virt="non-virtual"><scope>SQLite</scope><name>selectDBRecord</name></member>
+      <member refid="classSQLite_1a361a55088ac78691ac83d7bf8bb5a72a" prot="private" virt="non-virtual"><scope>SQLite</scope><name>speedTests</name></member>
+      <member refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" prot="public" virt="non-virtual"><scope>SQLite</scope><name>SQLite</name></member>
+      <member refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" prot="public" virt="non-virtual"><scope>SQLite</scope><name>sqlPreferences</name></member>
+      <member refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" prot="public" virt="non-virtual"><scope>SQLite</scope><name>startDriver</name></member>
+      <member refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" prot="public" virt="non-virtual"><scope>SQLite</scope><name>updateDBRecord</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

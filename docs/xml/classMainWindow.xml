@@ -1,0 +1,1229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classMainWindow" kind="class" prot="public">
+    <compoundname>MainWindow</compoundname>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMainWindow_1acd9e528f003b22f3c17657a89505803a" prot="public" static="no" mutable="no">
+        <type><ref refid="classSQLite" kindref="compound">SQLite</ref> *</type>
+        <definition>SQLite* MainWindow::sqlite</definition>
+        <argsstring></argsstring>
+        <name>sqlite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="71" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="42" endline="55">MainWindow</referencedby>
+        <referencedby refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" compoundref="mainwindow_8cpp" startline="57" endline="60">~MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::postTmpNrecords</definition>
+        <argsstring></argsstring>
+        <name>postTmpNrecords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="72" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::postTmpRunSeconds</definition>
+        <argsstring></argsstring>
+        <name>postTmpRunSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="73" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::fullSpeed</definition>
+        <argsstring></argsstring>
+        <name>fullSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="74" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::RRLbytes</definition>
+        <argsstring></argsstring>
+        <name>RRLbytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="75" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::DRLbytes</definition>
+        <argsstring></argsstring>
+        <name>DRLbytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="76" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::isQueryError</definition>
+        <argsstring></argsstring>
+        <name>isQueryError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="77" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString MainWindow::queryErrorMsg</definition>
+        <argsstring></argsstring>
+        <name>queryErrorMsg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="78" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" prot="public" static="no" mutable="no">
+        <type>QList&lt; int &gt;</type>
+        <definition>QList&lt;int&gt; MainWindow::resultTimes</definition>
+        <argsstring></argsstring>
+        <name>resultTimes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="79" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" compoundref="mainwindow_8cpp" startline="732" endline="742">runTimerInsertEvent</referencedby>
+        <referencedby refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" compoundref="mainwindow_8cpp" startline="743" endline="753">runTimerSelectEvent</referencedby>
+        <referencedby refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" compoundref="mainwindow_8cpp" startline="754" endline="764">runTimerDeleteEvent</referencedby>
+        <referencedby refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" compoundref="mainwindow_8cpp" startline="765" endline="775">runTimerUpdateEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type>Ui::MainWindow *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="101" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a2cd808b2da9dc89dfdc6ed71c780852b" prot="private" static="no" mutable="no">
+        <type>QSpinBox *</type>
+        <definition>QSpinBox* MainWindow::sbxLenghtVector[FIX_NR_FIELDS]</definition>
+        <argsstring>[FIX_NR_FIELDS]</argsstring>
+        <name>sbxLenghtVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="129" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a4a1c8293d7dd385f47cde1c570c23d58" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* MainWindow::cbxTextFieldVector[FIX_NR_FIELDS]</definition>
+        <argsstring>[FIX_NR_FIELDS]</argsstring>
+        <name>cbxTextFieldVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="130" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a72fa1e7c3cddb35670036d778bb99c58" prot="private" static="no" mutable="no">
+        <type>QCheckBox *</type>
+        <definition>QCheckBox* MainWindow::cbxRandomContentVector[FIX_NR_FIELDS]</definition>
+        <argsstring>[FIX_NR_FIELDS]</argsstring>
+        <name>cbxRandomContentVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="131" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a69dcd739ad465f44c1488308048e488b" prot="private" static="no" mutable="no">
+        <type>QLineEdit *</type>
+        <definition>QLineEdit* MainWindow::txtTextContentVector[FIX_NR_FIELDS]</definition>
+        <argsstring>[FIX_NR_FIELDS]</argsstring>
+        <name>txtTextContentVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="132" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a9a68d7b0a842fcc961cd17901d5351ad" prot="private" static="no" mutable="no">
+        <type>QStringList</type>
+        <definition>QStringList MainWindow::dataDB[MAX_RECORDS]</definition>
+        <argsstring>[MAX_RECORDS]</argsstring>
+        <name>dataDB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="133" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a7accd1de22bf7144b86b84c545bbb3c4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::resultTimesIdx</definition>
+        <argsstring></argsstring>
+        <name>resultTimesIdx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="134" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1aeb0fd0d944251dc4cb5bcfbfb57f76b4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::lastTime</definition>
+        <argsstring></argsstring>
+        <name>lastTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="135" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a0027bf5327f279babaaf5fd6129f3d9a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::sleepTime</definition>
+        <argsstring></argsstring>
+        <name>sleepTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="136" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a46c780a20bffaa5288c5f18aba7a916c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::tmpNrecords</definition>
+        <argsstring></argsstring>
+        <name>tmpNrecords</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="137" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a79a82c2ec296cfa23ff2cecd969a0bdd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::muteEvent</definition>
+        <argsstring></argsstring>
+        <name>muteEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="138" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a426da48f6e2f865b07a28533c07c4f7a" prot="private" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* MainWindow::fileMenu</definition>
+        <argsstring></argsstring>
+        <name>fileMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="139" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a947c15e520bfea60338b2577f67146b8" prot="private" static="no" mutable="no">
+        <type>QMenu *</type>
+        <definition>QMenu* MainWindow::helpMenu</definition>
+        <argsstring></argsstring>
+        <name>helpMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="140" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a04f14fec9d8ee33d64e20bb22c5bff5c" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::openAct</definition>
+        <argsstring></argsstring>
+        <name>openAct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="141" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a9d8778fbb596e6a923c2844c2cedfc41" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::exitAct</definition>
+        <argsstring></argsstring>
+        <name>exitAct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="142" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a07b31cf99def3b2de7958ffaf2eec463" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::aboutAct</definition>
+        <argsstring></argsstring>
+        <name>aboutAct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="143" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ace057e46f03ed0988c768e7d185bae2b" prot="private" static="no" mutable="no">
+        <type>QAction *</type>
+        <definition>QAction* MainWindow::aboutQtAct</definition>
+        <argsstring></argsstring>
+        <name>aboutQtAct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="144" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1ae60e21597ff15e91b99a1869319620b9" prot="private" static="no" mutable="no">
+        <type>QTimer *</type>
+        <definition>QTimer* MainWindow::runTimer</definition>
+        <argsstring></argsstring>
+        <name>runTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="145" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a83693b3dcefd9fef8001a0ddbbff0512" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::tmpRunSeconds</definition>
+        <argsstring></argsstring>
+        <name>tmpRunSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="146" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a56f18d63770867765eef4d25ecf84058" prot="private" static="no" mutable="no">
+        <type><ref refid="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" kindref="member">AnonymVoid</ref></type>
+        <definition>AnonymVoid MainWindow::runFunction</definition>
+        <argsstring></argsstring>
+        <name>runFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="147" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a865a6c2f53d03f5fc1847255d61d5a08" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::isBusy</definition>
+        <argsstring></argsstring>
+        <name>isBusy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="148" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1af9de0579502c67e18a65922c96081d19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::isSelect</definition>
+        <argsstring></argsstring>
+        <name>isSelect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="149" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a76483df4ac0391664e8ae25f7b14462c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MainWindow::mainTimer</definition>
+        <argsstring></argsstring>
+        <name>mainTimer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="150" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMainWindow_1a93c2d360a8d835a728212d72a075f104" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* MainWindow::runStepper</definition>
+        <argsstring></argsstring>
+        <name>runStepper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="151" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="69" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="42" bodyend="55"/>
+        <references refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" compoundref="mainwindow_8cpp" startline="830" endline="832">ClickedClear</references>
+        <references refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" compoundref="mainwindow_8h" startline="71">sqlite</references>
+        <references refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">SQLite::startDriver</references>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="70" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="57" bodyend="60"/>
+        <references refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" compoundref="mainwindow_8h" startline="71">sqlite</references>
+        <references refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" compoundref="sqlite_8cpp" startline="156" endline="159">SQLite::dbFlush</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setValueEPS</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValueEPS</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="83" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="824" bodyend="826"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a65c01e2454356623735a1ab596210304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::setValueST</definition>
+        <argsstring>(int value)</argsstring>
+        <name>setValueST</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="84" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="827" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ChangeFFGfieldType</definition>
+        <argsstring>(int)</argsstring>
+        <name>ChangeFFGfieldType</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="85" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="793" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a22b08e83650062d966d3765b972fbc71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ChangeFFGfieldContent</definition>
+        <argsstring>(int)</argsstring>
+        <name>ChangeFFGfieldContent</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="86" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="809" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedClear</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedClear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="87" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="830" bodyend="832"/>
+        <referencedby refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="42" endline="55">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedMake</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedMake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="88" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="833" bodyend="835"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedTESTINSERT</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedTESTINSERT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="89" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="851" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a45d0243661d09bfc99392c94b0060060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedTESTUPDATE</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedTESTUPDATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="90" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="854" bodyend="856"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a606b89316359652899d63d44b6cb86cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedTESTDELETE</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedTESTDELETE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="91" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="857" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ClickedTESTSELECT</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedTESTSELECT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="92" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="860" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::about</definition>
+        <argsstring>()</argsstring>
+        <name>about</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="93" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="836" bodyend="839"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::open</definition>
+        <argsstring>()</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="94" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="840" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::runTimerInsertEvent</definition>
+        <argsstring>()</argsstring>
+        <name>runTimerInsertEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="95" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="732" bodyend="742"/>
+        <references refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" compoundref="mainwindow_8h" startline="79">resultTimes</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::runTimerUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>runTimerUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="96" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="765" bodyend="775"/>
+        <references refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" compoundref="mainwindow_8h" startline="79">resultTimes</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::runTimerDeleteEvent</definition>
+        <argsstring>()</argsstring>
+        <name>runTimerDeleteEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="97" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="754" bodyend="764"/>
+        <references refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" compoundref="mainwindow_8h" startline="79">resultTimes</references>
+      </memberdef>
+      <memberdef kind="slot" id="classMainWindow_1a124c316d7016496cbdc44a798cb26309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::runTimerSelectEvent</definition>
+        <argsstring>()</argsstring>
+        <name>runTimerSelectEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="98" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="743" bodyend="753"/>
+        <references refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" compoundref="mainwindow_8h" startline="79">resultTimes</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classMainWindow_1a1c7877c1ca466bd8034d88762ce2af9f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::timerEvent</definition>
+        <argsstring>(QTimerEvent *)</argsstring>
+        <name>timerEvent</name>
+        <param>
+          <type>QTimerEvent *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="102" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="723" bodyend="731"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1acb1311efde9df3534f62b96e605eea2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::initVectors</definition>
+        <argsstring>(void)</argsstring>
+        <name>initVectors</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="103" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="96" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1aa930a1055ceeaa766dc666e14da95884" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::initListeners</definition>
+        <argsstring>(void)</argsstring>
+        <name>initListeners</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="104" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="150" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a62cd8712fb41a754298f6f60eead2cb0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createActions</definition>
+        <argsstring>()</argsstring>
+        <name>createActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="105" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="71" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1aa4907b0251d305659e403c62921ef331" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::createMenus</definition>
+        <argsstring>()</argsstring>
+        <name>createMenus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="106" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="86" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a8c61cc89b5cd621f6860f912528cd991" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::openSet</definition>
+        <argsstring>(bool firstCall)</argsstring>
+        <name>openSet</name>
+        <param>
+          <type>bool</type>
+          <declname>firstCall</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="107" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="843" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a75a49fe506c00a4959f6efb222814488" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString MainWindow::randomFixString</definition>
+        <argsstring>(int lenght)</argsstring>
+        <name>randomFixString</name>
+        <param>
+          <type>int</type>
+          <declname>lenght</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp_1Helpers">
+<title>Helpers</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="108" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="872" bodyend="881"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a3408e1dcde3e1f66d4915e3795b9722e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::insertInvoke</definition>
+        <argsstring>(void)</argsstring>
+        <name>insertInvoke</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="109" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="406" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a69866a1fa7235d0d04dbca2c51a2e723" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::insertInvokeFullSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>insertInvokeFullSpeed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="110" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="430" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a03d92fa730a2fd831571ff8979c7c883" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::updateInvoke</definition>
+        <argsstring>(void)</argsstring>
+        <name>updateInvoke</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="111" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="458" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ae3e7e2cd3f3accbba845c70ff087af19" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::updateInvokeFullSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>updateInvokeFullSpeed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="112" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="482" bodyend="507"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1aee6d7da7925518124bbeca942dcfb1ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteInvoke</definition>
+        <argsstring>(void)</argsstring>
+        <name>deleteInvoke</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="113" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="568" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a5e9c7bf989087853845c8c1793af8c5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::deleteInvokeFullSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>deleteInvokeFullSpeed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="114" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="597" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ad4e11ccf067f7b7a8b4691a783a18bfa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::selectInvoke</definition>
+        <argsstring>(void)</argsstring>
+        <name>selectInvoke</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="115" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="510" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a2dd7cd307165dbaac1c69a37dbfb2fa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::selectInvokeFullSpeed</definition>
+        <argsstring>(void)</argsstring>
+        <name>selectInvokeFullSpeed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="116" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="537" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1acd639da42ddb08cd7f375b68145243ba" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::startRunTimer</definition>
+        <argsstring>(const char *runStepper)</argsstring>
+        <name>startRunTimer</name>
+        <param>
+          <type>const char *</type>
+          <declname>runStepper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="117" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="675" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a600de2a996bbc0fdeb00ef777831da1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::callAnonymTask</definition>
+        <argsstring>(void(MainWindow::*)())</argsstring>
+        <name>callAnonymTask</name>
+        <param>
+          <type>void(MainWindow::*)()</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a6c7e1a0d45e5881f363123c70c9419f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::openResult</definition>
+        <argsstring>()</argsstring>
+        <name>openResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="119" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="847" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ac84a97e82da9dd0dd2b7241ecbca6848" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::stopProcess</definition>
+        <argsstring>()</argsstring>
+        <name>stopProcess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="120" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="694" bodyend="707"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a6f725debcaed6bacf40cfb7e15569a57" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processClearALL</definition>
+        <argsstring>()</argsstring>
+        <name>processClearALL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="121" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="194" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a818aa20af7bb43f603b99e171df9dfa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processMakeRRL</definition>
+        <argsstring>()</argsstring>
+        <name>processMakeRRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="122" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="238" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a839d76c21adef711ae97510e3b44ec49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processTestInsert</definition>
+        <argsstring>()</argsstring>
+        <name>processTestInsert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="123" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="283" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1aec36f921ec1c19a5c895cc1b7168af85" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processTestUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>processTestUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="124" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="317" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a83245eb41c8849ddbac3e0c0e4e21583" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processTestSelect</definition>
+        <argsstring>()</argsstring>
+        <name>processTestSelect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="125" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="352" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1a1be01f0bbdc32c4996347974094beb74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::processTestDelete</definition>
+        <argsstring>()</argsstring>
+        <name>processTestDelete</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="126" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="376" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classMainWindow_1ac9bcd0fe137a988903a563d489a2481e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::populateDRL</definition>
+        <argsstring>()</argsstring>
+        <name>populateDRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<sect1 id="classMainWindow_1MainWindow">
+<title>config</title>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="127" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp" bodystart="634" bodyend="667"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="22">
+        <label>SqlPreferences</label>
+        <link refid="structSqlPreferences"/>
+      </node>
+      <node id="20">
+        <label>MainWindow</label>
+        <link refid="classMainWindow"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>sqlite</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>SQLite</label>
+        <link refid="classSQLite"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>sqlPreferences</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="65" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="64" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>about</name></member>
+      <member refid="classMainWindow_1a07b31cf99def3b2de7958ffaf2eec463" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>aboutAct</name></member>
+      <member refid="classMainWindow_1ace057e46f03ed0988c768e7d185bae2b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>aboutQtAct</name></member>
+      <member refid="classMainWindow_1a600de2a996bbc0fdeb00ef777831da1d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>callAnonymTask</name></member>
+      <member refid="classMainWindow_1a72fa1e7c3cddb35670036d778bb99c58" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>cbxRandomContentVector</name></member>
+      <member refid="classMainWindow_1a4a1c8293d7dd385f47cde1c570c23d58" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>cbxTextFieldVector</name></member>
+      <member refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ChangeFFGfieldContent</name></member>
+      <member refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ChangeFFGfieldType</name></member>
+      <member refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedClear</name></member>
+      <member refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedMake</name></member>
+      <member refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedTESTDELETE</name></member>
+      <member refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedTESTINSERT</name></member>
+      <member refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedTESTSELECT</name></member>
+      <member refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ClickedTESTUPDATE</name></member>
+      <member refid="classMainWindow_1a62cd8712fb41a754298f6f60eead2cb0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createActions</name></member>
+      <member refid="classMainWindow_1aa4907b0251d305659e403c62921ef331" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>createMenus</name></member>
+      <member refid="classMainWindow_1a9a68d7b0a842fcc961cd17901d5351ad" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>dataDB</name></member>
+      <member refid="classMainWindow_1aee6d7da7925518124bbeca942dcfb1ac" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteInvoke</name></member>
+      <member refid="classMainWindow_1a5e9c7bf989087853845c8c1793af8c5b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>deleteInvokeFullSpeed</name></member>
+      <member refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>DRLbytes</name></member>
+      <member refid="classMainWindow_1a9d8778fbb596e6a923c2844c2cedfc41" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>exitAct</name></member>
+      <member refid="classMainWindow_1a426da48f6e2f865b07a28533c07c4f7a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>fileMenu</name></member>
+      <member refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>fullSpeed</name></member>
+      <member refid="classMainWindow_1a947c15e520bfea60338b2577f67146b8" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>helpMenu</name></member>
+      <member refid="classMainWindow_1aa930a1055ceeaa766dc666e14da95884" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>initListeners</name></member>
+      <member refid="classMainWindow_1acb1311efde9df3534f62b96e605eea2b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>initVectors</name></member>
+      <member refid="classMainWindow_1a3408e1dcde3e1f66d4915e3795b9722e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>insertInvoke</name></member>
+      <member refid="classMainWindow_1a69866a1fa7235d0d04dbca2c51a2e723" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>insertInvokeFullSpeed</name></member>
+      <member refid="classMainWindow_1a865a6c2f53d03f5fc1847255d61d5a08" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>isBusy</name></member>
+      <member refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>isQueryError</name></member>
+      <member refid="classMainWindow_1af9de0579502c67e18a65922c96081d19" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>isSelect</name></member>
+      <member refid="classMainWindow_1aeb0fd0d944251dc4cb5bcfbfb57f76b4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>lastTime</name></member>
+      <member refid="classMainWindow_1a76483df4ac0391664e8ae25f7b14462c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>mainTimer</name></member>
+      <member refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="classMainWindow_1a79a82c2ec296cfa23ff2cecd969a0bdd" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>muteEvent</name></member>
+      <member refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>open</name></member>
+      <member refid="classMainWindow_1a04f14fec9d8ee33d64e20bb22c5bff5c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>openAct</name></member>
+      <member refid="classMainWindow_1a6c7e1a0d45e5881f363123c70c9419f2" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>openResult</name></member>
+      <member refid="classMainWindow_1a8c61cc89b5cd621f6860f912528cd991" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>openSet</name></member>
+      <member refid="classMainWindow_1ac9bcd0fe137a988903a563d489a2481e" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>populateDRL</name></member>
+      <member refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>postTmpNrecords</name></member>
+      <member refid="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>postTmpRunSeconds</name></member>
+      <member refid="classMainWindow_1a6f725debcaed6bacf40cfb7e15569a57" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processClearALL</name></member>
+      <member refid="classMainWindow_1a818aa20af7bb43f603b99e171df9dfa0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processMakeRRL</name></member>
+      <member refid="classMainWindow_1a1be01f0bbdc32c4996347974094beb74" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processTestDelete</name></member>
+      <member refid="classMainWindow_1a839d76c21adef711ae97510e3b44ec49" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processTestInsert</name></member>
+      <member refid="classMainWindow_1a83245eb41c8849ddbac3e0c0e4e21583" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processTestSelect</name></member>
+      <member refid="classMainWindow_1aec36f921ec1c19a5c895cc1b7168af85" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>processTestUpdate</name></member>
+      <member refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>queryErrorMsg</name></member>
+      <member refid="classMainWindow_1a75a49fe506c00a4959f6efb222814488" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>randomFixString</name></member>
+      <member refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>resultTimes</name></member>
+      <member refid="classMainWindow_1a7accd1de22bf7144b86b84c545bbb3c4" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>resultTimesIdx</name></member>
+      <member refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>RRLbytes</name></member>
+      <member refid="classMainWindow_1a56f18d63770867765eef4d25ecf84058" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>runFunction</name></member>
+      <member refid="classMainWindow_1a93c2d360a8d835a728212d72a075f104" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>runStepper</name></member>
+      <member refid="classMainWindow_1ae60e21597ff15e91b99a1869319620b9" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>runTimer</name></member>
+      <member refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>runTimerDeleteEvent</name></member>
+      <member refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>runTimerInsertEvent</name></member>
+      <member refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>runTimerSelectEvent</name></member>
+      <member refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>runTimerUpdateEvent</name></member>
+      <member refid="classMainWindow_1a2cd808b2da9dc89dfdc6ed71c780852b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>sbxLenghtVector</name></member>
+      <member refid="classMainWindow_1ad4e11ccf067f7b7a8b4691a783a18bfa" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>selectInvoke</name></member>
+      <member refid="classMainWindow_1a2dd7cd307165dbaac1c69a37dbfb2fa0" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>selectInvokeFullSpeed</name></member>
+      <member refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>setValueEPS</name></member>
+      <member refid="classMainWindow_1a65c01e2454356623735a1ab596210304" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>setValueST</name></member>
+      <member refid="classMainWindow_1a0027bf5327f279babaaf5fd6129f3d9a" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>sleepTime</name></member>
+      <member refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>sqlite</name></member>
+      <member refid="classMainWindow_1acd639da42ddb08cd7f375b68145243ba" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>startRunTimer</name></member>
+      <member refid="classMainWindow_1ac84a97e82da9dd0dd2b7241ecbca6848" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>stopProcess</name></member>
+      <member refid="classMainWindow_1a1c7877c1ca466bd8034d88762ce2af9f" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>timerEvent</name></member>
+      <member refid="classMainWindow_1a46c780a20bffaa5288c5f18aba7a916c" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>tmpNrecords</name></member>
+      <member refid="classMainWindow_1a83693b3dcefd9fef8001a0ddbbff0512" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>tmpRunSeconds</name></member>
+      <member refid="classMainWindow_1a69dcd739ad465f44c1488308048e488b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>txtTextContentVector</name></member>
+      <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="classMainWindow_1a03d92fa730a2fd831571ff8979c7c883" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>updateInvoke</name></member>
+      <member refid="classMainWindow_1ae3e7e2cd3f3accbba845c70ff087af19" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>updateInvokeFullSpeed</name></member>
+      <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

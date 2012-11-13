@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structSqlPreferences" kind="struct" prot="public">
+    <compoundname>SqlPreferences</compoundname>
+    <includes refid="sqlite_8h" local="no">sqlite.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useAtomicCommit</definition>
+        <argsstring></argsstring>
+        <name>useAtomicCommit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="56" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" compoundref="sqlite_8cpp" startline="161" endline="165">SQLite::dbClose</referencedby>
+        <referencedby refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" compoundref="sqlite_8cpp" startline="167" endline="173">SQLite::dbOpen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomPageSize</definition>
+        <argsstring></argsstring>
+        <name>useCustomPageSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="57" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomCacheSize</definition>
+        <argsstring></argsstring>
+        <name>useCustomCacheSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="58" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomTempStore</definition>
+        <argsstring></argsstring>
+        <name>useCustomTempStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="59" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomJournalMode</definition>
+        <argsstring></argsstring>
+        <name>useCustomJournalMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="60" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomLockingMode</definition>
+        <argsstring></argsstring>
+        <name>useCustomLockingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="61" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useCustomSynchronous</definition>
+        <argsstring></argsstring>
+        <name>useCustomSynchronous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="62" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useExistDB</definition>
+        <argsstring></argsstring>
+        <name>useExistDB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="63" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">SQLite::startDriver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SqlPreferences::useRamDB</definition>
+        <argsstring></argsstring>
+        <name>useRamDB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="64" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">SQLite::startDriver</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customPageSize</definition>
+        <argsstring></argsstring>
+        <name>customPageSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="65" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customCacheSize</definition>
+        <argsstring></argsstring>
+        <name>customCacheSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="66" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customTempStore</definition>
+        <argsstring></argsstring>
+        <name>customTempStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="67" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customJournalMode</definition>
+        <argsstring></argsstring>
+        <name>customJournalMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="68" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customLockingMode</definition>
+        <argsstring></argsstring>
+        <name>customLockingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="69" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" prot="public" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString SqlPreferences::customSynchronous</definition>
+        <argsstring></argsstring>
+        <name>customSynchronous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="70" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="54" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="54" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customCacheSize</name></member>
+      <member refid="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customJournalMode</name></member>
+      <member refid="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customLockingMode</name></member>
+      <member refid="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customPageSize</name></member>
+      <member refid="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customSynchronous</name></member>
+      <member refid="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>customTempStore</name></member>
+      <member refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useAtomicCommit</name></member>
+      <member refid="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomCacheSize</name></member>
+      <member refid="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomJournalMode</name></member>
+      <member refid="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomLockingMode</name></member>
+      <member refid="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomPageSize</name></member>
+      <member refid="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomSynchronous</name></member>
+      <member refid="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useCustomTempStore</name></member>
+      <member refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useExistDB</name></member>
+      <member refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" prot="public" virt="non-virtual"><scope>SqlPreferences</scope><name>useRamDB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

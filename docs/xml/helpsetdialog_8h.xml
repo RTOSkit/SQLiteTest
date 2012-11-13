@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="helpsetdialog_8h" kind="file">
+    <compoundname>helpsetdialog.h</compoundname>
+    <includes local="no">QDialog</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes refid="sqlite_8h" local="yes">sqlite.h</includes>
+    <includedby refid="helpsetdialog_8cpp" local="yes">helpsetdialog.cpp</includedby>
+    <includedby refid="mainwindow_8h" local="yes">mainwindow.h</includedby>
+    <incdepgraph>
+      <node id="271">
+        <label>QMessageBox</label>
+      </node>
+      <node id="276">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="273">
+        <label>QMainWindow</label>
+      </node>
+      <node id="275">
+        <label>QCheckBox</label>
+      </node>
+      <node id="272">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="283">
+        <label>QApplication</label>
+      </node>
+      <node id="288">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>QDialog</label>
+      </node>
+      <node id="282">
+        <label>QDebug</label>
+      </node>
+      <node id="277">
+        <label>QTimer</label>
+      </node>
+      <node id="285">
+        <label>QString</label>
+      </node>
+      <node id="269">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog.h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>math.h</label>
+      </node>
+      <node id="289">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="287">
+        <label>QHash</label>
+      </node>
+      <node id="286">
+        <label>QVariant</label>
+      </node>
+      <node id="274">
+        <label>QSpinBox</label>
+      </node>
+      <node id="284">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="296">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="292">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="290">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog.h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>resultdialog.cpp</label>
+        <link refid="resultdialog_8cpp"/>
+      </node>
+      <node id="291">
+        <label>helpsetdialog.cpp</label>
+        <link refid="helpsetdialog_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classHelpSetDialog" prot="public">HelpSetDialog</innerclass>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>HELPSETDIALOG_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HELPSETDIALOG_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlite_8h" kindref="compound">sqlite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHelpSetDialog" kindref="compound">HelpSetDialog</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classHelpSetDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classHelpSetDialog" kindref="compound">HelpSetDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QDialog</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" kindref="member">HelpSetDialog</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>firstCall,<sp/>QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" kindref="member">~HelpSetDialog</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" kindref="member">closeEvent</ref>(QCloseEvent<sp/>*<sp/>event);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" kindref="member">ClickedHome</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" kindref="member">ClickedGit</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" kindref="member">ClickedClose</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" kindref="member">ClickedBack</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" kindref="member">ClickedForward</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" kindref="member">ClickedRefresh</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" kindref="member">ClickedH0</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" kindref="member">ClickedH1</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" kindref="member">ClickedH2</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" kindref="member">ClickedH3</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" kindref="member">ClickedH4</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" kindref="member">ClickedH5</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" kindref="member">ClickedH6</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" kindref="member">ClickedH7</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" kindref="member">ClickedH8</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::HelpSetDialog<sp/>*ui;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>QWidget<sp/>*cparent;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>firstCall;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initListeners(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>beforeClose(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>HELPSETDIALOG_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h"/>
+  </compounddef>
+</doxygen>

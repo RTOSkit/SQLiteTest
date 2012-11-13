@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="sqlite_8cpp" kind="file">
+    <compoundname>sqlite.cpp</compoundname>
+    <includes refid="sqlite_8h" local="yes">sqlite.h</includes>
+    <includes local="no">QDir</includes>
+    <includes local="no">QElapsedTimer</includes>
+    <incdepgraph>
+      <node id="429">
+        <label>QMessageBox</label>
+      </node>
+      <node id="437">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="426">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="431">
+        <label>QApplication</label>
+      </node>
+      <node id="430">
+        <label>QDebug</label>
+      </node>
+      <node id="433">
+        <label>QString</label>
+      </node>
+      <node id="425">
+        <label>sqlite.cpp</label>
+        <link refid="sqlite.cpp"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="436">
+        <label>QDir</label>
+      </node>
+      <node id="435">
+        <label>QHash</label>
+      </node>
+      <node id="434">
+        <label>QVariant</label>
+      </node>
+      <node id="432">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlite_8h" kindref="compound">sqlite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDir&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QElapsedTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" refkind="member"><highlight class="normal"><ref refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" kindref="member">SQLite::SQLite</ref>(){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences" kindref="compound">SqlPreferences</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" kindref="member">SQLite::startDriver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>queryStr<sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.isOpen())<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.close();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathDB<sp/><sp/>=<sp/>QApplication::applicationDirPath()<sp/>+<sp/><ref refid="sqlite_8h_1acfcad24977a121f8cb40c7abc0861e13" kindref="member">DEFAULT_DBNAME</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref><sp/>=<sp/>QSqlDatabase::addDatabase(</highlight><highlight class="stringliteral">&quot;QSQLITE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.setDatabaseName(pathDB);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.open();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" kindref="member">useExistDB</ref>){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;CREATE<sp/>TABLE<sp/>IF<sp/>NOT<sp/>EXISTS<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(ID<sp/>INTEGER<sp/>PRIMARY<sp/>KEY<sp/>AUTOINCREMENT<sp/>NOT<sp/>NULL,<sp/>&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD1<sp/>TEXT,<sp/>FIELD2<sp/>TEXT,FIELD3<sp/>TEXT,FIELD4<sp/>TEXT,FIELD5<sp/>TEXT,FIELD6<sp/>TEXT,&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD7<sp/>TEXT,FIELD8<sp/>TEXT,FIELD9<sp/>TEXT,FIELD10<sp/>TEXT);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;CREATE<sp/>TABLE<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(ID<sp/>INTEGER<sp/>PRIMARY<sp/>KEY<sp/>AUTOINCREMENT<sp/>NOT<sp/>NULL,<sp/>&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD1<sp/>TEXT,<sp/>FIELD2<sp/>TEXT,FIELD3<sp/>TEXT,FIELD4<sp/>TEXT,FIELD5<sp/>TEXT,FIELD6<sp/>TEXT,&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD7<sp/>TEXT,FIELD8<sp/>TEXT,FIELD9<sp/>TEXT,FIELD10<sp/>TEXT);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(queryStr);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" kindref="member">useRamDB</ref>){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>sqlAttach<sp/>=<sp/>QString(</highlight><highlight class="stringliteral">&quot;ATTACH<sp/>DATABASE<sp/>&apos;%1&apos;<sp/>AS<sp/>ramDB&quot;</highlight><highlight class="normal">).arg(</highlight><highlight class="stringliteral">&quot;:memory:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(sqlAttach);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;CREATE<sp/>TABLE<sp/>ramDB.&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(ID<sp/>INTEGER<sp/>PRIMARY<sp/>KEY<sp/>AUTOINCREMENT<sp/>NOT<sp/>NULL,<sp/>&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD1<sp/>TEXT,<sp/>FIELD2<sp/>TEXT,FIELD3<sp/>TEXT,FIELD4<sp/>TEXT,FIELD5<sp/>TEXT,FIELD6<sp/>TEXT,&quot;</highlight><highlight class="normal"><sp/>\</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FIELD7<sp/>TEXT,FIELD8<sp/>TEXT,FIELD9<sp/>TEXT,FIELD10<sp/>TEXT);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(queryStr);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.close();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SQLite::pragmasSet(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" kindref="member">useCustomPageSize</ref>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>page_size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" kindref="member">customPageSize</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" kindref="member">useCustomCacheSize</ref>)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>cache_size<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" kindref="member">customCacheSize</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" kindref="member">useCustomTempStore</ref>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>temp_store<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" kindref="member">customTempStore</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" kindref="member">useCustomJournalMode</ref>)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>journal_mode<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" kindref="member">customJournalMode</ref>);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" kindref="member">useCustomLockingMode</ref>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>locking_mode<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" kindref="member">customLockingMode</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" kindref="member">useCustomSynchronous</ref>)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;PRAGMA<sp/>synchronous<sp/>=<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/><ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" kindref="member">customSynchronous</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SQLite::speedTests(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>data;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>data.append(</highlight><highlight class="stringliteral">&quot;testa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;BEGIN<sp/>TRANSACTION;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;20;i++){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>//PREPARE<sp/>MODE<sp/><sp/>(20<sp/>records<sp/>&gt;<sp/>2<sp/>ms)</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QSqlQuery<sp/>qInsert(db);</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.prepare(&quot;INSERT<sp/>INTO<sp/>&quot;<sp/>+<sp/>qApp-&gt;tr(DEFAULT_TABLENAME)<sp/>+<sp/>&quot;<sp/>(FIELD1,<sp/>FIELD2,<sp/>FIELD3,<sp/>FIELD4,<sp/>FIELD5,<sp/>FIELD6,<sp/>FIELD7,<sp/>FIELD8,<sp/>FIELD9,<sp/>FIELD10)<sp/>VALUES<sp/>(:FIELD1,<sp/>:FIELD2,<sp/>:FIELD3,<sp/>:FIELD4,<sp/>:FIELD5,<sp/>:FIELD6,<sp/>:FIELD7,<sp/>:FIELD8,<sp/>:FIELD9,<sp/>:FIELD10)&quot;);</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD1&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD2&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD3&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD4&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD5&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD6&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD7&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD8&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD9&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.bindValue(&quot;:FIELD10&quot;,<sp/>&quot;testc&quot;);</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qInsert.exec();</highlight></codeline>
+<codeline lineno="128"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>//DIRECT<sp/>QUERY<sp/>MODE<sp/>(20<sp/>records<sp/>&gt;<sp/>1<sp/>ms)</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>db.exec(&quot;INSERT<sp/>INTO<sp/>&quot;<sp/>+<sp/>qApp-&gt;tr(DEFAULT_TABLENAME)<sp/>+<sp/>&quot;<sp/>(FIELD1,<sp/>FIELD2,<sp/>FIELD3,<sp/>FIELD4,<sp/>FIELD5,<sp/>FIELD6,<sp/>FIELD7,<sp/>FIELD8,<sp/>FIELD9,<sp/>FIELD10)<sp/>VALUES<sp/>(&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;,<sp/>&apos;TEST&apos;);&quot;);</highlight></codeline>
+<codeline lineno="132"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>//DIRECT<sp/>QUERY<sp/>MODE<sp/><sp/>with<sp/>Array<sp/>(20<sp/>records<sp/>&gt;<sp/>1<sp/>ms)</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>db.exec(&quot;INSERT<sp/>INTO<sp/>&quot;<sp/>+<sp/>qApp-&gt;tr(DEFAULT_TABLENAME)<sp/>+</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;<sp/>(FIELD1,<sp/>FIELD2,<sp/>FIELD3,<sp/>FIELD4,<sp/>FIELD5,<sp/>FIELD6,<sp/>FIELD7,<sp/>FIELD8,<sp/>FIELD9,<sp/>FIELD10)<sp/>VALUES<sp/>&quot;<sp/>+</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;(&apos;&quot;<sp/>+<sp/>data[0]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[1]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[2]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[3]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[4]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[5]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[6]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[7]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[8]<sp/>+<sp/>&quot;&apos;,<sp/>&apos;&quot;<sp/>+<sp/>data[9]<sp/>+<sp/>&quot;&apos;);&quot;);</highlight></codeline>
+<codeline lineno="139"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;COMMIT;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.close();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>strCtrlMS=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>strCtrlMS.sprintf(</highlight><highlight class="stringliteral">&quot;Total<sp/>Insert<sp/>in<sp/>%u<sp/>MS&quot;</highlight><highlight class="normal">,ctrlMS);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>strCtrlMS,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" kindref="member">SQLite::dbFlush</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.isOpen())<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.close();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlDatabase::removeDatabase(</highlight><highlight class="stringliteral">&quot;QSQLITE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">SQLite::dbClose</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" kindref="member">useAtomicCommit</ref>)</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;COMMIT;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.isOpen())<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.close();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">SQLite::dbOpen</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.isOpen())<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.open();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>-&gt;<ref refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" kindref="member">useAtomicCommit</ref>){</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pragmasSet();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>.exec(</highlight><highlight class="stringliteral">&quot;BEGIN<sp/>TRANSACTION;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" kindref="member">SQLite::updateDBRecord</ref>(QStringList<sp/>data){<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QString<sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;UPDATE<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>SET<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD1<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[0]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD2<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[1]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD3<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[2]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD4<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[3]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD5<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[4]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD6<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[5]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD7<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[6]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD8<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[7]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD9<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[8]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;FIELD10<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/><sp/><sp/>+<sp/>data[9]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;WHERE<sp/>FIELD1<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[0]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>query(queryStr,<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>query.result();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" kindref="member">SQLite::insertDBRecord</ref>(QStringList<sp/>data){<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QString<sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>(FIELD1,FIELD2,FIELD3,FIELD4,FIELD5,FIELD6,FIELD7,FIELD8,FIELD9,FIELD10)<sp/>VALUES<sp/>(&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[1]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[2]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[3]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[4]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[5]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[6]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[7]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[8]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[9]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;&quot;</highlight><highlight class="normal"><sp/>+<sp/>data[10]<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&apos;<sp/>)&quot;</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlQuery<sp/>query(queryStr,<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>query.result();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" kindref="member">SQLite::deleteDBRecord</ref>(){<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QString<sp/>queryStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>WHERE<sp/>rowid=<sp/>(SELECT<sp/>MIN(rowid)<sp/>FROM<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QSqlQuery<sp/>query(queryStr,<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">)<sp/>query.result();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218" refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" refkind="member"><highlight class="normal">QStringList<sp/><ref refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" kindref="member">SQLite::selectDBRecord</ref>(QString<sp/>startIdx){</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>sl;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QString<sp/>querySql<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>*<sp/>FROM<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>qApp-&gt;tr(<ref refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kindref="member">DEFAULT_TABLENAME</ref>)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>LIMIT<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>startIdx<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;,1;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>QSqlQuery<sp/>query(querySql,<ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>query.next();</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sl<sp/>&lt;&lt;<sp/>query.value(1).toString();sl<sp/>&lt;&lt;<sp/>query.value(2).toString();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sl<sp/>&lt;&lt;<sp/>query.value(3).toString();sl<sp/>&lt;&lt;<sp/>query.value(4).toString();</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sl<sp/>&lt;&lt;<sp/>query.value(5).toString();sl<sp/>&lt;&lt;<sp/>query.value(6).toString();</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sl<sp/>&lt;&lt;<sp/>query.value(7).toString();sl<sp/>&lt;&lt;<sp/>query.value(8).toString();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sl<sp/>&lt;&lt;<sp/>query.value(9).toString();sl<sp/>&lt;&lt;<sp/>query.value(10).toString();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sl;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,199 @@
+.TH "MainWindow" 3 "Tue Nov 13 2012" "Version 0.3.0a" "SQLiteTest" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mainwindow\&.h>\fP
+.SS "Public Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetValueEPS\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBsetValueST\fP (int value)"
+.br
+.ti -1c
+.RI "void \fBChangeFFGfieldType\fP (int)"
+.br
+.ti -1c
+.RI "void \fBChangeFFGfieldContent\fP (int)"
+.br
+.ti -1c
+.RI "void \fBClickedClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBClickedMake\fP ()"
+.br
+.ti -1c
+.RI "void \fBClickedTESTINSERT\fP ()"
+.br
+.ti -1c
+.RI "void \fBClickedTESTUPDATE\fP ()"
+.br
+.ti -1c
+.RI "void \fBClickedTESTDELETE\fP ()"
+.br
+.ti -1c
+.RI "void \fBClickedTESTSELECT\fP ()"
+.br
+.ti -1c
+.RI "void \fBabout\fP ()"
+.br
+.ti -1c
+.RI "void \fBopen\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunTimerInsertEvent\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunTimerUpdateEvent\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunTimerDeleteEvent\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunTimerSelectEvent\fP ()"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fB~MainWindow\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSQLite\fP * \fBsqlite\fP"
+.br
+.ti -1c
+.RI "int \fBpostTmpNrecords\fP"
+.br
+.ti -1c
+.RI "int \fBpostTmpRunSeconds\fP"
+.br
+.ti -1c
+.RI "bool \fBfullSpeed\fP"
+.br
+.ti -1c
+.RI "int \fBRRLbytes\fP"
+.br
+.ti -1c
+.RI "int \fBDRLbytes\fP"
+.br
+.ti -1c
+.RI "bool \fBisQueryError\fP"
+.br
+.ti -1c
+.RI "QString \fBqueryErrorMsg\fP"
+.br
+.ti -1c
+.RI "QList< int > \fBresultTimes\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 64 of file mainwindow\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBMainWindow::MainWindow\fP (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+.PP
+Definition at line 42 of file mainwindow\&.cpp\&.
+.SS "\fBMainWindow::~MainWindow\fP ()"
+.PP
+Definition at line 57 of file mainwindow\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void \fBMainWindow::about\fP ()\fC [slot]\fP"
+.PP
+Definition at line 836 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ChangeFFGfieldContent\fP (int)\fC [slot]\fP"
+.PP
+Definition at line 809 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ChangeFFGfieldType\fP (int)\fC [slot]\fP".SH "config"
+.PP
+
+.PP
+Definition at line 793 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedClear\fP ()\fC [slot]\fP"
+.PP
+Definition at line 830 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedMake\fP ()\fC [slot]\fP"
+.PP
+Definition at line 833 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedTESTDELETE\fP ()\fC [slot]\fP"
+.PP
+Definition at line 857 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedTESTINSERT\fP ()\fC [slot]\fP"
+.PP
+Definition at line 851 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedTESTSELECT\fP ()\fC [slot]\fP"
+.PP
+Definition at line 860 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ClickedTESTUPDATE\fP ()\fC [slot]\fP"
+.PP
+Definition at line 854 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::open\fP ()\fC [slot]\fP"
+.PP
+Definition at line 840 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::runTimerDeleteEvent\fP ()\fC [slot]\fP"
+.PP
+Definition at line 754 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::runTimerInsertEvent\fP ()\fC [slot]\fP"
+.PP
+Definition at line 732 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::runTimerSelectEvent\fP ()\fC [slot]\fP"
+.PP
+Definition at line 743 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::runTimerUpdateEvent\fP ()\fC [slot]\fP"
+.PP
+Definition at line 765 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::setValueEPS\fP (intvalue)\fC [slot]\fP"
+.PP
+Definition at line 824 of file mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::setValueST\fP (intvalue)\fC [slot]\fP"
+.PP
+Definition at line 827 of file mainwindow\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int \fBMainWindow::DRLbytes\fP"
+.PP
+Definition at line 76 of file mainwindow\&.h\&.
+.SS "bool \fBMainWindow::fullSpeed\fP"
+.PP
+Definition at line 74 of file mainwindow\&.h\&.
+.SS "bool \fBMainWindow::isQueryError\fP"
+.PP
+Definition at line 77 of file mainwindow\&.h\&.
+.SS "int \fBMainWindow::postTmpNrecords\fP"
+.PP
+Definition at line 72 of file mainwindow\&.h\&.
+.SS "int \fBMainWindow::postTmpRunSeconds\fP"
+.PP
+Definition at line 73 of file mainwindow\&.h\&.
+.SS "QString \fBMainWindow::queryErrorMsg\fP"
+.PP
+Definition at line 78 of file mainwindow\&.h\&.
+.SS "QList<int> \fBMainWindow::resultTimes\fP"
+.PP
+Definition at line 79 of file mainwindow\&.h\&.
+.SS "int \fBMainWindow::RRLbytes\fP"
+.PP
+Definition at line 75 of file mainwindow\&.h\&.
+.SS "\fBSQLite\fP* \fBMainWindow::sqlite\fP"
+.PP
+Definition at line 71 of file mainwindow\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SQLiteTest from the source code\&.

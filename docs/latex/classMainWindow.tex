@@ -1,0 +1,396 @@
+\hypertarget{classMainWindow}{\section{\-Main\-Window \-Class \-Reference}
+\label{classMainWindow}\index{\-Main\-Window@{\-Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+
+
+\-Collaboration diagram for \-Main\-Window\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classMainWindow__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classMainWindow_aa58e3ed6d26ed5b593560bbf0f8f183c}{set\-Value\-E\-P\-S} (int value)
+\item 
+void \hyperlink{classMainWindow_a65c01e2454356623735a1ab596210304}{set\-Value\-S\-T} (int value)
+\item 
+void \hyperlink{classMainWindow_a75915c5f4286c3cdb3a7b0b3c240877a}{\-Change\-F\-F\-Gfield\-Type} (int)
+\item 
+void \hyperlink{classMainWindow_a22b08e83650062d966d3765b972fbc71}{\-Change\-F\-F\-Gfield\-Content} (int)
+\item 
+void \hyperlink{classMainWindow_a6e9f5e24aedd12d81b21148576a81b52}{\-Clicked\-Clear} ()
+\item 
+void \hyperlink{classMainWindow_a08902ba306b0d0aa85f02946edcb7a25}{\-Clicked\-Make} ()
+\item 
+void \hyperlink{classMainWindow_a2829d4a6fd7676b59809e9dd8f792fd6}{\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T} ()
+\item 
+void \hyperlink{classMainWindow_a45d0243661d09bfc99392c94b0060060}{\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E} ()
+\item 
+void \hyperlink{classMainWindow_a606b89316359652899d63d44b6cb86cf}{\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E} ()
+\item 
+void \hyperlink{classMainWindow_a7908356fbc84a236502baf0f0bdbbe5c}{\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T} ()
+\item 
+void \hyperlink{classMainWindow_a7be6a5d98970ac1a6296c6f9aee1e9bb}{about} ()
+\item 
+void \hyperlink{classMainWindow_aa7473e4bbbcc281706ac2edef864fb45}{open} ()
+\item 
+void \hyperlink{classMainWindow_a6532900ddf54d3587f12607a858cfff4}{run\-Timer\-Insert\-Event} ()
+\item 
+void \hyperlink{classMainWindow_ad751cceac9d285bd49518fccf7d7e018}{run\-Timer\-Update\-Event} ()
+\item 
+void \hyperlink{classMainWindow_a012e372e5d6180e36e3b08d27eaa6c36}{run\-Timer\-Delete\-Event} ()
+\item 
+void \hyperlink{classMainWindow_a124c316d7016496cbdc44a798cb26309}{run\-Timer\-Select\-Event} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{\-Main\-Window} (\-Q\-Widget $\ast$parent=0)
+\item 
+\hyperlink{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSQLite}{\-S\-Q\-Lite} $\ast$ \hyperlink{classMainWindow_acd9e528f003b22f3c17657a89505803a}{sqlite}
+\item 
+int \hyperlink{classMainWindow_a271013fd9b8f471aed5ce6ff2941a6cf}{post\-Tmp\-Nrecords}
+\item 
+int \hyperlink{classMainWindow_a6c309625ea8d8bd81d552a96ffbbf368}{post\-Tmp\-Run\-Seconds}
+\item 
+bool \hyperlink{classMainWindow_ac3f3016f1a0ad93767c521c2fd349c7b}{full\-Speed}
+\item 
+int \hyperlink{classMainWindow_ac4e4dd0ba3dd8b958d2aec2271bfe299}{\-R\-R\-Lbytes}
+\item 
+int \hyperlink{classMainWindow_af648bf6238ec163343b5dec5e900fc23}{\-D\-R\-Lbytes}
+\item 
+bool \hyperlink{classMainWindow_a88b9fd4866e9ab0c99f50c7c0801e8de}{is\-Query\-Error}
+\item 
+\-Q\-String \hyperlink{classMainWindow_afbc3735a35d28cf9ce9a9873aacc4939}{query\-Error\-Msg}
+\item 
+\-Q\-List$<$ int $>$ \hyperlink{classMainWindow_a69d381f82b82ca37620172b78d58c4ea}{result\-Times}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 64 of file mainwindow.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}{\index{\-Main\-Window@{\-Main\-Window}!\-Main\-Window@{\-Main\-Window}}
+\index{\-Main\-Window@{\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::\-Main\-Window} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}explicit\mbox{]}}}}\label{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+\-Definition at line 42 of file mainwindow.\-cpp.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMainWindow_a8b244be8b7b7db1b08de2a2acb9409db_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}{\index{\-Main\-Window@{\-Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{\-Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Window\-::$\sim$\-Main\-Window} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7}
+
+
+\-Definition at line 57 of file mainwindow.\-cpp.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classMainWindow_ae98d00a93bc118200eeef9f9bba1dba7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classMainWindow_a7be6a5d98970ac1a6296c6f9aee1e9bb}{\index{\-Main\-Window@{\-Main\-Window}!about@{about}}
+\index{about@{about}!MainWindow@{\-Main\-Window}}
+\subsubsection[{about}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::about} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a7be6a5d98970ac1a6296c6f9aee1e9bb}
+
+
+\-Definition at line 836 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a22b08e83650062d966d3765b972fbc71}{\index{\-Main\-Window@{\-Main\-Window}!\-Change\-F\-F\-Gfield\-Content@{\-Change\-F\-F\-Gfield\-Content}}
+\index{\-Change\-F\-F\-Gfield\-Content@{\-Change\-F\-F\-Gfield\-Content}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Change\-F\-F\-Gfield\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Change\-F\-F\-Gfield\-Content} (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a22b08e83650062d966d3765b972fbc71}
+
+
+\-Definition at line 809 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a75915c5f4286c3cdb3a7b0b3c240877a}{\index{\-Main\-Window@{\-Main\-Window}!\-Change\-F\-F\-Gfield\-Type@{\-Change\-F\-F\-Gfield\-Type}}
+\index{\-Change\-F\-F\-Gfield\-Type@{\-Change\-F\-F\-Gfield\-Type}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Change\-F\-F\-Gfield\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Change\-F\-F\-Gfield\-Type} (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a75915c5f4286c3cdb3a7b0b3c240877a}
+\hypertarget{classMainWindow_MainWindow}{}\subsection{config}\label{classMainWindow_MainWindow}
+
+
+\-Definition at line 793 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a6e9f5e24aedd12d81b21148576a81b52}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-Clear@{\-Clicked\-Clear}}
+\index{\-Clicked\-Clear@{\-Clicked\-Clear}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-Clear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a6e9f5e24aedd12d81b21148576a81b52}
+
+
+\-Definition at line 830 of file mainwindow.\-cpp.
+
+
+
+\-Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMainWindow_a6e9f5e24aedd12d81b21148576a81b52_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classMainWindow_a08902ba306b0d0aa85f02946edcb7a25}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-Make@{\-Clicked\-Make}}
+\index{\-Clicked\-Make@{\-Clicked\-Make}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-Make}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-Make} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a08902ba306b0d0aa85f02946edcb7a25}
+
+
+\-Definition at line 833 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a606b89316359652899d63d44b6cb86cf}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E@{\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E}}
+\index{\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E@{\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-T\-E\-S\-T\-D\-E\-L\-E\-T\-E} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a606b89316359652899d63d44b6cb86cf}
+
+
+\-Definition at line 857 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a2829d4a6fd7676b59809e9dd8f792fd6}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T@{\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T}}
+\index{\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T@{\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-T\-E\-S\-T\-I\-N\-S\-E\-R\-T} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a2829d4a6fd7676b59809e9dd8f792fd6}
+
+
+\-Definition at line 851 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a7908356fbc84a236502baf0f0bdbbe5c}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T@{\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T}}
+\index{\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T@{\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-T\-E\-S\-T\-S\-E\-L\-E\-C\-T} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a7908356fbc84a236502baf0f0bdbbe5c}
+
+
+\-Definition at line 860 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a45d0243661d09bfc99392c94b0060060}{\index{\-Main\-Window@{\-Main\-Window}!\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E@{\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E}}
+\index{\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E@{\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::\-Clicked\-T\-E\-S\-T\-U\-P\-D\-A\-T\-E} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a45d0243661d09bfc99392c94b0060060}
+
+
+\-Definition at line 854 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_aa7473e4bbbcc281706ac2edef864fb45}{\index{\-Main\-Window@{\-Main\-Window}!open@{open}}
+\index{open@{open}!MainWindow@{\-Main\-Window}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::open} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_aa7473e4bbbcc281706ac2edef864fb45}
+
+
+\-Definition at line 840 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a012e372e5d6180e36e3b08d27eaa6c36}{\index{\-Main\-Window@{\-Main\-Window}!run\-Timer\-Delete\-Event@{run\-Timer\-Delete\-Event}}
+\index{run\-Timer\-Delete\-Event@{run\-Timer\-Delete\-Event}!MainWindow@{\-Main\-Window}}
+\subsubsection[{run\-Timer\-Delete\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::run\-Timer\-Delete\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a012e372e5d6180e36e3b08d27eaa6c36}
+
+
+\-Definition at line 754 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a6532900ddf54d3587f12607a858cfff4}{\index{\-Main\-Window@{\-Main\-Window}!run\-Timer\-Insert\-Event@{run\-Timer\-Insert\-Event}}
+\index{run\-Timer\-Insert\-Event@{run\-Timer\-Insert\-Event}!MainWindow@{\-Main\-Window}}
+\subsubsection[{run\-Timer\-Insert\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::run\-Timer\-Insert\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a6532900ddf54d3587f12607a858cfff4}
+
+
+\-Definition at line 732 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a124c316d7016496cbdc44a798cb26309}{\index{\-Main\-Window@{\-Main\-Window}!run\-Timer\-Select\-Event@{run\-Timer\-Select\-Event}}
+\index{run\-Timer\-Select\-Event@{run\-Timer\-Select\-Event}!MainWindow@{\-Main\-Window}}
+\subsubsection[{run\-Timer\-Select\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::run\-Timer\-Select\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a124c316d7016496cbdc44a798cb26309}
+
+
+\-Definition at line 743 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_ad751cceac9d285bd49518fccf7d7e018}{\index{\-Main\-Window@{\-Main\-Window}!run\-Timer\-Update\-Event@{run\-Timer\-Update\-Event}}
+\index{run\-Timer\-Update\-Event@{run\-Timer\-Update\-Event}!MainWindow@{\-Main\-Window}}
+\subsubsection[{run\-Timer\-Update\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::run\-Timer\-Update\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_ad751cceac9d285bd49518fccf7d7e018}
+
+
+\-Definition at line 765 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_aa58e3ed6d26ed5b593560bbf0f8f183c}{\index{\-Main\-Window@{\-Main\-Window}!set\-Value\-E\-P\-S@{set\-Value\-E\-P\-S}}
+\index{set\-Value\-E\-P\-S@{set\-Value\-E\-P\-S}!MainWindow@{\-Main\-Window}}
+\subsubsection[{set\-Value\-E\-P\-S}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::set\-Value\-E\-P\-S} (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_aa58e3ed6d26ed5b593560bbf0f8f183c}
+
+
+\-Definition at line 824 of file mainwindow.\-cpp.
+
+\hypertarget{classMainWindow_a65c01e2454356623735a1ab596210304}{\index{\-Main\-Window@{\-Main\-Window}!set\-Value\-S\-T@{set\-Value\-S\-T}}
+\index{set\-Value\-S\-T@{set\-Value\-S\-T}!MainWindow@{\-Main\-Window}}
+\subsubsection[{set\-Value\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Window\-::set\-Value\-S\-T} (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}slot\mbox{]}}}}\label{classMainWindow_a65c01e2454356623735a1ab596210304}
+
+
+\-Definition at line 827 of file mainwindow.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{classMainWindow_af648bf6238ec163343b5dec5e900fc23}{\index{\-Main\-Window@{\-Main\-Window}!\-D\-R\-Lbytes@{\-D\-R\-Lbytes}}
+\index{\-D\-R\-Lbytes@{\-D\-R\-Lbytes}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-D\-R\-Lbytes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Main\-Window\-::\-D\-R\-Lbytes}}}\label{classMainWindow_af648bf6238ec163343b5dec5e900fc23}
+
+
+\-Definition at line 76 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_ac3f3016f1a0ad93767c521c2fd349c7b}{\index{\-Main\-Window@{\-Main\-Window}!full\-Speed@{full\-Speed}}
+\index{full\-Speed@{full\-Speed}!MainWindow@{\-Main\-Window}}
+\subsubsection[{full\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Main\-Window\-::full\-Speed}}}\label{classMainWindow_ac3f3016f1a0ad93767c521c2fd349c7b}
+
+
+\-Definition at line 74 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_a88b9fd4866e9ab0c99f50c7c0801e8de}{\index{\-Main\-Window@{\-Main\-Window}!is\-Query\-Error@{is\-Query\-Error}}
+\index{is\-Query\-Error@{is\-Query\-Error}!MainWindow@{\-Main\-Window}}
+\subsubsection[{is\-Query\-Error}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Main\-Window\-::is\-Query\-Error}}}\label{classMainWindow_a88b9fd4866e9ab0c99f50c7c0801e8de}
+
+
+\-Definition at line 77 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_a271013fd9b8f471aed5ce6ff2941a6cf}{\index{\-Main\-Window@{\-Main\-Window}!post\-Tmp\-Nrecords@{post\-Tmp\-Nrecords}}
+\index{post\-Tmp\-Nrecords@{post\-Tmp\-Nrecords}!MainWindow@{\-Main\-Window}}
+\subsubsection[{post\-Tmp\-Nrecords}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Main\-Window\-::post\-Tmp\-Nrecords}}}\label{classMainWindow_a271013fd9b8f471aed5ce6ff2941a6cf}
+
+
+\-Definition at line 72 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_a6c309625ea8d8bd81d552a96ffbbf368}{\index{\-Main\-Window@{\-Main\-Window}!post\-Tmp\-Run\-Seconds@{post\-Tmp\-Run\-Seconds}}
+\index{post\-Tmp\-Run\-Seconds@{post\-Tmp\-Run\-Seconds}!MainWindow@{\-Main\-Window}}
+\subsubsection[{post\-Tmp\-Run\-Seconds}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Main\-Window\-::post\-Tmp\-Run\-Seconds}}}\label{classMainWindow_a6c309625ea8d8bd81d552a96ffbbf368}
+
+
+\-Definition at line 73 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_afbc3735a35d28cf9ce9a9873aacc4939}{\index{\-Main\-Window@{\-Main\-Window}!query\-Error\-Msg@{query\-Error\-Msg}}
+\index{query\-Error\-Msg@{query\-Error\-Msg}!MainWindow@{\-Main\-Window}}
+\subsubsection[{query\-Error\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Main\-Window\-::query\-Error\-Msg}}}\label{classMainWindow_afbc3735a35d28cf9ce9a9873aacc4939}
+
+
+\-Definition at line 78 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_a69d381f82b82ca37620172b78d58c4ea}{\index{\-Main\-Window@{\-Main\-Window}!result\-Times@{result\-Times}}
+\index{result\-Times@{result\-Times}!MainWindow@{\-Main\-Window}}
+\subsubsection[{result\-Times}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-List$<$int$>$ {\bf \-Main\-Window\-::result\-Times}}}\label{classMainWindow_a69d381f82b82ca37620172b78d58c4ea}
+
+
+\-Definition at line 79 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_ac4e4dd0ba3dd8b958d2aec2271bfe299}{\index{\-Main\-Window@{\-Main\-Window}!\-R\-R\-Lbytes@{\-R\-R\-Lbytes}}
+\index{\-R\-R\-Lbytes@{\-R\-R\-Lbytes}!MainWindow@{\-Main\-Window}}
+\subsubsection[{\-R\-R\-Lbytes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Main\-Window\-::\-R\-R\-Lbytes}}}\label{classMainWindow_ac4e4dd0ba3dd8b958d2aec2271bfe299}
+
+
+\-Definition at line 75 of file mainwindow.\-h.
+
+\hypertarget{classMainWindow_acd9e528f003b22f3c17657a89505803a}{\index{\-Main\-Window@{\-Main\-Window}!sqlite@{sqlite}}
+\index{sqlite@{sqlite}!MainWindow@{\-Main\-Window}}
+\subsubsection[{sqlite}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-S\-Q\-Lite}$\ast$ {\bf \-Main\-Window\-::sqlite}}}\label{classMainWindow_acd9e528f003b22f3c17657a89505803a}
+
+
+\-Definition at line 71 of file mainwindow.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

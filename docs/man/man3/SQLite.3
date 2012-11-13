@@ -1,0 +1,97 @@
+.TH "SQLite" 3 "Tue Nov 13 2012" "Version 0.3.0a" "SQLiteTest" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SQLite \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <sqlite\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSQLite\fP ()"
+.br
+.ti -1c
+.RI "void \fBstartDriver\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdbOpen\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdbClose\fP (void)"
+.br
+.ti -1c
+.RI "void \fBdbFlush\fP (void)"
+.br
+.ti -1c
+.RI "bool \fBupdateDBRecord\fP (QStringList data)"
+.br
+.ti -1c
+.RI "bool \fBinsertDBRecord\fP (QStringList data)"
+.br
+.ti -1c
+.RI "bool \fBdeleteDBRecord\fP ()"
+.br
+.ti -1c
+.RI "QStringList \fBselectDBRecord\fP (QString startIdx)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "QSqlDatabase \fBdb\fP"
+.br
+.ti -1c
+.RI "\fBSqlPreferences\fP * \fBsqlPreferences\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 74 of file sqlite\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBSQLite::SQLite\fP ()"
+.PP
+Definition at line 42 of file sqlite\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void \fBSQLite::dbClose\fP (void)"
+.PP
+Definition at line 161 of file sqlite\&.cpp\&.
+.SS "void \fBSQLite::dbFlush\fP (void)"
+.PP
+Definition at line 156 of file sqlite\&.cpp\&.
+.SS "void \fBSQLite::dbOpen\fP (void)"
+.PP
+Definition at line 167 of file sqlite\&.cpp\&.
+.SS "bool \fBSQLite::deleteDBRecord\fP ()"
+.PP
+Definition at line 211 of file sqlite\&.cpp\&.
+.SS "bool \fBSQLite::insertDBRecord\fP (QStringListdata)"
+.PP
+Definition at line 194 of file sqlite\&.cpp\&.
+.SS "QStringList \fBSQLite::selectDBRecord\fP (QStringstartIdx)"
+.PP
+Definition at line 218 of file sqlite\&.cpp\&.
+.SS "void \fBSQLite::startDriver\fP (void)"
+.PP
+Definition at line 46 of file sqlite\&.cpp\&.
+.SS "bool \fBSQLite::updateDBRecord\fP (QStringListdata)"
+.PP
+Definition at line 176 of file sqlite\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QSqlDatabase \fBSQLite::db\fP"
+.PP
+Definition at line 87 of file sqlite\&.h\&.
+.SS "\fBSqlPreferences\fP* \fBSQLite::sqlPreferences\fP"
+.PP
+Definition at line 88 of file sqlite\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for SQLiteTest from the source code\&.

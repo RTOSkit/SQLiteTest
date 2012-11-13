@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classHelpSetDialog" kind="class" prot="public">
+    <compoundname>HelpSetDialog</compoundname>
+    <includes refid="helpsetdialog_8h" local="no">helpsetdialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHelpSetDialog_1a2aeb91f630c02546e5e2c3fad080927b" prot="private" static="no" mutable="no">
+        <type>Ui::HelpSetDialog *</type>
+        <definition>Ui::HelpSetDialog* HelpSetDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="81" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHelpSetDialog_1a46475a318d406896cb43048786d7e6ac" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* HelpSetDialog::cparent</definition>
+        <argsstring></argsstring>
+        <name>cparent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="82" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHelpSetDialog_1a19134f00d27d612a3bf1fd6fd92c71e1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool HelpSetDialog::firstCall</definition>
+        <argsstring></argsstring>
+        <name>firstCall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="83" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HelpSetDialog::HelpSetDialog</definition>
+        <argsstring>(bool firstCall, QWidget *parent=0)</argsstring>
+        <name>HelpSetDialog</name>
+        <param>
+          <type>bool</type>
+          <declname>firstCall</declname>
+        </param>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="57" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="40" bodyend="50"/>
+        <references refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" compoundref="helpsetdialog_8cpp" startline="133" endline="141">ClickedHome</references>
+      </memberdef>
+      <memberdef kind="function" id="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HelpSetDialog::~HelpSetDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~HelpSetDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="58" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::closeEvent</definition>
+        <argsstring>(QCloseEvent *event)</argsstring>
+        <name>closeEvent</name>
+        <param>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="59" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="92" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedHome</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedHome</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="62" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="133" bodyend="141"/>
+        <referencedby refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" compoundref="helpsetdialog_8cpp" startline="40" endline="50">HelpSetDialog</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedGit</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedGit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="63" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedClose</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="64" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedBack</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedBack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="65" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedForward</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedForward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="66" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedRefresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="67" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH0</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="68" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="150" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH1</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="69" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH2</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="70" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH3</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="71" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH4</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="72" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="175" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH5</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="73" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="181" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH6</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="74" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="187" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH7</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="75" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="194" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="slot" id="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::ClickedH8</definition>
+        <argsstring>()</argsstring>
+        <name>ClickedH8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="76" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="202" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classHelpSetDialog_1aa6ef2b2109570a1aca71dc3c78c98251" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::initListeners</definition>
+        <argsstring>(void)</argsstring>
+        <name>initListeners</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="84" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="98" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classHelpSetDialog_1a936af798b7fff7d25403cc78d3230476" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HelpSetDialog::beforeClose</definition>
+        <argsstring>(void)</argsstring>
+        <name>beforeClose</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="85" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp" bodystart="56" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" line="51" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.h" bodystart="50" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classHelpSetDialog_1a936af798b7fff7d25403cc78d3230476" prot="private" virt="non-virtual"><scope>HelpSetDialog</scope><name>beforeClose</name></member>
+      <member refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedBack</name></member>
+      <member refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedClose</name></member>
+      <member refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedForward</name></member>
+      <member refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedGit</name></member>
+      <member refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH0</name></member>
+      <member refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH1</name></member>
+      <member refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH2</name></member>
+      <member refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH3</name></member>
+      <member refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH4</name></member>
+      <member refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH5</name></member>
+      <member refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH6</name></member>
+      <member refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH7</name></member>
+      <member refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedH8</name></member>
+      <member refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedHome</name></member>
+      <member refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>ClickedRefresh</name></member>
+      <member refid="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>closeEvent</name></member>
+      <member refid="classHelpSetDialog_1a46475a318d406896cb43048786d7e6ac" prot="private" virt="non-virtual"><scope>HelpSetDialog</scope><name>cparent</name></member>
+      <member refid="classHelpSetDialog_1a19134f00d27d612a3bf1fd6fd92c71e1" prot="private" virt="non-virtual"><scope>HelpSetDialog</scope><name>firstCall</name></member>
+      <member refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>HelpSetDialog</name></member>
+      <member refid="classHelpSetDialog_1aa6ef2b2109570a1aca71dc3c78c98251" prot="private" virt="non-virtual"><scope>HelpSetDialog</scope><name>initListeners</name></member>
+      <member refid="classHelpSetDialog_1a2aeb91f630c02546e5e2c3fad080927b" prot="private" virt="non-virtual"><scope>HelpSetDialog</scope><name>ui</name></member>
+      <member refid="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" prot="public" virt="non-virtual"><scope>HelpSetDialog</scope><name>~HelpSetDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

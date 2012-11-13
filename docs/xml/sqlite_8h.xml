@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="sqlite_8h" kind="file">
+    <compoundname>sqlite.h</compoundname>
+    <includes local="no">QSqlDatabase</includes>
+    <includes local="no">QSqlQuery</includes>
+    <includes local="no">QMessageBox</includes>
+    <includes local="no">QDebug</includes>
+    <includes local="no">QApplication</includes>
+    <includes local="no">QStringList</includes>
+    <includes local="no">QString</includes>
+    <includes local="no">QVariant</includes>
+    <includes local="no">QHash</includes>
+    <includedby refid="mainwindow_8h" local="yes">mainwindow.h</includedby>
+    <includedby refid="helpsetdialog_8h" local="yes">helpsetdialog.h</includedby>
+    <includedby refid="sqlite_8cpp" local="yes">sqlite.cpp</includedby>
+    <incdepgraph>
+      <node id="442">
+        <label>QMessageBox</label>
+      </node>
+      <node id="439">
+        <label>sqlite.h</label>
+        <link refid="sqlite.h"/>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="444">
+        <label>QApplication</label>
+      </node>
+      <node id="443">
+        <label>QDebug</label>
+      </node>
+      <node id="446">
+        <label>QString</label>
+      </node>
+      <node id="441">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="448">
+        <label>QHash</label>
+      </node>
+      <node id="447">
+        <label>QVariant</label>
+      </node>
+      <node id="445">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="456">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="450">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="453" relation="include">
+        </childnode>
+        <childnode refid="455" relation="include">
+        </childnode>
+        <childnode refid="456" relation="include">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>sqlite.h</label>
+        <link refid="sqlite.h"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="451">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="452" relation="include">
+        </childnode>
+        <childnode refid="450" relation="include">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>sqlite.cpp</label>
+        <link refid="sqlite_8cpp"/>
+      </node>
+      <node id="453">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="454" relation="include">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>resultdialog.cpp</label>
+        <link refid="resultdialog_8cpp"/>
+      </node>
+      <node id="452">
+        <label>helpsetdialog.cpp</label>
+        <link refid="helpsetdialog_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structSqlPreferences" prot="public">SqlPreferences</innerclass>
+    <innerclass refid="classSQLite" prot="public">SQLite</innerclass>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sqlite_8h_1acfcad24977a121f8cb40c7abc0861e13" prot="public" static="no">
+        <name>DEFAULT_DBNAME</name>
+        <initializer>&quot;/testdb.db3&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="51" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">SQLite::startDriver</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" prot="public" static="no">
+        <name>DEFAULT_TABLENAME</name>
+        <initializer>&quot;testdb&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" line="52" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" compoundref="sqlite_8cpp" startline="46" endline="76">SQLite::startDriver</referencedby>
+        <referencedby refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" compoundref="sqlite_8cpp" startline="176" endline="191">SQLite::updateDBRecord</referencedby>
+        <referencedby refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" compoundref="sqlite_8cpp" startline="194" endline="208">SQLite::insertDBRecord</referencedby>
+        <referencedby refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" compoundref="sqlite_8cpp" startline="211" endline="215">SQLite::deleteDBRecord</referencedby>
+        <referencedby refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" compoundref="sqlite_8cpp" startline="218" endline="229">SQLite::selectDBRecord</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>SQLITE_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SQLITE_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlDatabase&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSqlQuery&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMessageBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDebug&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QApplication&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStringList&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QString&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QVariant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QHash&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="sqlite_8h_1acfcad24977a121f8cb40c7abc0861e13" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_DBNAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;/testdb.db3&quot;</highlight></codeline>
+<codeline lineno="52" refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_TABLENAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;testdb&quot;</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="structSqlPreferences" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" kindref="member">useAtomicCommit</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" kindref="member">useCustomPageSize</ref>;</highlight></codeline>
+<codeline lineno="58" refid="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" kindref="member">useCustomCacheSize</ref>;</highlight></codeline>
+<codeline lineno="59" refid="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" kindref="member">useCustomTempStore</ref>;</highlight></codeline>
+<codeline lineno="60" refid="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" kindref="member">useCustomJournalMode</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" kindref="member">useCustomLockingMode</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" kindref="member">useCustomSynchronous</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" kindref="member">useExistDB</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" kindref="member">useRamDB</ref>;</highlight></codeline>
+<codeline lineno="65" refid="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" kindref="member">customPageSize</ref>;</highlight></codeline>
+<codeline lineno="66" refid="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" kindref="member">customCacheSize</ref>;</highlight></codeline>
+<codeline lineno="67" refid="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" kindref="member">customTempStore</ref>;</highlight></codeline>
+<codeline lineno="68" refid="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" kindref="member">customJournalMode</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" kindref="member">customLockingMode</ref>;</highlight></codeline>
+<codeline lineno="70" refid="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" kindref="member">customSynchronous</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<ref refid="structSqlPreferences" kindref="compound">SqlPreferences</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classSQLite" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSQLite" kindref="compound">SQLite</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" kindref="member">SQLite</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" kindref="member">startDriver</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" kindref="member">dbFlush</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" kindref="member">updateDBRecord</ref>(QStringList<sp/>data);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" kindref="member">insertDBRecord</ref>(QStringList<sp/>data);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" kindref="member">deleteDBRecord</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/><ref refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" kindref="member">selectDBRecord</ref>(QString<sp/>startIdx);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QSqlDatabase<sp/><ref refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kindref="member">db</ref>;</highlight></codeline>
+<codeline lineno="88" refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structSqlPreferences" kindref="compound">SqlPreferences</ref><sp/>*<ref refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kindref="member">sqlPreferences</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>speedTests(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pragmasSet(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SQLITE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/sqlite.h"/>
+  </compounddef>
+</doxygen>

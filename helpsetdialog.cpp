@@ -41,9 +41,8 @@ HelpSetDialog::HelpSetDialog(bool firstCall,QWidget *parent):
     QDialog(parent),
     ui(new Ui::HelpSetDialog){    
     this->firstCall = firstCall;
-    QString pathHTML  = QApplication::applicationDirPath()+"/html/resultdialog_8cpp.html";
-    ui->setupUi(this);
-    ui->webView->load(QUrl(pathHTML));
+    ui->setupUi(this);    
+    ClickedHome();
     initListeners();    
     cparent = (MainWindow*)parent;
     ui->cbxUED->setEnabled(firstCall);
@@ -132,9 +131,13 @@ void HelpSetDialog::ClickedForward(){
 
 
 void HelpSetDialog::ClickedHome(){
-    QString pathHTML  = QApplication::applicationDirPath()+"/html/index.html";
+    QString pathHTML="";
+    if(ui->cbxRD->isChecked())
+       pathHTML = "http://emmodded.org/projects/sqlitetest/docs/html/resultdialog_8cpp.html";
+    else
+       pathHTML = QApplication::applicationDirPath()+"/docs/html/resultdialog_8cpp.html";
     ui->webView->load(QUrl(pathHTML));
-    ui->viewerBox->setTitle("SQLiteTest - Doxygen Home");
+    ui->viewerBox->setTitle("SQLiteTest - Doxygen Home :: " + pathHTML);
 }
 
 void HelpSetDialog::ClickedGit(){

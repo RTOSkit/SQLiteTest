@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mainwindow_8h" kind="file">
+    <compoundname>mainwindow.h</compoundname>
+    <includes local="no">QMainWindow</includes>
+    <includes local="no">QSpinBox</includes>
+    <includes local="no">QCheckBox</includes>
+    <includes local="no">QElapsedTimer</includes>
+    <includes local="no">QTimer</includes>
+    <includes local="no">math.h</includes>
+    <includes refid="sqlite_8h" local="yes">sqlite.h</includes>
+    <includes refid="helpsetdialog_8h" local="yes">helpsetdialog.h</includes>
+    <includes refid="aboutdialog_8h" local="yes">aboutdialog.h</includes>
+    <includes refid="resultdialog_8h" local="yes">resultdialog.h</includes>
+    <includedby refid="helpsetdialog_8h" local="yes">helpsetdialog.h</includedby>
+    <includedby refid="resultdialog_8h" local="yes">resultdialog.h</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">mainwindow.cpp</includedby>
+    <incdepgraph>
+      <node id="355">
+        <label>QMessageBox</label>
+      </node>
+      <node id="349">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="346">
+        <label>QMainWindow</label>
+      </node>
+      <node id="348">
+        <label>QCheckBox</label>
+      </node>
+      <node id="345">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="357">
+        <label>QApplication</label>
+      </node>
+      <node id="364">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>QDialog</label>
+      </node>
+      <node id="356">
+        <label>QDebug</label>
+      </node>
+      <node id="350">
+        <label>QTimer</label>
+      </node>
+      <node id="359">
+        <label>QString</label>
+      </node>
+      <node id="362">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>math.h</label>
+      </node>
+      <node id="365">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="361">
+        <label>QHash</label>
+      </node>
+      <node id="360">
+        <label>QVariant</label>
+      </node>
+      <node id="347">
+        <label>QSpinBox</label>
+      </node>
+      <node id="358">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="372">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="366">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="367">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>resultdialog.cpp</label>
+        <link refid="resultdialog_8cpp"/>
+      </node>
+      <node id="368">
+        <label>helpsetdialog.cpp</label>
+        <link refid="helpsetdialog_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMainWindow" prot="public">MainWindow</innerclass>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" prot="public" static="no">
+        <name>FIX_NR_FIELDS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="51" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1ad811caf6c72a9a031c67d2af9edc57ab" prot="public" static="no">
+        <name>TEXT_FIELD_SIZE</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="52" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1a475c77257e5782fb60199a7d12a7e53f" prot="public" static="no">
+        <name>MAX_RECORDS</name>
+        <initializer>5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="53" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1aff2f9f643149b87035310798f31a5b15" prot="public" static="no">
+        <name>MAX_TURNS</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="54" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1ab04ce3533c12d8fcbe009e83411d7cee" prot="public" static="no">
+        <name>MAX_SLEEPS</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="55" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" prot="public" static="no">
+        <name>RRL_TITLE</name>
+        <initializer>&quot;Ram Records List &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="56" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" prot="public" static="no">
+        <name>DRL_TITLE</name>
+        <initializer>&quot;Data Records List &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="57" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* AnonymVoid)()</definition>
+        <argsstring>)()</argsstring>
+        <name>AnonymVoid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" line="59" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QSpinBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QCheckBox&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QElapsedTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QTimer&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sqlite_8h" kindref="compound">sqlite.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="helpsetdialog_8h" kindref="compound">helpsetdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="aboutdialog_8h" kindref="compound">aboutdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="resultdialog_8h" kindref="compound">resultdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIX_NR_FIELDS<sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="52" refid="mainwindow_8h_1ad811caf6c72a9a031c67d2af9edc57ab" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TEXT_FIELD_SIZE<sp/><sp/>1000</highlight></codeline>
+<codeline lineno="53" refid="mainwindow_8h_1a475c77257e5782fb60199a7d12a7e53f" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_RECORDS<sp/><sp/><sp/><sp/><sp/><sp/>5000</highlight></codeline>
+<codeline lineno="54" refid="mainwindow_8h_1aff2f9f643149b87035310798f31a5b15" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_TURNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight></codeline>
+<codeline lineno="55" refid="mainwindow_8h_1ab04ce3533c12d8fcbe009e83411d7cee" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MAX_SLEEPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>30</highlight></codeline>
+<codeline lineno="56" refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RRL_TITLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Ram<sp/>Records<sp/>List<sp/>&quot;</highlight></codeline>
+<codeline lineno="57" refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DRL_TITLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Data<sp/>Records<sp/>List<sp/>&quot;</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" kindref="member">AnonymVoid</ref>)();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMainWindow" kindref="compound">MainWindow</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64" refid="classMainWindow" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMainWindow" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">~MainWindow</ref>();</highlight></codeline>
+<codeline lineno="71" refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSQLite" kindref="compound">SQLite</ref>*<sp/><ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" kindref="member">postTmpRunSeconds</ref>;</highlight></codeline>
+<codeline lineno="74" refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>;</highlight></codeline>
+<codeline lineno="75" refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref>;</highlight></codeline>
+<codeline lineno="77" refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" kindref="member">queryErrorMsg</ref>;</highlight></codeline>
+<codeline lineno="79" refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;int&gt;<sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" kindref="member">setValueEPS</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a65c01e2454356623735a1ab596210304" kindref="member">setValueST</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" kindref="member">ClickedClear</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" kindref="member">ClickedMake</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" kindref="member">ClickedTESTINSERT</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" kindref="member">ClickedTESTUPDATE</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" kindref="member">ClickedTESTDELETE</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" kindref="member">ClickedTESTSELECT</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" kindref="member">about</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" kindref="member">open</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" kindref="member">runTimerInsertEvent</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" kindref="member">runTimerUpdateEvent</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" kindref="member">runTimerDeleteEvent</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" kindref="member">runTimerSelectEvent</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::MainWindow<sp/>*ui;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>timerEvent(QTimerEvent<sp/>*);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initVectors(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initListeners(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createActions();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createMenus();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openSet(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>firstCall);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>randomFixString(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lenght);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deleteInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>selectInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>selectInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>startRunTimer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>runStepper);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>callAnonymTask(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(<ref refid="classMainWindow" kindref="compound">MainWindow</ref>::*)());</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>openResult();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processClearALL();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processMakeRRL();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processTestInsert();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processTestUpdate();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processTestSelect();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>processTestDelete();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>populateDRL();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>QSpinBox*<sp/>sbxLenghtVector[<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>];</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox*<sp/>cbxTextFieldVector[<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>QCheckBox*<sp/>cbxRandomContentVector[<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>];</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>QLineEdit*<sp/>txtTextContentVector[<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>QStringList<sp/>dataDB[<ref refid="mainwindow_8h_1a475c77257e5782fb60199a7d12a7e53f" kindref="member">MAX_RECORDS</ref>];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resultTimesIdx;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastTime;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sleepTime;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmpNrecords;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>muteEvent;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu<sp/>*fileMenu;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>QMenu<sp/>*helpMenu;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction<sp/>*openAct;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction<sp/>*exitAct;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction<sp/>*aboutAct;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>QAction<sp/>*aboutQtAct;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>QTimer<sp/>*runTimer;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmpRunSeconds;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" kindref="member">AnonymVoid</ref><sp/>runFunction;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isBusy;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSelect;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mainTimer;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>runStepper;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.h"/>
+  </compounddef>
+</doxygen>

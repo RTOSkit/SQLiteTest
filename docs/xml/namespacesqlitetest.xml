@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespacesqlitetest" kind="namespace">
+    <compoundname>sqlitetest</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>SQLiteTest - Analysis Tools Kit</para><para>** Copyright (c) 2012 Emmodded Project All rights reserved.</para><para>This code is derived from software contributed to Emmodded Project by Maurizio Spoto &lt;<ulink url="mailto:mspoto@emmodded.org">mspoto@emmodded.org</ulink>&gt;</para><para>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para><para>THIS SOFTWARE IS PROVIDED BY EMMODDED PROJECT AND CONTRIBUTORS ``AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</para><para><simplesect kind="version"><para>0.3.0a </para></simplesect>
+<simplesect kind="author"><para>Maurizio Spoto ::RTOSkit:: </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.cpp" line="32"/>
+  </compounddef>
+</doxygen>

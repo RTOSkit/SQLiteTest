@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classResultDialog" kind="class" prot="public">
+    <compoundname>ResultDialog</compoundname>
+    <includes refid="resultdialog_8h" local="no">resultdialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classResultDialog_1a9890097432c0e414b73df77b17acc1f6" prot="private" static="no" mutable="no">
+        <type>Ui::ResultDialog *</type>
+        <definition>Ui::ResultDialog* ResultDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="58" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classResultDialog_1aee569252df0f005e521f08a4e82b35ac" prot="private" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* ResultDialog::cparent</definition>
+        <argsstring></argsstring>
+        <name>cparent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="60" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classResultDialog_1a3cd48b45618b2b87662ab3d5a53bded7" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ResultDialog::ResultDialog</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>ResultDialog</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="54" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.cpp" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classResultDialog_1a26dcd549337282cf931825ea481fc8c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ResultDialog::~ResultDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~ResultDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="55" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.cpp" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classResultDialog_1a5e73fb50438b8685a3824c7ab36461ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ResultDialog::populateTable</definition>
+        <argsstring>()</argsstring>
+        <name>populateTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="59" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.cpp" bodystart="53" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" line="50" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.h" bodystart="49" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classResultDialog_1aee569252df0f005e521f08a4e82b35ac" prot="private" virt="non-virtual"><scope>ResultDialog</scope><name>cparent</name></member>
+      <member refid="classResultDialog_1a5e73fb50438b8685a3824c7ab36461ae" prot="private" virt="non-virtual"><scope>ResultDialog</scope><name>populateTable</name></member>
+      <member refid="classResultDialog_1a3cd48b45618b2b87662ab3d5a53bded7" prot="public" virt="non-virtual"><scope>ResultDialog</scope><name>ResultDialog</name></member>
+      <member refid="classResultDialog_1a9890097432c0e414b73df77b17acc1f6" prot="private" virt="non-virtual"><scope>ResultDialog</scope><name>ui</name></member>
+      <member refid="classResultDialog_1a26dcd549337282cf931825ea481fc8c3" prot="public" virt="non-virtual"><scope>ResultDialog</scope><name>~ResultDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

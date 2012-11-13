@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="aboutdialog_8h" kind="file">
+    <compoundname>aboutdialog.h</compoundname>
+    <includes local="no">QDialog</includes>
+    <includedby refid="aboutdialog_8cpp" local="yes">aboutdialog.cpp</includedby>
+    <includedby refid="mainwindow_8h" local="yes">mainwindow.h</includedby>
+    <incdepgraph>
+      <node id="234">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog.h"/>
+        <childnode refid="235" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>QDialog</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="244">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="238">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="243">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="236">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog.h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="242">
+        <label>resultdialog.cpp</label>
+        <link refid="resultdialog_8cpp"/>
+      </node>
+      <node id="240">
+        <label>helpsetdialog.cpp</label>
+        <link refid="helpsetdialog_8cpp"/>
+      </node>
+      <node id="237">
+        <label>aboutdialog.cpp</label>
+        <link refid="aboutdialog_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classAboutDialog" prot="public">AboutDialog</innerclass>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <innernamespace refid="namespaceUi">Ui</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>ABOUTDIALOG_H</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ABOUTDIALOG_H</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QDialog&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="namespaceUi" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAboutDialog" kindref="compound">AboutDialog</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="classAboutDialog" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAboutDialog" kindref="compound">AboutDialog</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QDialog</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" kindref="member">AboutDialog</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" kindref="member">~AboutDialog</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Ui::AboutDialog<sp/>*ui;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ABOUTDIALOG_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h"/>
+  </compounddef>
+</doxygen>

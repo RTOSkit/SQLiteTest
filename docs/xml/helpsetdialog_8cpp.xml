@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="helpsetdialog_8cpp" kind="file">
+    <compoundname>helpsetdialog.cpp</compoundname>
+    <includes refid="helpsetdialog_8h" local="yes">helpsetdialog.h</includes>
+    <includes local="yes">ui_helpsetdialog.h</includes>
+    <incdepgraph>
+      <node id="248">
+        <label>QMessageBox</label>
+      </node>
+      <node id="253">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="250">
+        <label>QMainWindow</label>
+      </node>
+      <node id="252">
+        <label>QCheckBox</label>
+      </node>
+      <node id="249">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="260">
+        <label>QApplication</label>
+      </node>
+      <node id="265">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>QDialog</label>
+      </node>
+      <node id="259">
+        <label>QDebug</label>
+      </node>
+      <node id="254">
+        <label>QTimer</label>
+      </node>
+      <node id="262">
+        <label>QString</label>
+      </node>
+      <node id="246">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>math.h</label>
+      </node>
+      <node id="266">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="245">
+        <label>helpsetdialog.cpp</label>
+        <link refid="helpsetdialog.cpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>QHash</label>
+      </node>
+      <node id="263">
+        <label>QVariant</label>
+      </node>
+      <node id="251">
+        <label>QSpinBox</label>
+      </node>
+      <node id="261">
+        <label>QStringList</label>
+      </node>
+      <node id="267">
+        <label>ui_helpsetdialog.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="helpsetdialog_8h" kindref="compound">helpsetdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_helpsetdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" refkind="member"><highlight class="normal"><ref refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" kindref="member">HelpSetDialog::HelpSetDialog</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>firstCall,QWidget<sp/>*parent):<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="classHelpSetDialog" kindref="compound">HelpSetDialog</ref>){<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;firstCall<sp/>=<sp/>firstCall;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" kindref="member">ClickedHome</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>initListeners();<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>cparent<sp/>=<sp/>(<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)parent;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxUED-&gt;setEnabled(firstCall);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxARD-&gt;setEnabled(firstCall);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" refkind="member"><highlight class="normal"><ref refid="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" kindref="member">HelpSetDialog::~HelpSetDialog</ref>(){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HelpSetDialog::beforeClose(){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(firstCall){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>lBEFORECLOSE_SET;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Do<sp/>you<sp/>want<sp/>to<sp/>charge<sp/>driver<sp/>with<sp/>a<sp/>new<sp/>configuration<sp/>profile?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),msg,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok,QMessageBox::Cancel)==QMessageBox::Ok){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>lBEFORECLOSE_SET;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>lBEFORECLOSE_EXIT;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">lBEFORECLOSE_SET:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useAtomicCommit<sp/>=<sp/><sp/>ui-&gt;groupBoxAC-&gt;isChecked();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useCustomPageSize<sp/>=<sp/><sp/>ui-&gt;gbAC_0-&gt;isChecked();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useCustomCacheSize<sp/>=<sp/><sp/>ui-&gt;gbAC_1-&gt;isChecked();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customTempStore<sp/>=<sp/><sp/>ui-&gt;gbAC_2-&gt;isChecked();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useCustomJournalMode<sp/>=<sp/><sp/>ui-&gt;gbAC_3-&gt;isChecked();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useCustomLockingMode<sp/>=<sp/><sp/>ui-&gt;gbAC_4-&gt;isChecked();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useCustomSynchronous<sp/>=<sp/><sp/>ui-&gt;gbAC_5-&gt;isChecked();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useExistDB<sp/>=<sp/><sp/>ui-&gt;cbxUED-&gt;isChecked();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useRamDB<sp/>=<sp/><sp/>ui-&gt;cbxARD-&gt;isChecked();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customPageSize<sp/>=<sp/><sp/>ui-&gt;txtAC_0-&gt;text();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customCacheSize<sp/>=<sp/><sp/>ui-&gt;txtAC_1-&gt;text();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customTempStore<sp/>=<sp/><sp/>ui-&gt;txtAC_2-&gt;text();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customJournalMode<sp/>=<sp/><sp/>ui-&gt;txtAC_3-&gt;text();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customLockingMode<sp/>=<sp/><sp/>ui-&gt;txtAC_4-&gt;text();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;customSynchronous<sp/>=<sp/><sp/>ui-&gt;txtAC_5-&gt;text();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">lBEFORECLOSE_EXIT:</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;nop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" kindref="member">HelpSetDialog::closeEvent</ref>(QCloseEvent<sp/>*<sp/>event){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">=event;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//event-&gt;ignore();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>beforeClose();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HelpSetDialog::initListeners(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_home,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" kindref="member">ClickedHome</ref>()));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_git,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" kindref="member">ClickedGit</ref>()));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_close,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" kindref="member">ClickedClose</ref>()));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_back,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" kindref="member">ClickedBack</ref>()));</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_forward,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" kindref="member">ClickedForward</ref>()));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_refresh,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" kindref="member">ClickedRefresh</ref>()));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_0,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" kindref="member">ClickedH0</ref>()));</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_1,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" kindref="member">ClickedH1</ref>()));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_2,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" kindref="member">ClickedH2</ref>()));</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_3,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" kindref="member">ClickedH3</ref>()));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_4,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" kindref="member">ClickedH4</ref>()));</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_5,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" kindref="member">ClickedH5</ref>()));</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_6,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" kindref="member">ClickedH6</ref>()));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_7,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" kindref="member">ClickedH7</ref>()));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnH_8,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" kindref="member">ClickedH8</ref>()));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" kindref="member">HelpSetDialog::ClickedClose</ref>(){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;close();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" kindref="member">HelpSetDialog::ClickedRefresh</ref>(){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;reload();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123" refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" kindref="member">HelpSetDialog::ClickedBack</ref>(){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;back();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126" refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" kindref="member">HelpSetDialog::ClickedForward</ref>(){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;forward();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" kindref="member">HelpSetDialog::ClickedHome</ref>(){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ui-&gt;cbxRD-&gt;isChecked())</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathHTML<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://emmodded.org/projects/sqlitetest/docs/html/resultdialog_8cpp.html&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pathHTML<sp/>=<sp/>QApplication::applicationDirPath()+</highlight><highlight class="stringliteral">&quot;/docs/html/resultdialog_8cpp.html&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLiteTest<sp/>-<sp/>Doxygen<sp/>Home<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" kindref="member">HelpSetDialog::ClickedGit</ref>(){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;https://github.com/emmodded/SQLiteTest&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLiteTest<sp/>-<sp/>Git<sp/>Repository<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" kindref="member">HelpSetDialog::ClickedH0</ref>(){</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/atomiccommit.html&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Atomic<sp/>Commit<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" kindref="member">HelpSetDialog::ClickedH1</ref>(){</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_page_size&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Page<sp/>Size<sp/>Bytes<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" kindref="member">HelpSetDialog::ClickedH2</ref>(){</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_cache_size&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Cache<sp/>Size<sp/>Bytes<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" kindref="member">HelpSetDialog::ClickedH3</ref>(){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_temp_store&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Temp<sp/>Store<sp/>Mode<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" kindref="member">HelpSetDialog::ClickedH4</ref>(){</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_journal_mode&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Journal<sp/>Mode<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181" refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" kindref="member">HelpSetDialog::ClickedH5</ref>(){</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_locking_mode&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Locking<sp/>Transaction<sp/>Mode<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" kindref="member">HelpSetDialog::ClickedH6</ref>(){</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>pathHTML<sp/><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;http://www.sqlite.org/pragma.html#pragma_synchronous&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;webView-&gt;load(QUrl(pathHTML));</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;viewerBox-&gt;setTitle(</highlight><highlight class="stringliteral">&quot;SQLite<sp/>-<sp/>Synchronous<sp/>Transaction<sp/>::<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>pathHTML);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" kindref="member">HelpSetDialog::ClickedH7</ref>(){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>strMSG=</highlight><highlight class="stringliteral">&quot;Use<sp/>Stored<sp/>Existing<sp/>Database&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>strMSG,</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" kindref="member">HelpSetDialog::ClickedH8</ref>(){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>strMSG=</highlight><highlight class="stringliteral">&quot;Double<sp/>buffer<sp/>and<sp/>double<sp/>speed<sp/>solutions<sp/>\n<sp/>implements<sp/>for<sp/>future<sp/>scope&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>strMSG,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/helpsetdialog.cpp"/>
+  </compounddef>
+</doxygen>

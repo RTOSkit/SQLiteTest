@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="resultdialog_8cpp" kind="file">
+    <compoundname>resultdialog.cpp</compoundname>
+    <includes refid="resultdialog_8h" local="yes">resultdialog.h</includes>
+    <includes local="yes">ui_resultdialog.h</includes>
+    <incdepgraph>
+      <node id="386">
+        <label>QMessageBox</label>
+      </node>
+      <node id="395">
+        <label>ui_resultdialog.h</label>
+      </node>
+      <node id="381">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="378">
+        <label>QMainWindow</label>
+      </node>
+      <node id="380">
+        <label>QCheckBox</label>
+      </node>
+      <node id="377">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="388">
+        <label>QApplication</label>
+      </node>
+      <node id="394">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>QDialog</label>
+      </node>
+      <node id="387">
+        <label>QDebug</label>
+      </node>
+      <node id="382">
+        <label>QTimer</label>
+      </node>
+      <node id="390">
+        <label>QString</label>
+      </node>
+      <node id="393">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>math.h</label>
+      </node>
+      <node id="374">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="373">
+        <label>resultdialog.cpp</label>
+        <link refid="resultdialog.cpp"/>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>QHash</label>
+      </node>
+      <node id="391">
+        <label>QVariant</label>
+      </node>
+      <node id="379">
+        <label>QSpinBox</label>
+      </node>
+      <node id="389">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="resultdialog_8h" kindref="compound">resultdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_resultdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classResultDialog_1a3cd48b45618b2b87662ab3d5a53bded7" refkind="member"><highlight class="normal"><ref refid="classResultDialog_1a3cd48b45618b2b87662ab3d5a53bded7" kindref="member">ResultDialog::ResultDialog</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="classResultDialog" kindref="compound">ResultDialog</ref>){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>cparent<sp/>=<sp/>(<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)parent;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>populateTable();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classResultDialog_1a26dcd549337282cf931825ea481fc8c3" refkind="member"><highlight class="normal"><ref refid="classResultDialog_1a26dcd549337282cf931825ea481fc8c3" kindref="member">ResultDialog::~ResultDialog</ref>(){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ResultDialog::populateTable(){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRecords<sp/>=<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;postTmpNrecords;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nTurns<sp/>=<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;resultTimes.count();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//(((MainWindow*)cparent)-&gt;postTmpRunSeconds<sp/>*<sp/>2)<sp/>-1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fullSpeed<sp/>=<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;fullSpeed;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>operationTitle[2]={</highlight><highlight class="stringliteral">&quot;RUN&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;SLEEP&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode=0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>totalRun=0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>totalSleep=0;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speedTot=0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//POPULATE<sp/>OBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nTurns;j++){</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableTL-&gt;insertRow(j);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTableWidgetItem<sp/>*item;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>tmpS=operationTitle[mode];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(tmpS);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableTL-&gt;setItem(j,0,item);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>speedTot<sp/>=<sp/><sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;resultTimes[j];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!mode){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>speedTot+=0.01;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalRun+=speedTot;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode=1;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%5.3f&quot;</highlight><highlight class="normal">,speedTot);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>speedTot-=0.01;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%5.3f&quot;</highlight><highlight class="normal">,speedTot);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>totalSleep+=speedTot;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode=0;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(tmpS);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableTL-&gt;setItem(j,1,item);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>tmpS;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%5.0f&quot;</highlight><highlight class="normal">,totalRun);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>totalRunStr<sp/>=<sp/>tmpS;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%5.0f&quot;</highlight><highlight class="normal">,totalSleep);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>totalSleepStr<sp/>=<sp/>tmpS;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%5.0f&quot;</highlight><highlight class="normal">,((fullSpeed)?totalRun:(((totalRun&lt;1000)?1000:totalSleep)-totalSleep)));</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>totalDRunStr<sp/>=<sp/>tmpS;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;RRLbytes<sp/>|<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;DRLbytes);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>totalBytes=tmpS;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpS.sprintf(</highlight><highlight class="stringliteral">&quot;%u&quot;</highlight><highlight class="normal">,nRecords);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>totalRecords=tmpS;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>summary<sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;center&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;sqlite-&gt;sqlPreferences-&gt;useAtomicCommit)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Atomic<sp/>Commit&lt;/b&gt;&lt;br<sp/>/&gt;Disabled&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Atomic<sp/>Commit&lt;/b&gt;&lt;br<sp/>/&gt;Enabled&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Total<sp/>Bytes:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>totalBytes<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Total<sp/>Records:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>totalRecords<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Deducted<sp/>Run<sp/>Time<sp/>in<sp/>a<sp/>second:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>totalDRunStr<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>ms<sp/>&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Theoric<sp/>Run<sp/>Time:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>totalRunStr<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>ms&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Theoric<sp/>Sleep<sp/>Time:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>totalSleepStr<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>ms<sp/>&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;isQueryError)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;b&gt;Error:&lt;/b&gt;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal"><sp/>+<sp/>((<ref refid="classMainWindow" kindref="compound">MainWindow</ref>*)cparent)-&gt;queryErrorMsg<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;&lt;br<sp/>/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>summary.append(</highlight><highlight class="stringliteral">&quot;&lt;/center&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;pteResult-&gt;appendHtml(summary);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/resultdialog.cpp"/>
+  </compounddef>
+</doxygen>

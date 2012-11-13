@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classAboutDialog" kind="class" prot="public">
+    <compoundname>AboutDialog</compoundname>
+    <includes refid="aboutdialog_8h" local="no">aboutdialog.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAboutDialog_1a36203efe478483744d1f3c53a0f69256" prot="private" static="no" mutable="no">
+        <type>Ui::AboutDialog *</type>
+        <definition>Ui::AboutDialog* AboutDialog::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" line="55" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AboutDialog::AboutDialog</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>AboutDialog</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" line="51" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.cpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AboutDialog::~AboutDialog</definition>
+        <argsstring>()</argsstring>
+        <name>~AboutDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" line="52" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" line="47" bodyfile="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.h" bodystart="46" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" prot="public" virt="non-virtual"><scope>AboutDialog</scope><name>AboutDialog</name></member>
+      <member refid="classAboutDialog_1a36203efe478483744d1f3c53a0f69256" prot="private" virt="non-virtual"><scope>AboutDialog</scope><name>ui</name></member>
+      <member refid="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" prot="public" virt="non-virtual"><scope>AboutDialog</scope><name>~AboutDialog</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

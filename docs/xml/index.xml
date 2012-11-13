@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="classAboutDialog" kind="class"><name>AboutDialog</name>
+    <member refid="classAboutDialog_1a36203efe478483744d1f3c53a0f69256" kind="variable"><name>ui</name></member>
+    <member refid="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" kind="function"><name>AboutDialog</name></member>
+    <member refid="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" kind="function"><name>~AboutDialog</name></member>
+  </compound>
+  <compound refid="classHelpSetDialog" kind="class"><name>HelpSetDialog</name>
+    <member refid="classHelpSetDialog_1a2aeb91f630c02546e5e2c3fad080927b" kind="variable"><name>ui</name></member>
+    <member refid="classHelpSetDialog_1a46475a318d406896cb43048786d7e6ac" kind="variable"><name>cparent</name></member>
+    <member refid="classHelpSetDialog_1a19134f00d27d612a3bf1fd6fd92c71e1" kind="variable"><name>firstCall</name></member>
+    <member refid="classHelpSetDialog_1a42eedf3d1994361844e27c2d5455fc85" kind="function"><name>HelpSetDialog</name></member>
+    <member refid="classHelpSetDialog_1a59391ca64da7949e23bb6d9ed900e2eb" kind="function"><name>~HelpSetDialog</name></member>
+    <member refid="classHelpSetDialog_1a2d56d35a2a180de735942cc56d297fd3" kind="function"><name>closeEvent</name></member>
+    <member refid="classHelpSetDialog_1a392d911572314f20320bf43e1c97dacd" kind="slot"><name>ClickedHome</name></member>
+    <member refid="classHelpSetDialog_1a9837a1246bd3dfdc6e1adee2a49f2157" kind="slot"><name>ClickedGit</name></member>
+    <member refid="classHelpSetDialog_1aa3c79e2757893a38dd2e53271376ddb3" kind="slot"><name>ClickedClose</name></member>
+    <member refid="classHelpSetDialog_1a7183c0405fa07f127a0a9abc6929a8c7" kind="slot"><name>ClickedBack</name></member>
+    <member refid="classHelpSetDialog_1a2c435b9d4baaaf700d68e2f3433be28d" kind="slot"><name>ClickedForward</name></member>
+    <member refid="classHelpSetDialog_1a9c38de387e813f10d1783e9327fe4c5a" kind="slot"><name>ClickedRefresh</name></member>
+    <member refid="classHelpSetDialog_1ae381f3412a99fec40b901265d0b393c5" kind="slot"><name>ClickedH0</name></member>
+    <member refid="classHelpSetDialog_1a6c83306c35879d7d46af2b0e1818b0c1" kind="slot"><name>ClickedH1</name></member>
+    <member refid="classHelpSetDialog_1a21e7bb69468d2d75db0f7c106bdd66fa" kind="slot"><name>ClickedH2</name></member>
+    <member refid="classHelpSetDialog_1a67325da32306a5330c51639cbb793311" kind="slot"><name>ClickedH3</name></member>
+    <member refid="classHelpSetDialog_1af2e0e69fc351dce5a0982a1fca5730cf" kind="slot"><name>ClickedH4</name></member>
+    <member refid="classHelpSetDialog_1a0ef6a793476a27e4a452985d3264bf69" kind="slot"><name>ClickedH5</name></member>
+    <member refid="classHelpSetDialog_1adadd548eb11c585c0daf8df7d00e09c1" kind="slot"><name>ClickedH6</name></member>
+    <member refid="classHelpSetDialog_1ab672ac4bea4fd9d86e47dfe4c0359cc8" kind="slot"><name>ClickedH7</name></member>
+    <member refid="classHelpSetDialog_1aeb83aba8c60d5b6793f2c4f607be1323" kind="slot"><name>ClickedH8</name></member>
+    <member refid="classHelpSetDialog_1aa6ef2b2109570a1aca71dc3c78c98251" kind="function"><name>initListeners</name></member>
+    <member refid="classHelpSetDialog_1a936af798b7fff7d25403cc78d3230476" kind="function"><name>beforeClose</name></member>
+  </compound>
+  <compound refid="classMainWindow" kind="class"><name>MainWindow</name>
+    <member refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kind="variable"><name>sqlite</name></member>
+    <member refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kind="variable"><name>postTmpNrecords</name></member>
+    <member refid="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" kind="variable"><name>postTmpRunSeconds</name></member>
+    <member refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kind="variable"><name>fullSpeed</name></member>
+    <member refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kind="variable"><name>RRLbytes</name></member>
+    <member refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kind="variable"><name>DRLbytes</name></member>
+    <member refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kind="variable"><name>isQueryError</name></member>
+    <member refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" kind="variable"><name>queryErrorMsg</name></member>
+    <member refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kind="variable"><name>resultTimes</name></member>
+    <member refid="classMainWindow_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
+    <member refid="classMainWindow_1a2cd808b2da9dc89dfdc6ed71c780852b" kind="variable"><name>sbxLenghtVector</name></member>
+    <member refid="classMainWindow_1a4a1c8293d7dd385f47cde1c570c23d58" kind="variable"><name>cbxTextFieldVector</name></member>
+    <member refid="classMainWindow_1a72fa1e7c3cddb35670036d778bb99c58" kind="variable"><name>cbxRandomContentVector</name></member>
+    <member refid="classMainWindow_1a69dcd739ad465f44c1488308048e488b" kind="variable"><name>txtTextContentVector</name></member>
+    <member refid="classMainWindow_1a9a68d7b0a842fcc961cd17901d5351ad" kind="variable"><name>dataDB</name></member>
+    <member refid="classMainWindow_1a7accd1de22bf7144b86b84c545bbb3c4" kind="variable"><name>resultTimesIdx</name></member>
+    <member refid="classMainWindow_1aeb0fd0d944251dc4cb5bcfbfb57f76b4" kind="variable"><name>lastTime</name></member>
+    <member refid="classMainWindow_1a0027bf5327f279babaaf5fd6129f3d9a" kind="variable"><name>sleepTime</name></member>
+    <member refid="classMainWindow_1a46c780a20bffaa5288c5f18aba7a916c" kind="variable"><name>tmpNrecords</name></member>
+    <member refid="classMainWindow_1a79a82c2ec296cfa23ff2cecd969a0bdd" kind="variable"><name>muteEvent</name></member>
+    <member refid="classMainWindow_1a426da48f6e2f865b07a28533c07c4f7a" kind="variable"><name>fileMenu</name></member>
+    <member refid="classMainWindow_1a947c15e520bfea60338b2577f67146b8" kind="variable"><name>helpMenu</name></member>
+    <member refid="classMainWindow_1a04f14fec9d8ee33d64e20bb22c5bff5c" kind="variable"><name>openAct</name></member>
+    <member refid="classMainWindow_1a9d8778fbb596e6a923c2844c2cedfc41" kind="variable"><name>exitAct</name></member>
+    <member refid="classMainWindow_1a07b31cf99def3b2de7958ffaf2eec463" kind="variable"><name>aboutAct</name></member>
+    <member refid="classMainWindow_1ace057e46f03ed0988c768e7d185bae2b" kind="variable"><name>aboutQtAct</name></member>
+    <member refid="classMainWindow_1ae60e21597ff15e91b99a1869319620b9" kind="variable"><name>runTimer</name></member>
+    <member refid="classMainWindow_1a83693b3dcefd9fef8001a0ddbbff0512" kind="variable"><name>tmpRunSeconds</name></member>
+    <member refid="classMainWindow_1a56f18d63770867765eef4d25ecf84058" kind="variable"><name>runFunction</name></member>
+    <member refid="classMainWindow_1a865a6c2f53d03f5fc1847255d61d5a08" kind="variable"><name>isBusy</name></member>
+    <member refid="classMainWindow_1af9de0579502c67e18a65922c96081d19" kind="variable"><name>isSelect</name></member>
+    <member refid="classMainWindow_1a76483df4ac0391664e8ae25f7b14462c" kind="variable"><name>mainTimer</name></member>
+    <member refid="classMainWindow_1a93c2d360a8d835a728212d72a075f104" kind="variable"><name>runStepper</name></member>
+    <member refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
+    <member refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
+    <member refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" kind="slot"><name>setValueEPS</name></member>
+    <member refid="classMainWindow_1a65c01e2454356623735a1ab596210304" kind="slot"><name>setValueST</name></member>
+    <member refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kind="slot"><name>ChangeFFGfieldType</name></member>
+    <member refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kind="slot"><name>ChangeFFGfieldContent</name></member>
+    <member refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" kind="slot"><name>ClickedClear</name></member>
+    <member refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" kind="slot"><name>ClickedMake</name></member>
+    <member refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" kind="slot"><name>ClickedTESTINSERT</name></member>
+    <member refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" kind="slot"><name>ClickedTESTUPDATE</name></member>
+    <member refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" kind="slot"><name>ClickedTESTDELETE</name></member>
+    <member refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" kind="slot"><name>ClickedTESTSELECT</name></member>
+    <member refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" kind="slot"><name>about</name></member>
+    <member refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" kind="slot"><name>open</name></member>
+    <member refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" kind="slot"><name>runTimerInsertEvent</name></member>
+    <member refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" kind="slot"><name>runTimerUpdateEvent</name></member>
+    <member refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" kind="slot"><name>runTimerDeleteEvent</name></member>
+    <member refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" kind="slot"><name>runTimerSelectEvent</name></member>
+    <member refid="classMainWindow_1a1c7877c1ca466bd8034d88762ce2af9f" kind="function"><name>timerEvent</name></member>
+    <member refid="classMainWindow_1acb1311efde9df3534f62b96e605eea2b" kind="function"><name>initVectors</name></member>
+    <member refid="classMainWindow_1aa930a1055ceeaa766dc666e14da95884" kind="function"><name>initListeners</name></member>
+    <member refid="classMainWindow_1a62cd8712fb41a754298f6f60eead2cb0" kind="function"><name>createActions</name></member>
+    <member refid="classMainWindow_1aa4907b0251d305659e403c62921ef331" kind="function"><name>createMenus</name></member>
+    <member refid="classMainWindow_1a8c61cc89b5cd621f6860f912528cd991" kind="function"><name>openSet</name></member>
+    <member refid="classMainWindow_1a75a49fe506c00a4959f6efb222814488" kind="function"><name>randomFixString</name></member>
+    <member refid="classMainWindow_1a3408e1dcde3e1f66d4915e3795b9722e" kind="function"><name>insertInvoke</name></member>
+    <member refid="classMainWindow_1a69866a1fa7235d0d04dbca2c51a2e723" kind="function"><name>insertInvokeFullSpeed</name></member>
+    <member refid="classMainWindow_1a03d92fa730a2fd831571ff8979c7c883" kind="function"><name>updateInvoke</name></member>
+    <member refid="classMainWindow_1ae3e7e2cd3f3accbba845c70ff087af19" kind="function"><name>updateInvokeFullSpeed</name></member>
+    <member refid="classMainWindow_1aee6d7da7925518124bbeca942dcfb1ac" kind="function"><name>deleteInvoke</name></member>
+    <member refid="classMainWindow_1a5e9c7bf989087853845c8c1793af8c5b" kind="function"><name>deleteInvokeFullSpeed</name></member>
+    <member refid="classMainWindow_1ad4e11ccf067f7b7a8b4691a783a18bfa" kind="function"><name>selectInvoke</name></member>
+    <member refid="classMainWindow_1a2dd7cd307165dbaac1c69a37dbfb2fa0" kind="function"><name>selectInvokeFullSpeed</name></member>
+    <member refid="classMainWindow_1acd639da42ddb08cd7f375b68145243ba" kind="function"><name>startRunTimer</name></member>
+    <member refid="classMainWindow_1a600de2a996bbc0fdeb00ef777831da1d" kind="function"><name>callAnonymTask</name></member>
+    <member refid="classMainWindow_1a6c7e1a0d45e5881f363123c70c9419f2" kind="function"><name>openResult</name></member>
+    <member refid="classMainWindow_1ac84a97e82da9dd0dd2b7241ecbca6848" kind="function"><name>stopProcess</name></member>
+    <member refid="classMainWindow_1a6f725debcaed6bacf40cfb7e15569a57" kind="function"><name>processClearALL</name></member>
+    <member refid="classMainWindow_1a818aa20af7bb43f603b99e171df9dfa0" kind="function"><name>processMakeRRL</name></member>
+    <member refid="classMainWindow_1a839d76c21adef711ae97510e3b44ec49" kind="function"><name>processTestInsert</name></member>
+    <member refid="classMainWindow_1aec36f921ec1c19a5c895cc1b7168af85" kind="function"><name>processTestUpdate</name></member>
+    <member refid="classMainWindow_1a83245eb41c8849ddbac3e0c0e4e21583" kind="function"><name>processTestSelect</name></member>
+    <member refid="classMainWindow_1a1be01f0bbdc32c4996347974094beb74" kind="function"><name>processTestDelete</name></member>
+    <member refid="classMainWindow_1ac9bcd0fe137a988903a563d489a2481e" kind="function"><name>populateDRL</name></member>
+  </compound>
+  <compound refid="classResultDialog" kind="class"><name>ResultDialog</name>
+    <member refid="classResultDialog_1a9890097432c0e414b73df77b17acc1f6" kind="variable"><name>ui</name></member>
+    <member refid="classResultDialog_1aee569252df0f005e521f08a4e82b35ac" kind="variable"><name>cparent</name></member>
+    <member refid="classResultDialog_1a3cd48b45618b2b87662ab3d5a53bded7" kind="function"><name>ResultDialog</name></member>
+    <member refid="classResultDialog_1a26dcd549337282cf931825ea481fc8c3" kind="function"><name>~ResultDialog</name></member>
+    <member refid="classResultDialog_1a5e73fb50438b8685a3824c7ab36461ae" kind="function"><name>populateTable</name></member>
+  </compound>
+  <compound refid="classSQLite" kind="class"><name>SQLite</name>
+    <member refid="classSQLite_1a1e719c7ea443e641471da642dbf33a70" kind="variable"><name>db</name></member>
+    <member refid="classSQLite_1a2dd6672e754497ad5ad90470e3ef3e33" kind="variable"><name>sqlPreferences</name></member>
+    <member refid="classSQLite_1ae7b35dc7e3c41543a0acde669ad4ba0d" kind="function"><name>SQLite</name></member>
+    <member refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" kind="function"><name>startDriver</name></member>
+    <member refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kind="function"><name>dbOpen</name></member>
+    <member refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kind="function"><name>dbClose</name></member>
+    <member refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" kind="function"><name>dbFlush</name></member>
+    <member refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" kind="function"><name>updateDBRecord</name></member>
+    <member refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" kind="function"><name>insertDBRecord</name></member>
+    <member refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" kind="function"><name>deleteDBRecord</name></member>
+    <member refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" kind="function"><name>selectDBRecord</name></member>
+    <member refid="classSQLite_1a361a55088ac78691ac83d7bf8bb5a72a" kind="function"><name>speedTests</name></member>
+    <member refid="classSQLite_1ae1ef40c11add6d31db2e39a21202f9a9" kind="function"><name>pragmasSet</name></member>
+  </compound>
+  <compound refid="structSqlPreferences" kind="struct"><name>SqlPreferences</name>
+    <member refid="structSqlPreferences_1a36464d4021afe0e0919cce650a1519fe" kind="variable"><name>useAtomicCommit</name></member>
+    <member refid="structSqlPreferences_1a7e53d4abaf46acfb84cd8c30fbf3b1df" kind="variable"><name>useCustomPageSize</name></member>
+    <member refid="structSqlPreferences_1ad26f9920ddc5ac5f655873d9ecb3ac53" kind="variable"><name>useCustomCacheSize</name></member>
+    <member refid="structSqlPreferences_1abcd9f162cf432b71159c7c83adb8ac88" kind="variable"><name>useCustomTempStore</name></member>
+    <member refid="structSqlPreferences_1a9aa98cdd591864c7b2382b2d0fff0de9" kind="variable"><name>useCustomJournalMode</name></member>
+    <member refid="structSqlPreferences_1a22c08a63c97db2f85e08920bf3e22516" kind="variable"><name>useCustomLockingMode</name></member>
+    <member refid="structSqlPreferences_1a3d18d11573e0546e8fe854b7584adab7" kind="variable"><name>useCustomSynchronous</name></member>
+    <member refid="structSqlPreferences_1ae8bb4bc0c82e4f32c51efdbf3d3e1af5" kind="variable"><name>useExistDB</name></member>
+    <member refid="structSqlPreferences_1ad7d06ce81f298cf13b7522e48d640a78" kind="variable"><name>useRamDB</name></member>
+    <member refid="structSqlPreferences_1aeaa6fa937ead293aa8cd41b86f1c5cf4" kind="variable"><name>customPageSize</name></member>
+    <member refid="structSqlPreferences_1a623f8f8b12bdde7ce2c69f6388d3719b" kind="variable"><name>customCacheSize</name></member>
+    <member refid="structSqlPreferences_1a36b942f872c390f204cc5542fc0662de" kind="variable"><name>customTempStore</name></member>
+    <member refid="structSqlPreferences_1afa1cee8e11c7ca38d32e05c92a6b56da" kind="variable"><name>customJournalMode</name></member>
+    <member refid="structSqlPreferences_1ad99a3e0cc0c19283aa9337e6a28f0a28" kind="variable"><name>customLockingMode</name></member>
+    <member refid="structSqlPreferences_1a7d309904c4edb9f888d0c8a810def2d1" kind="variable"><name>customSynchronous</name></member>
+  </compound>
+  <compound refid="namespacesqlitetest" kind="namespace"><name>sqlitetest</name>
+  </compound>
+  <compound refid="namespaceUi" kind="namespace"><name>Ui</name>
+  </compound>
+  <compound refid="aboutdialog_8cpp" kind="file"><name>aboutdialog.cpp</name>
+  </compound>
+  <compound refid="aboutdialog_8h" kind="file"><name>aboutdialog.h</name>
+  </compound>
+  <compound refid="helpsetdialog_8cpp" kind="file"><name>helpsetdialog.cpp</name>
+  </compound>
+  <compound refid="helpsetdialog_8h" kind="file"><name>helpsetdialog.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+  </compound>
+  <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+    <member refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kind="define"><name>FIX_NR_FIELDS</name></member>
+    <member refid="mainwindow_8h_1ad811caf6c72a9a031c67d2af9edc57ab" kind="define"><name>TEXT_FIELD_SIZE</name></member>
+    <member refid="mainwindow_8h_1a475c77257e5782fb60199a7d12a7e53f" kind="define"><name>MAX_RECORDS</name></member>
+    <member refid="mainwindow_8h_1aff2f9f643149b87035310798f31a5b15" kind="define"><name>MAX_TURNS</name></member>
+    <member refid="mainwindow_8h_1ab04ce3533c12d8fcbe009e83411d7cee" kind="define"><name>MAX_SLEEPS</name></member>
+    <member refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kind="define"><name>RRL_TITLE</name></member>
+    <member refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" kind="define"><name>DRL_TITLE</name></member>
+    <member refid="mainwindow_8h_1a1e88eb4912e990e9280b2045fbf8f190" kind="typedef"><name>AnonymVoid</name></member>
+  </compound>
+  <compound refid="resultdialog_8cpp" kind="file"><name>resultdialog.cpp</name>
+  </compound>
+  <compound refid="resultdialog_8h" kind="file"><name>resultdialog.h</name>
+  </compound>
+  <compound refid="sqlite_8cpp" kind="file"><name>sqlite.cpp</name>
+  </compound>
+  <compound refid="sqlite_8h" kind="file"><name>sqlite.h</name>
+    <member refid="sqlite_8h_1acfcad24977a121f8cb40c7abc0861e13" kind="define"><name>DEFAULT_DBNAME</name></member>
+    <member refid="sqlite_8h_1adda28390da72cdfef24377fcd0262e17" kind="define"><name>DEFAULT_TABLENAME</name></member>
+  </compound>
+</doxygenindex>

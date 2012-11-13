@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="aboutdialog_8cpp" kind="file">
+    <compoundname>aboutdialog.cpp</compoundname>
+    <includes refid="aboutdialog_8h" local="yes">aboutdialog.h</includes>
+    <includes local="yes">ui_aboutdialog.h</includes>
+    <incdepgraph>
+      <node id="232">
+        <label>ui_aboutdialog.h</label>
+      </node>
+      <node id="230">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>QDialog</label>
+      </node>
+      <node id="229">
+        <label>aboutdialog.cpp</label>
+        <link refid="aboutdialog.cpp"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="aboutdialog_8h" kindref="compound">aboutdialog.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_aboutdialog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" refkind="member"><highlight class="normal"><ref refid="classAboutDialog_1ad96fc2ce8de7568ace543b7c69c71c56" kindref="member">AboutDialog::AboutDialog</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QDialog(parent),</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="classAboutDialog" kindref="compound">AboutDialog</ref>){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" refkind="member"><highlight class="normal"><ref refid="classAboutDialog_1a3d87f5a26a175bb2573965c98af6d4ca" kindref="member">AboutDialog::~AboutDialog</ref>(){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/aboutdialog.cpp"/>
+  </compounddef>
+</doxygen>

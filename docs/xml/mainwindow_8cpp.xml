@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mainwindow_8cpp" kind="file">
+    <compoundname>mainwindow.cpp</compoundname>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includes local="yes">ui_mainwindow.h</includes>
+    <incdepgraph>
+      <node id="332">
+        <label>QMessageBox</label>
+      </node>
+      <node id="326">
+        <label>QElapsedTimer</label>
+      </node>
+      <node id="321">
+        <label>mainwindow.cpp</label>
+        <link refid="mainwindow.cpp"/>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>QMainWindow</label>
+      </node>
+      <node id="325">
+        <label>QCheckBox</label>
+      </node>
+      <node id="322">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>sqlite.h</label>
+        <link refid="sqlite_8h"/>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>QSqlDatabase</label>
+      </node>
+      <node id="334">
+        <label>QApplication</label>
+      </node>
+      <node id="341">
+        <label>aboutdialog.h</label>
+        <link refid="aboutdialog_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>ui_mainwindow.h</label>
+      </node>
+      <node id="340">
+        <label>QDialog</label>
+      </node>
+      <node id="333">
+        <label>QDebug</label>
+      </node>
+      <node id="327">
+        <label>QTimer</label>
+      </node>
+      <node id="336">
+        <label>QString</label>
+      </node>
+      <node id="339">
+        <label>helpsetdialog.h</label>
+        <link refid="helpsetdialog_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>math.h</label>
+      </node>
+      <node id="342">
+        <label>resultdialog.h</label>
+        <link refid="resultdialog_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>QSqlQuery</label>
+      </node>
+      <node id="338">
+        <label>QHash</label>
+      </node>
+      <node id="337">
+        <label>QVariant</label>
+      </node>
+      <node id="324">
+        <label>QSpinBox</label>
+      </node>
+      <node id="335">
+        <label>QStringList</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacesqlitetest">sqlitetest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mainwindow_8h" kindref="compound">mainwindow.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ui_mainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" refkind="member"><highlight class="normal"><ref refid="classMainWindow_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow::MainWindow</ref>(QWidget<sp/>*parent)<sp/>:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>QMainWindow(parent),</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>ui(new<sp/>Ui::<ref refid="classMainWindow" kindref="compound">MainWindow</ref>){<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;setupUi(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>createActions();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>createMenus();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>initVectors();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>initListeners();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>muteEvent=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" kindref="member">ClickedClear</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classSQLite" kindref="compound">SQLite</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>openSet(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1ad04b99dcc053d1ad1fe034a7d33ddc45" kindref="member">startDriver</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" refkind="member"><highlight class="normal"><ref refid="classMainWindow_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">MainWindow::~MainWindow</ref>(){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ui;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a245861da7b78b4adb356e552bd3b2286" kindref="member">dbFlush</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::createActions(){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>openAct<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(tr(</highlight><highlight class="stringliteral">&quot;&amp;Set...&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>openAct-&gt;setStatusTip(tr(</highlight><highlight class="stringliteral">&quot;Open<sp/>HelpSet<sp/>Dialog&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(openAct,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" kindref="member">open</ref>()));</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>exitAct<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(tr(</highlight><highlight class="stringliteral">&quot;E&amp;xit&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>exitAct-&gt;setStatusTip(tr(</highlight><highlight class="stringliteral">&quot;Exit<sp/>the<sp/>application&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>exitAct-&gt;setShortcuts(QKeySequence::Quit);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(exitAct,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(close()));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>aboutAct<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(tr(</highlight><highlight class="stringliteral">&quot;&amp;About&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>aboutAct-&gt;setStatusTip(tr(</highlight><highlight class="stringliteral">&quot;Show<sp/>the<sp/>application&apos;s<sp/>About<sp/>box&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(aboutAct,<sp/>SIGNAL(triggered()),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" kindref="member">about</ref>()));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>aboutQtAct<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QAction(tr(</highlight><highlight class="stringliteral">&quot;About<sp/>&amp;Qt&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>aboutQtAct-&gt;setStatusTip(tr(</highlight><highlight class="stringliteral">&quot;Show<sp/>the<sp/>Qt<sp/>library&apos;s<sp/>About<sp/>box&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(aboutQtAct,<sp/>SIGNAL(triggered()),<sp/>qApp,<sp/>SLOT(aboutQt()));</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::createMenus(){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>fileMenu<sp/>=<sp/>menuBar()-&gt;addMenu(tr(</highlight><highlight class="stringliteral">&quot;&amp;File&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>fileMenu-&gt;addAction(openAct);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>fileMenu-&gt;addSeparator();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>fileMenu-&gt;addAction(exitAct);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>menuBar()-&gt;addSeparator();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>helpMenu<sp/>=<sp/>menuBar()-&gt;addMenu(tr(</highlight><highlight class="stringliteral">&quot;&amp;Help&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>helpMenu-&gt;addAction(aboutAct);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>helpMenu-&gt;addAction(aboutQtAct);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::initVectors(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx=0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_0;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=1;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_1;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_1;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_1;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_1;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=2;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_2;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_2;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_2;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_2;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=3;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_3;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_3;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_3;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_3;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=4;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_4;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_4;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_4;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_4;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=5;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_5;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_5;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_5;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_5;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=6;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_6;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_6;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_6;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_6;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=7;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_7;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_7;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_7;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_7;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=8;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_8;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_8;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_8;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_8;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>idx=9;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>sbxLenghtVector[idx]=<sp/>ui-&gt;sbxFFG_9;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxTextFieldVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_TEXT_9;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>cbxRandomContentVector[idx]<sp/>=<sp/>ui-&gt;cbxFFG_RANDOM_9;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>txtTextContentVector[idx]<sp/>=<sp/>ui-&gt;txtFFG_9;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::initListeners(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;dialEPS,<sp/>SIGNAL(valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" kindref="member">setValueEPS</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;dialST,<sp/>SIGNAL(valueChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>SLOT(<ref refid="classMainWindow_1a65c01e2454356623735a1ab596210304" kindref="member">setValueST</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnClear,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" kindref="member">ClickedClear</ref>()));</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnMake,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" kindref="member">ClickedMake</ref>()));</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnTESTINSERT,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" kindref="member">ClickedTESTINSERT</ref>()));</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnTESTUPDATE,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" kindref="member">ClickedTESTUPDATE</ref>()));</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnTESTDELETE,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" kindref="member">ClickedTESTDELETE</ref>()));</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;btnTESTSELECT,SIGNAL(clicked()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" kindref="member">ClickedTESTSELECT</ref>()));</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_0,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_1,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_2,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_3,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_4,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_5,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_6,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_7,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_8,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_TEXT_9,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_0,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_1,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_2,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_3,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_4,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_5,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_6,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_7,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_8,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/>connect(ui-&gt;cbxFFG_RANDOM_9,SIGNAL(stateChanged(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,SLOT(<ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processClearALL(){</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>muteEvent=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_0-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_1-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_2-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_3-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_4-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_5-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_6-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_7-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_TEXT_8-&gt;setChecked(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_0-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_1-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_2-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_3-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_4-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_5-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_6-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_7-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_8-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;cbxFFG_RANDOM_9-&gt;setChecked(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>muteEvent=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">ChangeFFGfieldType</ref>(0);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">ChangeFFGfieldContent</ref>(0);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableRRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxRRL-&gt;setTitle(<ref refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kindref="member">RRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>nRows<sp/>=<sp/>ui-&gt;tableDRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxDRL-&gt;setTitle(<ref refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" kindref="member">DRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>isSelect=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref><sp/>=<sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;tbMain-&gt;setCurrentIndex(0);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processMakeRRL(){</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>isSelect=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRecords<sp/>=<sp/>ui-&gt;dialEPS-&gt;value();</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CLEAR<sp/>OBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableRRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>nRows<sp/>=<sp/>ui-&gt;tableDRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxDRL-&gt;setTitle(<ref refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" kindref="member">DRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref><sp/>=<sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//POPULATE<sp/>OBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRecords;j++){</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;insertRow(j);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>;i++){</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTableWidgetItem<sp/>*item;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>tmpS=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(cbxRandomContentVector[i]-&gt;isChecked()){</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpS<sp/>=<sp/>randomFixString(</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((cbxTextFieldVector[i]-&gt;isChecked())?</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mainwindow_8h_1ad811caf6c72a9a031c67d2af9edc57ab" kindref="member">TEXT_FIELD_SIZE</ref>:</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sbxLenghtVector[i]-&gt;value()));</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpS<sp/>=<sp/>(txtTextContentVector[i]-&gt;text().length()&gt;=1)?txtTextContentVector[i]-&gt;text():</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref><sp/>+=<sp/>tmpS.length();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(tmpS);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;setItem(j,i,item);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>strRRLbytes=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speedRequired<sp/>=<sp/><ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref><sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>strRRLbytes.sprintf(</highlight><highlight class="stringliteral">&quot;:<sp/>%u<sp/>Bytes,<sp/>Speed<sp/>request<sp/>%9.1fkbits/s&quot;</highlight><highlight class="normal">,<ref refid="classMainWindow_1ac4e4dd0ba3dd8b958d2aec2271bfe299" kindref="member">RRLbytes</ref>,speedRequired);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxRRL-&gt;setTitle(<ref refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kindref="member">RRL_TITLE</ref>+strRRLbytes);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processTestInsert(){</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableRRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataDB[j].append(j+</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>;i++){</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTableWidgetItem<sp/>*item<sp/>=<sp/>ui-&gt;tableRRL-&gt;item(0,i);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>itemStr<sp/>=<sp/>item-&gt;text();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataDB[j].append(itemStr);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nRows){</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpNrecords<sp/>=<sp/>nRows;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>=<sp/>tmpNrecords;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;groupBoxRRL-&gt;setTitle(<ref refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kindref="member">RRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Insert<sp/>Sentence<sp/>is<sp/>Ready!<sp/>\nDo<sp/>you<sp/>want<sp/>run<sp/>in<sp/>fullSpeed<sp/>Mode?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),msg,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertInvokeFullSpeed();</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startRunTimer(SLOT(<ref refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" kindref="member">runTimerInsertEvent</ref>()));</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;Ram<sp/>Records<sp/>List<sp/>-<sp/>is<sp/>Empty&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processTestUpdate(){</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableDRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>;i++){</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTableWidgetItem<sp/>*item<sp/>=<sp/>ui-&gt;tableDRL-&gt;item(0,i);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>itemStr<sp/>=<sp/>item-&gt;text();</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataDB[j].append(itemStr);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nRows){</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpNrecords<sp/>=<sp/>nRows;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>=<sp/>tmpNrecords;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;groupBoxDRL-&gt;setTitle(<ref refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" kindref="member">DRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Update<sp/>Sentence<sp/>is<sp/>Ready!<sp/>\nDo<sp/>you<sp/>want<sp/>run<sp/>in<sp/>fullSpeed<sp/>Mode?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),msg,</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updateInvokeFullSpeed();</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startRunTimer(SLOT(<ref refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" kindref="member">runTimerUpdateEvent</ref>()));</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;Data<sp/>Records<sp/>List<sp/>-<sp/>is<sp/>Empty!\n<sp/>Please<sp/>run<sp/>a<sp/>&apos;Select<sp/>Test&apos;<sp/>first.&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processTestSelect(){</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableRRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nRows){</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nRows<sp/>=<sp/>ui-&gt;dialEPS-&gt;value();</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords<sp/>=<sp/>nRows;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>=<sp/>tmpNrecords;</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxRRL-&gt;setTitle(<ref refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kindref="member">RRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Select<sp/>Sentence<sp/>is<sp/>Ready!<sp/>\nDo<sp/>you<sp/>want<sp/>run<sp/>in<sp/>fullSpeed<sp/>Mode?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),msg,</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectInvokeFullSpeed();</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startRunTimer(SLOT(<ref refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" kindref="member">runTimerSelectEvent</ref>()));</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::processTestDelete(){</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableRRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nRows){</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableRRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nRows<sp/>=<sp/>ui-&gt;dialEPS-&gt;value();</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords<sp/>=<sp/>nRows;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>=<sp/>tmpNrecords;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxRRL-&gt;setTitle(<ref refid="mainwindow_8h_1afdbfb02687a82624eb0775e9398be734" kindref="member">RRL_TITLE</ref>);</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>msg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Delete<sp/>Sentence<sp/>is<sp/>Ready!<sp/>\nDo<sp/>you<sp/>want<sp/>run<sp/>in<sp/>fullSpeed<sp/>Mode?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(QMessageBox::question(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),msg,</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::Ok,QMessageBox::No)==QMessageBox::Ok){</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deleteInvokeFullSpeed();</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1ac3f3016f1a0ad93767c521c2fd349c7b" kindref="member">fullSpeed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startRunTimer(SLOT(<ref refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" kindref="member">runTimerDeleteEvent</ref>()));</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::insertInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords--;</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords&lt;0){</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" kindref="member">insertDBRecord</ref>(dataDB[tmpNrecords]);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords==0){</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="427"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::insertInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.clear();</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>();</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;tmpNrecords;i++){</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1aa4a76c8a9ec7d8a0101a28c228701e4b" kindref="member">insertDBRecord</ref>(dataDB[i]);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>();</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>openResult();</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*DEBUG</highlight></codeline>
+<codeline lineno="449"><highlight class="comment"><sp/><sp/><sp/><sp/>QString<sp/>strCtrlMS=&quot;&quot;;</highlight></codeline>
+<codeline lineno="450"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS.sprintf(&quot;Total<sp/>Insert<sp/>in<sp/>%u<sp/>MS&quot;,ctrlMS);</highlight></codeline>
+<codeline lineno="451"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(&quot;SQLiteTest&quot;),</highlight></codeline>
+<codeline lineno="452"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS,</highlight></codeline>
+<codeline lineno="453"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="454"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::updateInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords--;</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords&lt;0){</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" kindref="member">updateDBRecord</ref>(dataDB[tmpNrecords]);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords==0){</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::updateInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.clear();</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>();</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;tmpNrecords;i++){</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1acd343255f8010fdde87b1d8b2cd65e49" kindref="member">updateDBRecord</ref>(dataDB[i]);</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>();</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/>openResult();</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*DEBUG</highlight></codeline>
+<codeline lineno="501"><highlight class="comment"><sp/><sp/><sp/><sp/>QString<sp/>strCtrlMS=&quot;&quot;;</highlight></codeline>
+<codeline lineno="502"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS.sprintf(&quot;Total<sp/>Insert<sp/>in<sp/>%u<sp/>MS&quot;,ctrlMS);</highlight></codeline>
+<codeline lineno="503"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(&quot;SQLiteTest&quot;),</highlight></codeline>
+<codeline lineno="504"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS,</highlight></codeline>
+<codeline lineno="505"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="506"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::selectInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords--;</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords&lt;0){</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isSelect=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>str<sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/>dataDB[tmpNrecords]<sp/>=<sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" kindref="member">selectDBRecord</ref>(str.setNum(tmpNrecords));</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords==0){</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isSelect=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::selectInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.clear();</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>();</highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>str<sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;tmpNrecords;i++){<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataDB[i]<sp/>=<sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a7c04908029911f3df653b673b3ee6e84" kindref="member">selectDBRecord</ref>(str.setNum(i));</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>();</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/>populateDRL();</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;tbMain-&gt;setCurrentIndex(1);</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/>openResult();</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*DEBUG</highlight></codeline>
+<codeline lineno="559"><highlight class="comment"><sp/><sp/><sp/><sp/>QString<sp/>strCtrlMS=&quot;&quot;;</highlight></codeline>
+<codeline lineno="560"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS.sprintf(&quot;Total<sp/>Insert<sp/>in<sp/>%u<sp/>MS&quot;,ctrlMS);</highlight></codeline>
+<codeline lineno="561"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(&quot;SQLiteTest&quot;),</highlight></codeline>
+<codeline lineno="562"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS,</highlight></codeline>
+<codeline lineno="563"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="564"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::deleteInvoke(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpNrecords--;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords&lt;0){</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" kindref="member">deleteDBRecord</ref>()){</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" kindref="member">queryErrorMsg</ref>.sprintf(</highlight><highlight class="stringliteral">&quot;<sp/>in<sp/>%u<sp/>record.&quot;</highlight><highlight class="normal">,<ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>-<sp/>tmpNrecords);</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpNrecords=0;</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(tmpNrecords==0){</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="594"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::deleteInvokeFullSpeed(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/>QElapsedTimer<sp/>ctrlTimer;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ctrlMS=0;</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.clear();</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlTimer.start();</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>();</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;tmpNrecords;i++){</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1ae740e848da37fb08e92d2e7db3b508b7" kindref="member">deleteDBRecord</ref>()){</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" kindref="member">queryErrorMsg</ref>.sprintf(</highlight><highlight class="stringliteral">&quot;<sp/>in<sp/>%u<sp/>record.&quot;</highlight><highlight class="normal">,<ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>-<sp/>tmpNrecords);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>();</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>ctrlMS=<sp/>ctrlTimer.elapsed();</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>ctrlMS;</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(ctrlMS);</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/>openResult();</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*DEBUG</highlight></codeline>
+<codeline lineno="620"><highlight class="comment"><sp/><sp/><sp/><sp/>QString<sp/>strCtrlMS=&quot;&quot;;</highlight></codeline>
+<codeline lineno="621"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS.sprintf(&quot;Total<sp/>Insert<sp/>in<sp/>%u<sp/>MS&quot;,ctrlMS);</highlight></codeline>
+<codeline lineno="622"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::information(0,<sp/>qApp-&gt;tr(&quot;SQLiteTest&quot;),</highlight></codeline>
+<codeline lineno="623"><highlight class="comment"><sp/><sp/><sp/><sp/>strCtrlMS,</highlight></codeline>
+<codeline lineno="624"><highlight class="comment"><sp/><sp/><sp/><sp/>QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="625"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="628"><highlight class="normal"></highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::populateDRL(){</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRecords<sp/>=<sp/>ui-&gt;dialEPS-&gt;value();</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CLEAR<sp/>OBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRows<sp/>=<sp/>ui-&gt;tableDRL-&gt;rowCount();</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRows;j++){</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;removeRow(0);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref>=0;</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//POPULATE<sp/>OBJECT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;nRecords;j++){</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;insertRow(j);</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;<ref refid="mainwindow_8h_1aa78da16b589b9ca5469c44688b356192" kindref="member">FIX_NR_FIELDS</ref>;i++){</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dataDB[j].length()!=10){</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a88b9fd4866e9ab0c99f50c7c0801e8de" kindref="member">isQueryError</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1afbc3735a35d28cf9ce9a9873aacc4939" kindref="member">queryErrorMsg</ref>.sprintf(</highlight><highlight class="stringliteral">&quot;<sp/>only<sp/>%u<sp/>records<sp/>found.&quot;</highlight><highlight class="normal">,<ref refid="classMainWindow_1a271013fd9b8f471aed5ce6ff2941a6cf" kindref="member">postTmpNrecords</ref><sp/>-<sp/>tmpNrecords);</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>lPOPULATEDRL_EXIT;</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QTableWidgetItem<sp/>*item;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>tmpS=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpS<sp/>=<sp/>dataDB[j][i];</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref><sp/>+=<sp/>tmpS.length();</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>item<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTableWidgetItem(tmpS);</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tableDRL-&gt;setItem(j,i,item);</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"></highlight></codeline>
+<codeline lineno="662"><highlight class="normal">lPOPULATEDRL_EXIT:</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>strDRLbytes=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>speedRequired<sp/>=<sp/><ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref><sp/>/<sp/>8;</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>strDRLbytes.sprintf(</highlight><highlight class="stringliteral">&quot;:<sp/>%u<sp/>Bytes,<sp/>Speed<sp/>%9.1fkbits/s&quot;</highlight><highlight class="normal">,<ref refid="classMainWindow_1af648bf6238ec163343b5dec5e900fc23" kindref="member">DRLbytes</ref>,speedRequired);</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;groupBoxDRL-&gt;setTitle(<ref refid="mainwindow_8h_1a92c41d772914eb2a3066de8b613bd6c0" kindref="member">DRL_TITLE</ref>+strDRLbytes);</highlight></codeline>
+<codeline lineno="667"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::startRunTimer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>runStepper){</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;runStepper<sp/>=<sp/>runStepper;</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/>runTimer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>QTimer();</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>connect(runTimer,SIGNAL(timeout()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,runStepper);</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tI=<sp/>floor(1000<sp/>/<sp/>ui-&gt;lcdNumberEPS-&gt;value());</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpRunSeconds<sp/>=<sp/>ui-&gt;lcdNumberST-&gt;value();</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a6c309625ea8d8bd81d552a96ffbbf368" kindref="member">postTmpRunSeconds</ref><sp/>=<sp/>tmpRunSeconds;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>sleepTime<sp/>=<sp/>tI;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>resultTimesIdx=0;</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/>isSelect=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.clear();</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a84d9c5795ea328449772de77bfd9e30e" kindref="member">dbOpen</ref>();</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//timeout<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/>mainTimer<sp/>=<sp/>startTimer(1000);</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//steps<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>runTimer-&gt;start(tI);</highlight></codeline>
+<codeline lineno="692"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::stopProcess(){</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isBusy){</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>runTimer-&gt;stop();</highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disconnect(runTimer,SIGNAL(timeout()),</highlight><highlight class="keyword">this</highlight><highlight class="normal">,this-&gt;runStepper);</highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>killTimer(mainTimer);</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classMainWindow_1acd9e528f003b22f3c17657a89505803a" kindref="member">sqlite</ref>-&gt;<ref refid="classSQLite_1a846367e96132826f56b96515a2c1d8ab" kindref="member">dbClose</ref>();</highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;ui-&gt;centralWidget-&gt;setEnabled(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(isSelect){</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>populateDRL();</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;tbMain-&gt;setCurrentIndex(1);</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>openResult();</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="707"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"></highlight></codeline>
+<codeline lineno="713"><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::timerEvent(QTimerEvent<sp/>*){</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!tmpRunSeconds){</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>strMSG=</highlight><highlight class="stringliteral">&quot;Operation<sp/>not<sp/>completed<sp/>due<sp/>to<sp/>timeout!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox::warning(0,<sp/>qApp-&gt;tr(</highlight><highlight class="stringliteral">&quot;SQLiteTest&quot;</highlight><highlight class="normal">),strMSG,QMessageBox::Ok);</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stopProcess();</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmpRunSeconds--;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="731"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="732" refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a6532900ddf54d3587f12607a858cfff4" kindref="member">MainWindow::runTimerInsertEvent</ref>(){</highlight></codeline>
+<codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isBusy){</highlight></codeline>
+<codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(resultTimesIdx){</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(sleepTime<sp/>-<sp/>lastTime);</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertInvoke();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="742"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="743" refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a124c316d7016496cbdc44a798cb26309" kindref="member">MainWindow::runTimerSelectEvent</ref>(){</highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isBusy){</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(resultTimesIdx){</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(sleepTime<sp/>-<sp/>lastTime);</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectInvoke();</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="753"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="754" refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a012e372e5d6180e36e3b08d27eaa6c36" kindref="member">MainWindow::runTimerDeleteEvent</ref>(){</highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isBusy){</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(resultTimesIdx){</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(sleepTime<sp/>-<sp/>lastTime);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deleteInvoke();</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="764"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="765" refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1ad751cceac9d285bd49518fccf7d7e018" kindref="member">MainWindow::runTimerUpdateEvent</ref>(){</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!isBusy){</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(resultTimesIdx){</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMainWindow_1a69d381f82b82ca37620172b78d58c4ea" kindref="member">resultTimes</ref>.append(sleepTime<sp/>-<sp/>lastTime);</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resultTimesIdx++;</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>updateInvoke();</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isBusy=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="775"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"></highlight></codeline>
+<codeline lineno="780"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="normal"></highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="783"><highlight class="normal"></highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="785"><highlight class="normal"></highlight></codeline>
+<codeline lineno="786"><highlight class="normal"></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"></highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="793" refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a75915c5f4286c3cdb3a7b0b3c240877a" kindref="member">MainWindow::ChangeFFGfieldType</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="794"><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!muteEvent){</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_0-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_0-&gt;isChecked());</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_1-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_1-&gt;isChecked());</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_2-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_2-&gt;isChecked());</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_3-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_3-&gt;isChecked());</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_4-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_4-&gt;isChecked());</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_5-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_5-&gt;isChecked());</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_6-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_6-&gt;isChecked());</highlight></codeline>
+<codeline lineno="803"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_7-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_7-&gt;isChecked());</highlight></codeline>
+<codeline lineno="804"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_8-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_8-&gt;isChecked());</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;sbxFFG_9-&gt;setEnabled(!ui-&gt;cbxFFG_TEXT_9-&gt;isChecked());</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"></highlight></codeline>
+<codeline lineno="808"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="809" refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a22b08e83650062d966d3765b972fbc71" kindref="member">MainWindow::ChangeFFGfieldContent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"></highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!muteEvent){</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_0-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_0-&gt;isChecked());</highlight></codeline>
+<codeline lineno="813"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_1-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_1-&gt;isChecked());</highlight></codeline>
+<codeline lineno="814"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_2-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_2-&gt;isChecked());</highlight></codeline>
+<codeline lineno="815"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_3-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_3-&gt;isChecked());</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_4-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_4-&gt;isChecked());</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_5-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_5-&gt;isChecked());</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_6-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_6-&gt;isChecked());</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_7-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_7-&gt;isChecked());</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_8-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_8-&gt;isChecked());</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ui-&gt;txtFFG_9-&gt;setEnabled(!ui-&gt;cbxFFG_RANDOM_9-&gt;isChecked());</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="823"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="824" refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1aa58e3ed6d26ed5b593560bbf0f8f183c" kindref="member">MainWindow::setValueEPS</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value){</highlight></codeline>
+<codeline lineno="825"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;lcdNumberEPS-&gt;display(value);</highlight></codeline>
+<codeline lineno="826"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="827" refid="classMainWindow_1a65c01e2454356623735a1ab596210304" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a65c01e2454356623735a1ab596210304" kindref="member">MainWindow::setValueST</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value){</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/>ui-&gt;lcdNumberST-&gt;display(value);</highlight></codeline>
+<codeline lineno="829"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="830" refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a6e9f5e24aedd12d81b21148576a81b52" kindref="member">MainWindow::ClickedClear</ref>(){</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/>processClearALL();</highlight></codeline>
+<codeline lineno="832"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="833" refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a08902ba306b0d0aa85f02946edcb7a25" kindref="member">MainWindow::ClickedMake</ref>(){</highlight></codeline>
+<codeline lineno="834"><highlight class="normal"><sp/><sp/><sp/><sp/>processMakeRRL();</highlight></codeline>
+<codeline lineno="835"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="836" refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a7be6a5d98970ac1a6296c6f9aee1e9bb" kindref="member">MainWindow::about</ref>(){</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAboutDialog" kindref="compound">AboutDialog</ref><sp/>*aboutDialog<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classAboutDialog" kindref="compound">AboutDialog</ref>();</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/>aboutDialog-&gt;show();</highlight></codeline>
+<codeline lineno="839"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="840" refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1aa7473e4bbbcc281706ac2edef864fb45" kindref="member">MainWindow::open</ref>(){</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/>openSet(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="842"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="843"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::openSet(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>firstCall){</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHelpSetDialog" kindref="compound">HelpSetDialog</ref><sp/>*helpSetDialog<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classHelpSetDialog" kindref="compound">HelpSetDialog</ref>(firstCall,</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/>helpSetDialog-&gt;show();</highlight></codeline>
+<codeline lineno="846"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MainWindow::openResult(){</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classResultDialog" kindref="compound">ResultDialog</ref><sp/>*resultDialog<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classResultDialog" kindref="compound">ResultDialog</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/>resultDialog-&gt;show();</highlight></codeline>
+<codeline lineno="850"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="851" refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a2829d4a6fd7676b59809e9dd8f792fd6" kindref="member">MainWindow::ClickedTESTINSERT</ref>(){</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/>processTestInsert();</highlight></codeline>
+<codeline lineno="853"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="854" refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a45d0243661d09bfc99392c94b0060060" kindref="member">MainWindow::ClickedTESTUPDATE</ref>(){</highlight></codeline>
+<codeline lineno="855"><highlight class="normal"><sp/><sp/><sp/><sp/>processTestUpdate();</highlight></codeline>
+<codeline lineno="856"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="857" refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a606b89316359652899d63d44b6cb86cf" kindref="member">MainWindow::ClickedTESTDELETE</ref>(){</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/>processTestDelete();</highlight></codeline>
+<codeline lineno="859"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="860" refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMainWindow_1a7908356fbc84a236502baf0f0bdbbe5c" kindref="member">MainWindow::ClickedTESTSELECT</ref>(){</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/>processTestSelect();</highlight></codeline>
+<codeline lineno="862"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="863"><highlight class="normal"></highlight></codeline>
+<codeline lineno="864"><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="normal"></highlight></codeline>
+<codeline lineno="866"><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight></codeline>
+<codeline lineno="872"><highlight class="normal">QString<sp/>MainWindow::randomFixString(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lenght){</highlight></codeline>
+<codeline lineno="873"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>ABC[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;QWERTYUIOPASDFGHJKLZXCVBNM&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="874"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;qwertyuiopasdfghjklzxcvbnm&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="875"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>out=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;lenght;i++){</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cs=<sp/>qrand()<sp/>%<sp/>2,ls=<sp/>qrand()<sp/>%<sp/>25;</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out+=ABC[cs].at(ls).toAscii();</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="881"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="882"><highlight class="normal"></highlight></codeline>
+<codeline lineno="883"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/bitehack/QTProjects/QT/SQLiteTest/SQLiteTest/mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

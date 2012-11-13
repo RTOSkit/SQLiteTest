@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a7be6a5d98970ac1a6296c6f9aee1e9bb"><param name="Name" value="about"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAboutDialog.html"><param name="Name" value="AboutDialog"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAboutDialog.html#ad96fc2ce8de7568ace543b7c69c71c56"><param name="Name" value="AboutDialog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classAboutDialog.html#a3d87f5a26a175bb2573965c98af6d4ca"><param name="Name" value="~AboutDialog"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a1e88eb4912e990e9280b2045fbf8f190"><param name="Name" value="AnonymVoid"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a22b08e83650062d966d3765b972fbc71"><param name="Name" value="ChangeFFGfieldContent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a75915c5f4286c3cdb3a7b0b3c240877a"><param name="Name" value="ChangeFFGfieldType"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a7183c0405fa07f127a0a9abc6929a8c7"><param name="Name" value="ClickedBack"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6e9f5e24aedd12d81b21148576a81b52"><param name="Name" value="ClickedClear"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#aa3c79e2757893a38dd2e53271376ddb3"><param name="Name" value="ClickedClose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a2c435b9d4baaaf700d68e2f3433be28d"><param name="Name" value="ClickedForward"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a9837a1246bd3dfdc6e1adee2a49f2157"><param name="Name" value="ClickedGit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#ae381f3412a99fec40b901265d0b393c5"><param name="Name" value="ClickedH0"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a6c83306c35879d7d46af2b0e1818b0c1"><param name="Name" value="ClickedH1"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a21e7bb69468d2d75db0f7c106bdd66fa"><param name="Name" value="ClickedH2"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a67325da32306a5330c51639cbb793311"><param name="Name" value="ClickedH3"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#af2e0e69fc351dce5a0982a1fca5730cf"><param name="Name" value="ClickedH4"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a0ef6a793476a27e4a452985d3264bf69"><param name="Name" value="ClickedH5"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#adadd548eb11c585c0daf8df7d00e09c1"><param name="Name" value="ClickedH6"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#ab672ac4bea4fd9d86e47dfe4c0359cc8"><param name="Name" value="ClickedH7"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#aeb83aba8c60d5b6793f2c4f607be1323"><param name="Name" value="ClickedH8"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a392d911572314f20320bf43e1c97dacd"><param name="Name" value="ClickedHome"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a08902ba306b0d0aa85f02946edcb7a25"><param name="Name" value="ClickedMake"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a9c38de387e813f10d1783e9327fe4c5a"><param name="Name" value="ClickedRefresh"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a606b89316359652899d63d44b6cb86cf"><param name="Name" value="ClickedTESTDELETE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a2829d4a6fd7676b59809e9dd8f792fd6"><param name="Name" value="ClickedTESTINSERT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a7908356fbc84a236502baf0f0bdbbe5c"><param name="Name" value="ClickedTESTSELECT"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a45d0243661d09bfc99392c94b0060060"><param name="Name" value="ClickedTESTUPDATE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a2d56d35a2a180de735942cc56d297fd3"><param name="Name" value="closeEvent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a623f8f8b12bdde7ce2c69f6388d3719b"><param name="Name" value="customCacheSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#afa1cee8e11c7ca38d32e05c92a6b56da"><param name="Name" value="customJournalMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad99a3e0cc0c19283aa9337e6a28f0a28"><param name="Name" value="customLockingMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#aeaa6fa937ead293aa8cd41b86f1c5cf4"><param name="Name" value="customPageSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a7d309904c4edb9f888d0c8a810def2d1"><param name="Name" value="customSynchronous"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a36b942f872c390f204cc5542fc0662de"><param name="Name" value="customTempStore"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a1e719c7ea443e641471da642dbf33a70"><param name="Name" value="db"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a846367e96132826f56b96515a2c1d8ab"><param name="Name" value="dbClose"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a245861da7b78b4adb356e552bd3b2286"><param name="Name" value="dbFlush"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a84d9c5795ea328449772de77bfd9e30e"><param name="Name" value="dbOpen"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sqlite_8h.html#acfcad24977a121f8cb40c7abc0861e13"><param name="Name" value="DEFAULT_DBNAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sqlite_8h.html#adda28390da72cdfef24377fcd0262e17"><param name="Name" value="DEFAULT_TABLENAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#ae740e848da37fb08e92d2e7db3b508b7"><param name="Name" value="deleteDBRecord"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a92c41d772914eb2a3066de8b613bd6c0"><param name="Name" value="DRL_TITLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#af648bf6238ec163343b5dec5e900fc23"><param name="Name" value="DRLbytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#aa78da16b589b9ca5469c44688b356192"><param name="Name" value="FIX_NR_FIELDS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ac3f3016f1a0ad93767c521c2fd349c7b"><param name="Name" value="fullSpeed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html"><param name="Name" value="HelpSetDialog"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a7183c0405fa07f127a0a9abc6929a8c7"><param name="Name" value="ClickedBack"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#aa3c79e2757893a38dd2e53271376ddb3"><param name="Name" value="ClickedClose"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a2c435b9d4baaaf700d68e2f3433be28d"><param name="Name" value="ClickedForward"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a9837a1246bd3dfdc6e1adee2a49f2157"><param name="Name" value="ClickedGit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#ae381f3412a99fec40b901265d0b393c5"><param name="Name" value="ClickedH0"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a6c83306c35879d7d46af2b0e1818b0c1"><param name="Name" value="ClickedH1"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a21e7bb69468d2d75db0f7c106bdd66fa"><param name="Name" value="ClickedH2"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a67325da32306a5330c51639cbb793311"><param name="Name" value="ClickedH3"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#af2e0e69fc351dce5a0982a1fca5730cf"><param name="Name" value="ClickedH4"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a0ef6a793476a27e4a452985d3264bf69"><param name="Name" value="ClickedH5"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#adadd548eb11c585c0daf8df7d00e09c1"><param name="Name" value="ClickedH6"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#ab672ac4bea4fd9d86e47dfe4c0359cc8"><param name="Name" value="ClickedH7"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#aeb83aba8c60d5b6793f2c4f607be1323"><param name="Name" value="ClickedH8"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a392d911572314f20320bf43e1c97dacd"><param name="Name" value="ClickedHome"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a9c38de387e813f10d1783e9327fe4c5a"><param name="Name" value="ClickedRefresh"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a2d56d35a2a180de735942cc56d297fd3"><param name="Name" value="closeEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a42eedf3d1994361844e27c2d5455fc85"><param name="Name" value="HelpSetDialog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a59391ca64da7949e23bb6d9ed900e2eb"><param name="Name" value="~HelpSetDialog"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#aa4a76c8a9ec7d8a0101a28c228701e4b"><param name="Name" value="insertDBRecord"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a88b9fd4866e9ab0c99f50c7c0801e8de"><param name="Name" value="isQueryError"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html"><param name="Name" value="main.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="main"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html"><param name="Name" value="MainWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html"><param name="Name" value="mainwindow.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a1e88eb4912e990e9280b2045fbf8f190"><param name="Name" value="AnonymVoid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a92c41d772914eb2a3066de8b613bd6c0"><param name="Name" value="DRL_TITLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#aa78da16b589b9ca5469c44688b356192"><param name="Name" value="FIX_NR_FIELDS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a475c77257e5782fb60199a7d12a7e53f"><param name="Name" value="MAX_RECORDS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#ab04ce3533c12d8fcbe009e83411d7cee"><param name="Name" value="MAX_SLEEPS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#aff2f9f643149b87035310798f31a5b15"><param name="Name" value="MAX_TURNS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#afdbfb02687a82624eb0775e9398be734"><param name="Name" value="RRL_TITLE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#ad811caf6c72a9a031c67d2af9edc57ab"><param name="Name" value="TEXT_FIELD_SIZE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html"><param name="Name" value="MainWindow"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a7be6a5d98970ac1a6296c6f9aee1e9bb"><param name="Name" value="about"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a22b08e83650062d966d3765b972fbc71"><param name="Name" value="ChangeFFGfieldContent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a75915c5f4286c3cdb3a7b0b3c240877a"><param name="Name" value="ChangeFFGfieldType"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6e9f5e24aedd12d81b21148576a81b52"><param name="Name" value="ClickedClear"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a08902ba306b0d0aa85f02946edcb7a25"><param name="Name" value="ClickedMake"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a606b89316359652899d63d44b6cb86cf"><param name="Name" value="ClickedTESTDELETE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a2829d4a6fd7676b59809e9dd8f792fd6"><param name="Name" value="ClickedTESTINSERT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a7908356fbc84a236502baf0f0bdbbe5c"><param name="Name" value="ClickedTESTSELECT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a45d0243661d09bfc99392c94b0060060"><param name="Name" value="ClickedTESTUPDATE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#af648bf6238ec163343b5dec5e900fc23"><param name="Name" value="DRLbytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ac3f3016f1a0ad93767c521c2fd349c7b"><param name="Name" value="fullSpeed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a88b9fd4866e9ab0c99f50c7c0801e8de"><param name="Name" value="isQueryError"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a8b244be8b7b7db1b08de2a2acb9409db"><param name="Name" value="MainWindow"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#aa7473e4bbbcc281706ac2edef864fb45"><param name="Name" value="open"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a271013fd9b8f471aed5ce6ff2941a6cf"><param name="Name" value="postTmpNrecords"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6c309625ea8d8bd81d552a96ffbbf368"><param name="Name" value="postTmpRunSeconds"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#afbc3735a35d28cf9ce9a9873aacc4939"><param name="Name" value="queryErrorMsg"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a69d381f82b82ca37620172b78d58c4ea"><param name="Name" value="resultTimes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ac4e4dd0ba3dd8b958d2aec2271bfe299"><param name="Name" value="RRLbytes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a012e372e5d6180e36e3b08d27eaa6c36"><param name="Name" value="runTimerDeleteEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6532900ddf54d3587f12607a858cfff4"><param name="Name" value="runTimerInsertEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a124c316d7016496cbdc44a798cb26309"><param name="Name" value="runTimerSelectEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ad751cceac9d285bd49518fccf7d7e018"><param name="Name" value="runTimerUpdateEvent"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#aa58e3ed6d26ed5b593560bbf0f8f183c"><param name="Name" value="setValueEPS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a65c01e2454356623735a1ab596210304"><param name="Name" value="setValueST"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#acd9e528f003b22f3c17657a89505803a"><param name="Name" value="sqlite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7"><param name="Name" value="~MainWindow"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#a475c77257e5782fb60199a7d12a7e53f"><param name="Name" value="MAX_RECORDS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#ab04ce3533c12d8fcbe009e83411d7cee"><param name="Name" value="MAX_SLEEPS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#aff2f9f643149b87035310798f31a5b15"><param name="Name" value="MAX_TURNS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#aa7473e4bbbcc281706ac2edef864fb45"><param name="Name" value="open"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a271013fd9b8f471aed5ce6ff2941a6cf"><param name="Name" value="postTmpNrecords"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6c309625ea8d8bd81d552a96ffbbf368"><param name="Name" value="postTmpRunSeconds"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#afbc3735a35d28cf9ce9a9873aacc4939"><param name="Name" value="queryErrorMsg"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classResultDialog.html"><param name="Name" value="ResultDialog"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classResultDialog.html#a3cd48b45618b2b87662ab3d5a53bded7"><param name="Name" value="ResultDialog"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classResultDialog.html#a26dcd549337282cf931825ea481fc8c3"><param name="Name" value="~ResultDialog"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a69d381f82b82ca37620172b78d58c4ea"><param name="Name" value="resultTimes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#afdbfb02687a82624eb0775e9398be734"><param name="Name" value="RRL_TITLE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ac4e4dd0ba3dd8b958d2aec2271bfe299"><param name="Name" value="RRLbytes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a012e372e5d6180e36e3b08d27eaa6c36"><param name="Name" value="runTimerDeleteEvent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a6532900ddf54d3587f12607a858cfff4"><param name="Name" value="runTimerInsertEvent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a124c316d7016496cbdc44a798cb26309"><param name="Name" value="runTimerSelectEvent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ad751cceac9d285bd49518fccf7d7e018"><param name="Name" value="runTimerUpdateEvent"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a7c04908029911f3df653b673b3ee6e84"><param name="Name" value="selectDBRecord"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#aa58e3ed6d26ed5b593560bbf0f8f183c"><param name="Name" value="setValueEPS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#a65c01e2454356623735a1ab596210304"><param name="Name" value="setValueST"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html"><param name="Name" value="SQLite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sqlite_8h.html"><param name="Name" value="sqlite.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sqlite_8h.html#acfcad24977a121f8cb40c7abc0861e13"><param name="Name" value="DEFAULT_DBNAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sqlite_8h.html#adda28390da72cdfef24377fcd0262e17"><param name="Name" value="DEFAULT_TABLENAME"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html"><param name="Name" value="SQLite"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a1e719c7ea443e641471da642dbf33a70"><param name="Name" value="db"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a846367e96132826f56b96515a2c1d8ab"><param name="Name" value="dbClose"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a245861da7b78b4adb356e552bd3b2286"><param name="Name" value="dbFlush"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a84d9c5795ea328449772de77bfd9e30e"><param name="Name" value="dbOpen"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#ae740e848da37fb08e92d2e7db3b508b7"><param name="Name" value="deleteDBRecord"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#aa4a76c8a9ec7d8a0101a28c228701e4b"><param name="Name" value="insertDBRecord"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#acd9e528f003b22f3c17657a89505803a"><param name="Name" value="sqlite"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html"><param name="Name" value="SQLite"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a7c04908029911f3df653b673b3ee6e84"><param name="Name" value="selectDBRecord"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#ae7b35dc7e3c41543a0acde669ad4ba0d"><param name="Name" value="SQLite"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a2dd6672e754497ad5ad90470e3ef3e33"><param name="Name" value="sqlPreferences"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#ad04b99dcc053d1ad1fe034a7d33ddc45"><param name="Name" value="startDriver"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#acd343255f8010fdde87b1d8b2cd65e49"><param name="Name" value="updateDBRecord"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespacesqlitetest.html"><param name="Name" value="sqlitetest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html"><param name="Name" value="SqlPreferences"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a623f8f8b12bdde7ce2c69f6388d3719b"><param name="Name" value="customCacheSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#afa1cee8e11c7ca38d32e05c92a6b56da"><param name="Name" value="customJournalMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad99a3e0cc0c19283aa9337e6a28f0a28"><param name="Name" value="customLockingMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#aeaa6fa937ead293aa8cd41b86f1c5cf4"><param name="Name" value="customPageSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a7d309904c4edb9f888d0c8a810def2d1"><param name="Name" value="customSynchronous"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a36b942f872c390f204cc5542fc0662de"><param name="Name" value="customTempStore"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#a2dd6672e754497ad5ad90470e3ef3e33"><param name="Name" value="sqlPreferences"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html"><param name="Name" value="SqlPreferences"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a36464d4021afe0e0919cce650a1519fe"><param name="Name" value="useAtomicCommit"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad26f9920ddc5ac5f655873d9ecb3ac53"><param name="Name" value="useCustomCacheSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a9aa98cdd591864c7b2382b2d0fff0de9"><param name="Name" value="useCustomJournalMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a22c08a63c97db2f85e08920bf3e22516"><param name="Name" value="useCustomLockingMode"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a7e53d4abaf46acfb84cd8c30fbf3b1df"><param name="Name" value="useCustomPageSize"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a3d18d11573e0546e8fe854b7584adab7"><param name="Name" value="useCustomSynchronous"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#abcd9f162cf432b71159c7c83adb8ac88"><param name="Name" value="useCustomTempStore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ae8bb4bc0c82e4f32c51efdbf3d3e1af5"><param name="Name" value="useExistDB"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad7d06ce81f298cf13b7522e48d640a78"><param name="Name" value="useRamDB"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#ad04b99dcc053d1ad1fe034a7d33ddc45"><param name="Name" value="startDriver"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="mainwindow_8h.html#ad811caf6c72a9a031c67d2af9edc57ab"><param name="Name" value="TEXT_FIELD_SIZE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceUi.html"><param name="Name" value="Ui"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classSQLite.html#acd343255f8010fdde87b1d8b2cd65e49"><param name="Name" value="updateDBRecord"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a36464d4021afe0e0919cce650a1519fe"><param name="Name" value="useAtomicCommit"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad26f9920ddc5ac5f655873d9ecb3ac53"><param name="Name" value="useCustomCacheSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a9aa98cdd591864c7b2382b2d0fff0de9"><param name="Name" value="useCustomJournalMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a22c08a63c97db2f85e08920bf3e22516"><param name="Name" value="useCustomLockingMode"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a7e53d4abaf46acfb84cd8c30fbf3b1df"><param name="Name" value="useCustomPageSize"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#a3d18d11573e0546e8fe854b7584adab7"><param name="Name" value="useCustomSynchronous"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#abcd9f162cf432b71159c7c83adb8ac88"><param name="Name" value="useCustomTempStore"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ae8bb4bc0c82e4f32c51efdbf3d3e1af5"><param name="Name" value="useExistDB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structSqlPreferences.html#ad7d06ce81f298cf13b7522e48d640a78"><param name="Name" value="useRamDB"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classAboutDialog.html#a3d87f5a26a175bb2573965c98af6d4ca"><param name="Name" value="~AboutDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classHelpSetDialog.html#a59391ca64da7949e23bb6d9ed900e2eb"><param name="Name" value="~HelpSetDialog"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classMainWindow.html#ae98d00a93bc118200eeef9f9bba1dba7"><param name="Name" value="~MainWindow"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classResultDialog.html#a26dcd549337282cf931825ea481fc8c3"><param name="Name" value="~ResultDialog"></OBJECT>
+</UL>
+</BODY>
+</HTML>

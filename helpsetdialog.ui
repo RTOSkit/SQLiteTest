@@ -1018,6 +1018,22 @@ color: rgb(57, 84, 127);</string>
                 <string>Attach Ram Database</string>
                </property>
               </widget>
+              <widget class="QCheckBox" name="cbxRD">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>380</y>
+                 <width>181</width>
+                 <height>21</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Remote Doxygen </string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
              </widget>
              <widget class="QPushButton" name="btnH_0">
               <property name="geometry">
