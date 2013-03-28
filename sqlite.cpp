@@ -1,3 +1,6 @@
+
+
+
 /**
  * SQLiteTest - Analysis Tools Kit
  *
@@ -52,6 +55,11 @@ void SQLite::startDriver(void){
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(pathDB);
     db.open();
+
+
+    queryStr =   "PRAGMA auto_vacuum = 1";
+    db.exec(queryStr);
+
 
     if(sqlPreferences->useExistDB){
         queryStr = "CREATE TABLE IF NOT EXISTS " + qApp->tr(DEFAULT_TABLENAME) + " (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, " \
